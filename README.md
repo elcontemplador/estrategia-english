@@ -2,7 +2,7 @@
 
 An English reading edition of estrategIA, the Spanish-language publication about artificial intelligence, politics and government.
 
-This repository contains the static website framework. The first six translations are under local editorial review; the public reading site has not been launched. Editorial working files, source snapshots and review evidence are excluded from this repository. Articles enter a release only after editorial acceptance.
+This repository contains the static website framework. The translation archive is expanding in chronological batches under local editorial review; the public reading site has not been launched. Editorial working files, source snapshots and review evidence are excluded from this repository. Articles enter a release only after editorial acceptance.
 
 ## Local editorial workflow
 

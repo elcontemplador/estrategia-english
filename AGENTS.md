@@ -1,8 +1,9 @@
 # estrategIA English edition
 
-Scope: English archive website, currently first milestone (verified inventory, six pilot translations, local review website). GitHub Pages is chosen. Preserve the original corpus and the parent repository's unrelated changes.
+Scope: English archive website, now expanding the reviewed text archive in chronological batches after the six-pilot milestone. GitHub Pages is chosen. Preserve the original corpus and the parent repository's unrelated changes.
 
 ## Editorial workflow
+- Current user priority: texts first. Preserve original illustrations and meaningful screenshots where possible; defer redesign of graphics with embedded Spanish text. Track outstanding visual work separately so it does not block translation.
 - Source published Spanish main articles, retaining author, date, links, tables, notes and meaningful images.
 - Translate in international English with consistent British spelling. Preserve modality, historical context and first-person voice.
 - Do not claim human approval, completeness of archive, publication, indexing or AI citations before evidence exists.

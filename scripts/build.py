@@ -184,13 +184,13 @@ For the original presentation of the publication and its editorial approach, [re
         rendered=converter.convert(raw)
         if re.search(r"<(?:script|iframe|form)\b|\son\w+\s*=|javascript:",rendered,re.I):
             raise ValueError("Unsafe HTML in article "+r["id"])
-        toc=converter.toc if len(converter.toc_tokens)>1 else ""
+        toc=converter.toc if converter.toc_tokens else ""
         genre=r.get("genre","analysis").replace("_"," ").title()
         headline='<div class="breadcrumbs"><a href="'+url("essays/")+'">Essays</a> / Issue '+r["id"]+'</div><header class="article-heading"><p class="eyebrow">'+e(TOPICS[r["topics"][0]][0])+' · '+e(genre)+'</p><h1>'+e(r["title"])+'</h1><p class="dek">'+e(r["description"])+'</p><div class="article-meta"><div><strong><a href="'+e(r["author"].get("url") or config["original_site"])+'">'+e(r["author"]["name"])+'</a></strong><span>Author</span></div><div><strong>'+date_label(r.get("original_date"))+'</strong><span>Originally published in Spanish</span></div><div><strong>'+str(r["minutes"])+' min read</strong><span>'+("English review draft" if review else "English edition · "+date_label(r["english_publication_date"]))+'</span></div></div></header>'
         historical='This is a translation of the original Spanish essay'+(' published on '+date_label(r["original_date"]) if r.get("original_date") else '')+'. Its claims, examples and forecasts retain that historical context.'
         citation=r["author"]["name"]+'. “'+r["title"]+'.” estrategIA, issue '+r["id"]+', '+date_label(r.get("original_date"))+'. English '+('translation, review draft' if review else 'edition, '+date_label(r["english_publication_date"]))+'. '+r["url"]
         body='<div class="article-body">'+rendered+'<div class="history-note">'+e(historical)+' <a href="'+e(r["original_url"])+'">Read the original Spanish edition</a>, including its accompanying illustrations.</div><section class="citation" aria-labelledby="cite-title"><h2 id="cite-title">Cite this essay</h2><p id="citation-text">'+e(citation)+'</p><button class="button" type="button" data-copy="citation-text">Copy citation</button><span class="status" role="status" aria-live="polite"></span></section></div>'
-        aside='<aside class="article-aside" aria-label="Essay navigation"><h2>In this essay</h2>'+toc+'<div class="aside-links"><a href="'+e(r["original_url"])+'">Read in Spanish</a><a href="'+url("text/"+r["id"]+".md")+'">Read as Markdown</a><a href="#cite-title">Cite this essay</a></div></aside>'
+        aside='<aside class="article-aside" aria-label="Essay navigation"><h2>'+('In this essay' if toc else 'Read and cite')+'</h2>'+toc+'<div class="aside-links"><a href="'+e(r["original_url"])+'">Read in Spanish</a><a href="'+url("text/"+r["id"]+".md")+'">Read as Markdown</a><a href="#cite-title">Cite this essay</a></div></aside>'
         related=[x for x in records if x["id"]!=r["id"]]
         related.sort(key=lambda x:len(set(x["topics"])&set(r["topics"])),reverse=True)
         more='<section class="related"><div class="section-heading"><h2>Continue the conversation</h2></div><div class="essay-grid">'+"".join(card(x,"h3") for x in related[:3])+'</div></section>'
@@ -236,9 +236,9 @@ For the original presentation of the publication and its editorial approach, [re
     page("404/","Page not found","This page is not available.",'<header class="page-heading"><p class="eyebrow">404</p><h1>That page is not here.</h1><p class="dek">Find your next reading in the <a href="'+url("essays/")+'">essay archive</a>.</p></header>')
     shutil.copyfile(output/"404/index.html",output/"404.html")
     if review:
-        status='<header class="page-heading"><p class="eyebrow">Private editorial working copy</p><h1>Review this edition</h1><p class="dek">Six pilot translations. This copy is not an approved publication. Automated checks, bilingual review and human acceptance are tracked separately.</p></header><table class="review-table"><thead><tr><th>Issue</th><th>Essay</th><th>Assisted review</th><th>Human acceptance</th></tr></thead><tbody>'
+        status='<header class="page-heading"><p class="eyebrow">Private editorial working copy</p><h1>Review this edition</h1><p class="dek">'+str(len(records))+' translations. This copy is not an approved publication. Automated checks, bilingual review and human acceptance are tracked separately.</p></header><table class="review-table"><thead><tr><th>Issue</th><th>Essay</th><th>Assisted review</th><th>Human acceptance</th></tr></thead><tbody>'
         for r in records: status+='<tr><td>'+r["id"]+'</td><td><a href="'+url(r["route"])+'">'+e(r["title"])+'</a></td><td>'+e(r.get("assisted_review_status","pending"))+'</td><td>'+e(r.get("human_approval","pending"))+'</td></tr>'
-        page("review/","Editorial review","Review status for the pilot English edition.",status+"</tbody></table>")
+        page("review/","Editorial review","Review status for the English edition.",status+"</tbody></table>")
     manifest={"mode":args.mode,"base_url":base,"built_at":datetime.now(timezone.utc).isoformat(),"human_approval":config["human_approval"],"article_count":len(records),"article_ids":[r["id"] for r in records],"source_hashes":{r["id"]:r["source_hash"] for r in records},"files":sorted(str(p.relative_to(output)).replace("\\","/") for p in output.rglob("*") if p.is_file())}
     manifest["editorial_hashes"]={r["id"]:r["editorial_fingerprint"] for r in records}
     manifest["english_publication_dates"]={} if review else {r["id"]:r["english_publication_date"] for r in records}

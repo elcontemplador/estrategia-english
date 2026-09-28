@@ -22,3 +22,4 @@ Context takes priority over a mechanical substitution.
 | capacidades | capabilities / capacity | Capabilities for abilities; capacity for systemic ability or resources. |
 | transformación digital | digital transformation | Preserve the process and institutional dimensions. |
 | brecha digital | digital divide | Digital divides when distinct gaps are specified. |
+| programa | program / programme | Program for computer software, including British English; programme for an educational or public initiative. |
