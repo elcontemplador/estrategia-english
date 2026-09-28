@@ -19,7 +19,7 @@ The progress report checks that recorded reviews match the current texts and kee
 
 The server prints its local review URL. Review output is labelled and marked noindex. Browser checks additionally use an existing Playwright installation and Microsoft Edge.
 
-Read EDITORIAL_GUIDE.md and GLOSSARY.md before preparing translations. A public build requires human acceptance in site.json and each article's metadata, source dates and URLs, a passed independent bilingual review, matching review/approval fingerprints and a persistent English publication date per article. No command below grants approval.
+Read EDITORIAL_GUIDE.md and GLOSSARY.md before preparing translations. A public build requires human acceptance in site.json and each article's metadata, resolved authorship, source dates and URLs, a passed independent bilingual review, matching review/approval fingerprints and a persistent English publication date per article. No command below grants approval.
 
 ```text
 python scripts/build.py --mode public
@@ -33,7 +33,7 @@ The planned production URL is https://elcontemplador.github.io/estrategia-englis
 
 ## Content model
 
-Each translated essay has content/en/NNN.md and content/en/NNN.json. Metadata preserves source date, URL and author separately from translation dates and review state. Original source files are immutable.
+Each translated essay has content/en/NNN.md and content/en/NNN.json. Metadata preserves source date, URL and author separately from translation dates and review state. Original source files are immutable. Unknown bylines remain null in the catalogue and are labelled explicitly in review pages; they never become invented Person records or a public release.
 
 HTML, plain Markdown, JSON catalogue, sitemap and Atom feed are built from the same selected records. Full-text reading, topics and archive navigation work without JavaScript. Search and interactive filters use a small local script.
 

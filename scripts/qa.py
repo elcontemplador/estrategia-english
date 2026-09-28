@@ -64,6 +64,12 @@ def run(folder):
         check(bool(r["original_date"] and r["original_url"]),r["id"]+": missing provenance")
         p=base/"essays"/r["id"]/"index.html"
         data=pages[p.resolve()].jsonld[0]
+        expected_author=(r.get("author") or {}).get("name")
+        check((data.get("author") or {}).get("name")==expected_author,r["id"]+": schema author matches source metadata")
+        if not expected_author:
+            html_text=p.read_text(encoding="utf-8")
+            check("Byline not stated in original" in html_text,r["id"]+": missing visible unknown-byline notice")
+            check("author" not in data,r["id"]+": invented structured author")
         check(data["translationOfWork"].get("datePublished")==r["original_date"],r["id"]+": original schema date")
         check((data.get("datePublished") is None)==(manifest["mode"]=="review"),r["id"]+": English schema date")
         md=(base/"text"/(r["id"]+".md")).read_text(encoding="utf-8")

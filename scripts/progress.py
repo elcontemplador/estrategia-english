@@ -41,7 +41,7 @@ def main():
             raise ValueError(f"Stale human acceptance for issue {number}.")
         rows.append({
             "issue_number": number, "title": meta["title"],
-            "author": meta["author"]["name"],
+            "author": (meta.get("author") or {}).get("name"),
             "english_words": len(body.decode("utf-8-sig").split()),
             "assisted_review_status": meta.get("assisted_review_status", "pending"),
             "assisted_review_hash": meta.get("assisted_review_hash"),

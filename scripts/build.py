@@ -25,6 +25,12 @@ def e(value):
     return html.escape(str(value if value is not None else ""), quote=True)
 def plain(text):
     return re.sub(r"\s+", " ", re.sub(r"<[^>]*>", " ", text)).strip()
+def author_name(record):
+    return (record.get("author") or {}).get("name") or ""
+
+def author_label(record):
+    return author_name(record) or "Byline not stated in original"
+
 def date_label(value):
     if not value: return "Date being verified"
     return datetime.fromisoformat(value[:10]).strftime("%d %B %Y").lstrip("0")
@@ -103,11 +109,11 @@ def main():
         write(("index.html" if not route else route+"index.html"),full)
     def card(r,heading="h2"):
         t=r["topics"][0]
-        search=" ".join([r["title"],r["description"],r["author"]["name"],*r["topics"],plain(markdown.markdown(r["raw"]))])
-        return '<article class="essay-card" data-essay data-search="'+e(search)+'" data-topics="'+e(" ".join(r["topics"]))+'" data-year="'+e((r.get("original_date") or "")[:4])+'"><div class="topic-label">'+e(TOPICS[t][0])+'</div><'+heading+'><a href="'+url(r["route"])+'">'+e(r["title"])+'</a></'+heading+'><p>'+e(r["description"])+'</p><div class="meta"><span>'+e(r["author"]["name"])+'</span><span>'+date_label(r.get("original_date"))+'</span><span>'+str(r["minutes"])+' min read</span><span>Issue '+r["id"]+'</span></div></article>'
+        search=" ".join([r["title"],r["description"],author_label(r),*r["topics"],plain(markdown.markdown(r["raw"]))])
+        return '<article class="essay-card" data-essay data-search="'+e(search)+'" data-topics="'+e(" ".join(r["topics"]))+'" data-year="'+e((r.get("original_date") or "")[:4])+'"><div class="topic-label">'+e(TOPICS[t][0])+'</div><'+heading+'><a href="'+url(r["route"])+'">'+e(r["title"])+'</a></'+heading+'><p>'+e(r["description"])+'</p><div class="meta"><span>'+e(author_label(r))+'</span><span>'+date_label(r.get("original_date"))+'</span><span>'+str(r["minutes"])+' min read</span><span>Issue '+r["id"]+'</span></div></article>'
     records.sort(key=lambda r:r["issue_number"],reverse=True)
     lead=next((r for r in records if r["issue_number"]==155),records[0])
-    featured='''<section class="feature" aria-labelledby="featured-title"><div><p class="eyebrow">Featured essay · Power and sovereignty</p><h2 id="featured-title"><a href="'''+url(lead["route"])+'''">'''+e(lead["title"])+'''</a></h2><p class="summary">'''+e(lead["description"])+'''</p><div class="meta"><span>'''+e(lead["author"]["name"])+'''</span><span>'''+date_label(lead.get("original_date"))+'''</span><span>'''+str(lead["minutes"])+''' min read</span></div></div><aside class="feature-aside"><p class="eyebrow">Start here</p><h3>A different way into the AI debate.</h3><p>Who holds power? What can institutions do? How should the gains be shared? Follow the questions across our archive.</p><a class="text-link" href="'''+url("topics/")+'''">Explore the topics</a></aside></section>'''
+    featured='''<section class="feature" aria-labelledby="featured-title"><div><p class="eyebrow">Featured essay · Power and sovereignty</p><h2 id="featured-title"><a href="'''+url(lead["route"])+'''">'''+e(lead["title"])+'''</a></h2><p class="summary">'''+e(lead["description"])+'''</p><div class="meta"><span>'''+e(author_label(lead))+'''</span><span>'''+date_label(lead.get("original_date"))+'''</span><span>'''+str(lead["minutes"])+''' min read</span></div></div><aside class="feature-aside"><p class="eyebrow">Start here</p><h3>A different way into the AI debate.</h3><p>Who holds power? What can institutions do? How should the gains be shared? Follow the questions across our archive.</p><a class="text-link" href="'''+url("topics/")+'''">Explore the topics</a></aside></section>'''
     home='''<section class="intro"><div><p class="eyebrow">From the Spanish archive</p><h1>AI, politics<br>and government.</h1></div><div class="intro-copy"><p>estrategIA explores how artificial intelligence is changing public life: the power to decide, the work we do and the institutions we share.</p><p>This English edition brings the main essays from our Spanish-language publication to a wider conversation.</p><a class="text-link" href="'''+url("about/")+'''">Meet estrategIA</a></div></section>'''+featured
     start=[next(r for r in records if r["issue_number"]==n) for n in [131,132,104] if any(r["issue_number"]==n for r in records)]
     home+='<section><div class="section-heading"><h2>Three questions worth pursuing</h2><a href="'+url("essays/")+'">All '+str(len(records))+' essays</a></div><div class="essay-grid">'+"".join(card(r,"h3") for r in start)+'</div></section>'
@@ -151,7 +157,7 @@ You can begin with a theme, follow an author or browse the archive. Each essay c
 
 These translations aim to preserve the argument, voice and degree of certainty of the originals. They use international English with consistent British spelling. Institutions and culturally specific references are briefly explained where needed.
 
-Every essay identifies its author, original publication date and Spanish source. Historical claims and predictions retain their original context. A translation date is not an update of the argument. Any substantive correction or contextual addition is identified separately.
+Every essay preserves its original publication date and Spanish source. Authors are credited where the original byline is known; unresolved attributions are identified explicitly. Historical claims and predictions retain their original context. A translation date is not an update of the argument. Any substantive correction or contextual addition is identified separately.
 
 The preparation process uses AI for translation and an assisted bilingual review. Those steps are recorded separately from human editorial acceptance. Quotes translated from Spanish are not presented as independently verified original English wording unless they have been checked.
 
@@ -182,26 +188,29 @@ For the original presentation of the publication and its editorial approach, [re
         raw=re.sub(r"!\[([^\]]*)\]\(([^)]+)\)",image_rewrite,raw)
         converter=markdown.Markdown(extensions=["extra","toc","sane_lists"],extension_configs={"toc":{"permalink":"¶","permalink_title":"Link to this section","toc_depth":"2-3"}})
         rendered=converter.convert(raw)
+        rendered=rendered.replace('<table>', '<p class="table-hint">Scroll across the table to read all columns.</p><table tabindex="0" aria-label="Data table; scroll horizontally to read all columns">')
         if re.search(r"<(?:script|iframe|form)\b|\son\w+\s*=|javascript:",rendered,re.I):
             raise ValueError("Unsafe HTML in article "+r["id"])
         toc=converter.toc if converter.toc_tokens else ""
         genre=r.get("genre","analysis").replace("_"," ").title()
-        headline='<div class="breadcrumbs"><a href="'+url("essays/")+'">Essays</a> / Issue '+r["id"]+'</div><header class="article-heading"><p class="eyebrow">'+e(TOPICS[r["topics"][0]][0])+' · '+e(genre)+'</p><h1>'+e(r["title"])+'</h1><p class="dek">'+e(r["description"])+'</p><div class="article-meta"><div><strong><a href="'+e(r["author"].get("url") or config["original_site"])+'">'+e(r["author"]["name"])+'</a></strong><span>Author</span></div><div><strong>'+date_label(r.get("original_date"))+'</strong><span>Originally published in Spanish</span></div><div><strong>'+str(r["minutes"])+' min read</strong><span>'+("English review draft" if review else "English edition · "+date_label(r["english_publication_date"]))+'</span></div></div></header>'
+        byline=('<a href="'+e(r["author"].get("url") or config["original_site"])+'">'+e(author_name(r))+'</a>') if author_name(r) else e(author_label(r))
+        headline='<div class="breadcrumbs"><a href="'+url("essays/")+'">Essays</a> / Issue '+r["id"]+'</div><header class="article-heading"><p class="eyebrow">'+e(TOPICS[r["topics"][0]][0])+' · '+e(genre)+'</p><h1>'+e(r["title"])+'</h1><p class="dek">'+e(r["description"])+'</p><div class="article-meta"><div><strong>'+byline+'</strong><span>Author</span></div><div><strong>'+date_label(r.get("original_date"))+'</strong><span>Originally published in Spanish</span></div><div><strong>'+str(r["minutes"])+' min read</strong><span>'+("English review draft" if review else "English edition · "+date_label(r["english_publication_date"]))+'</span></div></div></header>'
         historical='This is a translation of the original Spanish essay'+(' published on '+date_label(r["original_date"]) if r.get("original_date") else '')+'. Its claims, examples and forecasts retain that historical context.'
-        citation=r["author"]["name"]+'. “'+r["title"]+'.” estrategIA, issue '+r["id"]+', '+date_label(r.get("original_date"))+'. English '+('translation, review draft' if review else 'edition, '+date_label(r["english_publication_date"]))+'. '+r["url"]
+        citation=(author_name(r)+'. ' if author_name(r) else '')+'“'+r["title"]+'.” estrategIA, issue '+r["id"]+', '+date_label(r.get("original_date"))+'. English '+('translation, review draft' if review else 'edition, '+date_label(r["english_publication_date"]))+'. '+r["url"]
         body='<div class="article-body">'+rendered+'<div class="history-note">'+e(historical)+' <a href="'+e(r["original_url"])+'">Read the original Spanish edition</a>, including its accompanying illustrations.</div><section class="citation" aria-labelledby="cite-title"><h2 id="cite-title">Cite this essay</h2><p id="citation-text">'+e(citation)+'</p><button class="button" type="button" data-copy="citation-text">Copy citation</button><span class="status" role="status" aria-live="polite"></span></section></div>'
         aside='<aside class="article-aside" aria-label="Essay navigation"><h2>'+('In this essay' if toc else 'Read and cite')+'</h2>'+toc+'<div class="aside-links"><a href="'+e(r["original_url"])+'">Read in Spanish</a><a href="'+url("text/"+r["id"]+".md")+'">Read as Markdown</a><a href="#cite-title">Cite this essay</a></div></aside>'
         related=[x for x in records if x["id"]!=r["id"]]
         related.sort(key=lambda x:len(set(x["topics"])&set(r["topics"])),reverse=True)
         more='<section class="related"><div class="section-heading"><h2>Continue the conversation</h2></div><div class="essay-grid">'+"".join(card(x,"h3") for x in related[:3])+'</div></section>'
-        schema={"@context":"https://schema.org","@type":"Article","@id":r["url"]+"#article","headline":r["title"],"description":r["description"],"inLanguage":"en-GB","url":r["url"],"author":{"@type":"Person","name":r["author"]["name"],"url":r["author"].get("url") or r["original_url"]},"publisher":{"@type":"Organization",**config["publisher"]},"genre":genre,"translationOfWork":{"@type":"Article","@id":r["original_url"],"url":r["original_url"],"inLanguage":"es"}}
+        schema={"@context":"https://schema.org","@type":"Article","@id":r["url"]+"#article","headline":r["title"],"description":r["description"],"inLanguage":"en-GB","url":r["url"],"publisher":{"@type":"Organization",**config["publisher"]},"genre":genre,"translationOfWork":{"@type":"Article","@id":r["original_url"],"url":r["original_url"],"inLanguage":"es"}}
+        if author_name(r): schema["author"]={"@type":"Person","name":author_name(r),"url":r["author"].get("url") or r["original_url"]}
         if r.get("original_date"): schema["translationOfWork"]["datePublished"]=r["original_date"]
         if not review:
             schema["datePublished"]=r["english_publication_date"]
             if r.get("english_modified_date"):
                 schema["dateModified"]=r["english_modified_date"]
         page(r["route"],r["title"],r["description"],headline+'<div class="article-layout">'+body+aside+'</div>'+more,"Essays",schema)
-        export_header='# '+r["title"]+'\n\nAuthor: '+r["author"]["name"]+'\nOriginal publication: '+str(r.get("original_date") or "unverified")+'\nSpanish original: '+r["original_url"]+'\nEnglish URL: '+r["url"]+'\nStatus: '+("Editorial review draft" if review else "Published translation")+'\n\n'+historical+'\n\n'
+        export_header='# '+r["title"]+'\n\nAuthor: '+author_label(r)+'\nOriginal publication: '+str(r.get("original_date") or "unverified")+'\nSpanish original: '+r["original_url"]+'\nEnglish URL: '+r["url"]+'\nStatus: '+("Editorial review draft" if review else "Published translation")+'\n\n'+historical+'\n\n'
         if not review:
             export_header += "English publication: "+r["english_publication_date"]+"\n\n"
         # Absolute image URLs keep the plain-text copy portable.
@@ -227,7 +236,7 @@ For the original presentation of the publication and its editorial approach, [re
         ET.SubElement(entry,"title").text=r["title"]; ET.SubElement(entry,"id").text=r["url"]
         ET.SubElement(entry,"link",href=r["url"]); ET.SubElement(entry,"updated").text=(r.get("english_modified_date") or r["english_publication_date"])+"T00:00:00Z"
         ET.SubElement(entry,"published").text=r["english_publication_date"]+"T00:00:00Z"
-        author=ET.SubElement(entry,"author"); ET.SubElement(author,"name").text=r["author"]["name"]
+        author=ET.SubElement(entry,"author"); ET.SubElement(author,"name").text=author_label(r)
         ET.SubElement(entry,"summary").text=r["description"]
     write("feed.xml",ET.tostring(feed,encoding="unicode",xml_declaration=True))
     robots="# For a project subpath, the origin-level robots.txt remains authoritative.\nUser-agent: *\n"+("Disallow: /\n" if review else "Allow: /\nSitemap: "+base+"sitemap.xml\n")

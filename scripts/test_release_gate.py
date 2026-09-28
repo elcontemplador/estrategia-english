@@ -39,6 +39,14 @@ class ArticleGateTests(unittest.TestCase):
     def test_bound_accepted_article_passes(self):
         self.assertEqual(validate_article_release(self.metadata, self.body), self.bind())
 
+    def test_unresolved_authorship_cannot_be_published_even_with_bound_approval(self):
+        for author in (None, {}, {"name": ""}, {"name": "  "}):
+            with self.subTest(author=author):
+                self.metadata["author"] = author
+                self.bind()
+                with self.assertRaisesRegex(ValueError, "authorship is unresolved"):
+                    validate_article_release(self.metadata, self.body)
+
     def test_changed_modality_fails_even_when_flags_stay_approved(self):
         changed = self.body.replace(b"may help", b"proves fraud")
         with self.assertRaisesRegex(ValueError, "assisted review"):

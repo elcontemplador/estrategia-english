@@ -71,6 +71,9 @@ def validate_article_release(metadata: dict, markdown_bytes: bytes,
         raise ValueError(f"Issue {issue}: assisted bilingual review is pending.")
     if not metadata.get("original_url"):
         raise ValueError(f"Issue {issue}: original URL is unresolved.")
+    author = metadata.get("author")
+    if not isinstance(author, dict) or not isinstance(author.get("name"), str) or not author["name"].strip():
+        raise ValueError(f"Issue {issue}: original authorship is unresolved.")
     original = iso_date(metadata.get("original_date"), "original_date")
     publication = iso_date(metadata.get("english_publication_date"),
                            "english_publication_date")
