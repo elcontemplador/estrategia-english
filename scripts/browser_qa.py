@@ -1,6 +1,9 @@
-import json
+import argparse,json
 from pathlib import Path
 from playwright.sync_api import sync_playwright
+parser=argparse.ArgumentParser()
+parser.add_argument("--mobile-issues",nargs="+",type=int,default=[3,104,155])
+args=parser.parse_args()
 ROOT=Path(__file__).resolve().parents[1]
 base=json.loads((ROOT/"evidence/preview-server.json").read_text())["url"]
 out=ROOT/"evidence/screenshots";out.mkdir(exist_ok=True)
@@ -30,7 +33,7 @@ with sync_playwright() as p:
     result["checks"].append({"name":"topic_filter","passed":page.locator("[data-essay]:visible").count()>=1})
     for width in [390,320]:
         page.set_viewport_size({"width":width,"height":844})
-        for route in ["","essays/","about/","essays/003/","essays/104/","essays/155/"]:
+        for route in ["","essays/","about/"]+[f"essays/{n:03d}/" for n in args.mobile_issues]:
             response=page.goto(base+route);page.wait_for_load_state("networkidle")
             overflow=page.evaluate("document.documentElement.scrollWidth>innerWidth+1")
             name=route.strip("/").replace("/","-") or "home"

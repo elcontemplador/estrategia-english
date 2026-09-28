@@ -9,10 +9,13 @@ This repository contains the static website framework. The translation archive i
 Use Python 3.11+ and install the pinned package in requirements.txt. Content and source images belong in the local editorial workspace described in AGENTS.md.
 
 ```text
+python scripts/progress.py
 python scripts/build.py --mode review
 python scripts/serve.py
 python scripts/qa.py --root preview
 ```
+
+The progress report checks that recorded reviews match the current texts and keeps documented non-article exclusions separate from the translation backlog. It grants no approvals.
 
 The server prints its local review URL. Review output is labelled and marked noindex. Browser checks additionally use an existing Playwright installation and Microsoft Edge.
 
@@ -44,7 +47,7 @@ python scripts/qa.py --root preview
 python scripts/browser_qa.py
 ```
 
-The last command needs the local review server running. Technical checks do not replace assisted bilingual review or human editorial acceptance.
+The last command needs the local review server running. Use --mobile-issues followed by issue numbers to inspect a new batch on mobile. Technical checks do not replace assisted bilingual review or human editorial acceptance.
 
 ## Rights
 
