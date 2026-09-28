@@ -1,0 +1,22 @@
+{
+  "title": "estrategIA · English edition",
+  "tagline": "AI, politics and government",
+  "base_url": "https://elcontemplador.github.io/estrategia-english/",
+  "language": "en-GB",
+  "original_site": "https://estrategiabyaleph.substack.com",
+  "publisher": {
+    "name": "Institución Educativa ALEPH",
+    "url": "https://institucioneducativaaleph.com/"
+  },
+  "human_approval": "pending",
+  "publication_date": null,
+  "training_policy": "pending",
+  "pilot_issues": [
+    1,
+    50,
+    104,
+    131,
+    132,
+    155
+  ]
+}

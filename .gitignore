@@ -1,0 +1,13 @@
+# Editorial working material stays local until a release is accepted.
+content/
+data/
+evidence/
+preview/
+dist/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.log
+release/*
+!release/.gitkeep
