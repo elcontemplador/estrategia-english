@@ -50,6 +50,18 @@ def article_images(rendered, base):
     return images
 
 
+def social_image(images):
+    """Keep link previews under a conservative 5 MB transfer budget."""
+    for image in images:
+        try:
+            size = int(str(image.get('contentSize', '0')).split()[0])
+        except (ValueError, IndexError):
+            continue
+        if size < 5_000_000:
+            return image
+    return None
+
+
 def _url(base, route=""):
     return urljoin(base.rstrip("/") + "/", route)
 

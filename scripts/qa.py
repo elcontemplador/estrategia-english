@@ -5,6 +5,7 @@ from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
 import xml.etree.ElementTree as ET
 from people import load_profiles, profile_for, route as profile_route, author_entity, contributions
+from discovery import social_image
 ROOT=Path(__file__).resolve().parents[1]
 class Page(HTMLParser):
     def __init__(self): super().__init__();self.ids=set();self.links=[];self.images=[];self.h1=0;self.lang=None;self.canonical=[];self.robots=[];self.description=[];self.jsonld=[];self.capture=False;self.buf="";self.duplicates=[];self.meta={}
@@ -53,7 +54,7 @@ def run(folder):
         check(("noindex" in ",".join(p.robots))==(manifest["mode"]=="review" or is_error),f"{path}: robots mode")
         check(p.meta.get("og:url")==p.canonical,f"{path}: social URL matches canonical")
         article=next((s for s in p.jsonld if s.get('@type')=='Article'),{})
-        image=(article.get('image') or [{}])[0]
+        image=social_image(article.get('image',[])) or {}
         check(p.meta.get("og:image")==[image.get('url') or manifest["base_url"]+"assets/estrategia-header.png"],f"{path}: absolute social image matches article or brand fallback")
         check(p.meta.get('twitter:image')==p.meta.get('og:image'),f'{path}: consistent social previews')
         check(bool(p.meta.get("og:image:alt",[""])[0]),f"{path}: social image description")

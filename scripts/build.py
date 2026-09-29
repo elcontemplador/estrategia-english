@@ -6,7 +6,7 @@ from urllib.parse import urlparse, unquote
 import xml.etree.ElementTree as ET
 import markdown
 from discovery import (article_schema, collection_schema, site_schema,
-                       breadcrumb_schema, organisation_schema, social_meta, article_images)
+                       breadcrumb_schema, organisation_schema, social_meta, article_images, social_image)
 from reading_media import enhance_images, IMAGE_VIEWER
 from people import (load_profiles, profile_for, route as profile_route, authors,
                     contributions, enrich_article, profile_schema)
@@ -132,7 +132,7 @@ def main():
 <title>'''+e(title)+''' · estrategIA</title><meta name="description" content="'''+e(description)+'''">
 '''+robot+'''<link rel="canonical" href="'''+e(canonical)+'''">
 '''+alternate+'''<link rel="sitemap" type="application/xml" href="'''+url('sitemap.xml')+'''">
-'''+social_meta(title,description,canonical,config,base,is_article=schema.get("@type")=="Article",article_image=(schema.get('image') or [None])[0] if schema.get('@type')=='Article' else None)+'''
+'''+social_meta(title,description,canonical,config,base,is_article=schema.get("@type")=="Article",article_image=social_image(schema.get('image',[])) if schema.get('@type')=='Article' else None)+'''
 <meta name="theme-color" content="#9d2235"><meta name="color-scheme" content="light">
 <link rel="icon" href="'''+url("assets/favicon.svg")+'''" type="image/svg+xml">
 <link rel="stylesheet" href="'''+url("assets/site.css")+'''"><script src="'''+url("assets/site.js")+'?v='+script_version+'''" defer></script>
@@ -254,6 +254,9 @@ For the original presentation of the publication and its editorial approach, [re
             raise ValueError("Unsafe HTML in article "+r["id"])
         rendered=enhance_images(rendered,output,prefix)
         r['images']=article_images(rendered,base)
+        for illustration in r['images']:
+            image_path=output/unquote(urlparse(illustration['url']).path.removeprefix(prefix))
+            illustration['contentSize']=str(image_path.stat().st_size)+' bytes'
         toc=converter.toc if converter.toc_tokens else ""
         genre=r["genre_label"]
         people=r.get("authors")

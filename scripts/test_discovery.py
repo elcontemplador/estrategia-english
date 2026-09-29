@@ -4,7 +4,7 @@ import json
 import unittest
 from html.parser import HTMLParser
 
-from discovery import (article_schema, article_images, breadcrumb_schema, collection_schema,
+from discovery import (article_schema, article_images, social_image, breadcrumb_schema, collection_schema,
                        organisation_schema, site_schema, social_meta)
 
 
@@ -57,6 +57,14 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(images[0]['url'],self.base+'assets/images/figure.jpg')
         self.assertEqual(images[0]['caption'],'Public & private')
         self.assertEqual(article_images('<p>No image.</p>',self.base),[])
+
+    def test_social_preview_skips_oversized_files_without_changing_article_images(self):
+        images=[{'url':'large.png','contentSize':'5816934 bytes'},
+                {'url':'smaller.png','contentSize':'4775462 bytes'}]
+        original=copy.deepcopy(images)
+        self.assertEqual(social_image(images)['url'],'smaller.png')
+        self.assertIsNone(social_image(images[:1]))
+        self.assertEqual(images,original)
 
     def test_markdown_and_illustration_are_same_article_representations(self):
         self.record['images']=article_images('<img src="/archive/assets/images/figure.jpg" width="800" height="500" alt="Chart">',self.base)
