@@ -6,13 +6,48 @@ editorial facts, not approval, indexing, model access or guaranteed citations.
 from __future__ import annotations
 
 import html
+import mimetypes
 import re
-from urllib.parse import urljoin
+from html.parser import HTMLParser
+from urllib.parse import urljoin, urlsplit
 
 CONTEXT = "https://schema.org"
 LANGUAGE = "en-GB"
 HEADER_IMAGE = "assets/estrategia-header.png"
 HEADER_ALT = "estrategIA wordmark in white and burgundy on a dark background"
+
+
+def article_images(rendered, base):
+    """Describe only real, sufficiently large images in the visible article.
+
+    No branding fallback: an essay without an illustration has no image claim.
+    Dimensions are read from the existing local artwork by the reading renderer.
+    """
+    images = []
+    seen = set()
+    class Parser(HTMLParser):
+        def handle_starttag(self, tag, attrs):
+            if tag != 'img':
+                return
+            attrs = dict(attrs)
+            src = attrs.get('src')
+            if not src:
+                return
+            url = urljoin(base, src)
+            try:
+                width, height = int(attrs.get('width', 0)), int(attrs.get('height', 0))
+            except (TypeError, ValueError):
+                return
+            if not url.startswith(base + 'assets/images/') or width * height < 50000 or url in seen:
+                return
+            seen.add(url)
+            item = {'@type': 'ImageObject', 'url': url, 'contentUrl': url,
+                    'width': width, 'height': height}
+            if attrs.get('alt'):
+                item['caption'] = attrs['alt']
+            images.append(item)
+    Parser().feed(rendered)
+    return images
 
 
 def _url(base, route=""):
@@ -113,7 +148,13 @@ def article_schema(record, config, base, review):
         "inLanguage": LANGUAGE,
         "mainEntityOfPage": {"@type": "WebPage", "@id": canonical},
         "isPartOf": _periodical(config, base),
+        "isAccessibleForFree": True,
     }
+    if record.get('images'):
+        result['image'] = record['images']
+    if record.get('markdown_url'):
+        result['encoding'] = {'@type': 'MediaObject', 'contentUrl': record['markdown_url'],
+                              'encodingFormat': 'text/markdown', 'inLanguage': LANGUAGE}
     publisher = _publisher(config, base)
     if publisher:
         result["publisher"] = publisher
@@ -198,9 +239,14 @@ def breadcrumb_schema(items):
     }
 
 
-def social_meta(title, description, canonical, config, base, is_article=False):
+def social_meta(title, description, canonical, config, base, is_article=False, article_image=None):
     """HTML-escaped OG/Twitter tags using the existing editorial header image."""
-    image = _url(base, HEADER_IMAGE)
+    illustration = article_image or {}
+    image = illustration.get('url') or _url(base, HEADER_IMAGE)
+    image_type = mimetypes.guess_type(urlsplit(image).path)[0] or 'image/png'
+    width = illustration.get('width') or 756
+    height = illustration.get('height') or 502
+    alt = illustration.get('caption') or (description if article_image else HEADER_ALT)
     tags = [
         ("property", "og:type", "article" if is_article else "website"),
         ("property", "og:title", title),
@@ -209,15 +255,15 @@ def social_meta(title, description, canonical, config, base, is_article=False):
         ("property", "og:site_name", config.get("title", "estrategIA · English edition")),
         ("property", "og:locale", "en_GB"),
         ("property", "og:image", image),
-        ("property", "og:image:type", "image/png"),
-        ("property", "og:image:width", "756"),
-        ("property", "og:image:height", "502"),
-        ("property", "og:image:alt", HEADER_ALT),
+        ("property", "og:image:type", image_type),
+        ("property", "og:image:width", str(width)),
+        ("property", "og:image:height", str(height)),
+        ("property", "og:image:alt", alt),
         ("name", "twitter:card", "summary_large_image"),
         ("name", "twitter:title", title),
         ("name", "twitter:description", description),
         ("name", "twitter:image", image),
-        ("name", "twitter:image:alt", HEADER_ALT),
+        ("name", "twitter:image:alt", alt),
     ]
     return "\n".join(
         f'<meta {attribute}="{key}" content="{html.escape(str(value or ""), quote=True)}">'

@@ -199,6 +199,8 @@
     readURL();
     render();
     writeURL('replace');
+    for (const control of [search, topic, year, genre, sort]) control.disabled = false;
+    form.setAttribute('aria-busy', 'false');
     form.hidden = false;
     if (terms().length) void loadIndex();
   }

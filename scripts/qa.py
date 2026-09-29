@@ -52,7 +52,10 @@ def run(folder):
         is_error=path.relative_to(base).as_posix() in ("404.html","404/index.html")
         check(("noindex" in ",".join(p.robots))==(manifest["mode"]=="review" or is_error),f"{path}: robots mode")
         check(p.meta.get("og:url")==p.canonical,f"{path}: social URL matches canonical")
-        check(p.meta.get("og:image")==[manifest["base_url"]+"assets/estrategia-header.png"],f"{path}: absolute social image")
+        article=next((s for s in p.jsonld if s.get('@type')=='Article'),{})
+        image=(article.get('image') or [{}])[0]
+        check(p.meta.get("og:image")==[image.get('url') or manifest["base_url"]+"assets/estrategia-header.png"],f"{path}: absolute social image matches article or brand fallback")
+        check(p.meta.get('twitter:image')==p.meta.get('og:image'),f'{path}: consistent social previews')
         check(bool(p.meta.get("og:image:alt",[""])[0]),f"{path}: social image description")
         check(p.meta.get("twitter:card")==["summary_large_image"],f"{path}: social card")
         for img in p.images:
@@ -108,6 +111,10 @@ def run(folder):
         check((data.get("datePublished") is None)==(manifest["mode"]=="review"),r["id"]+": English schema date")
         check(data.get("mainEntityOfPage",{}).get("@id")==r["url"],r["id"]+": main entity canonical")
         check(data.get("isPartOf",{}).get("@type")=="Periodical",r["id"]+": publication identity")
+        check(data.get('isAccessibleForFree') is True,r['id']+': free access stated')
+        check(data.get('encoding',{}).get('contentUrl')==r['markdown_url'],r['id']+': Markdown representation matches catalogue')
+        visible_images={urlsplit(i['src']).path for i in pages[p.resolve()].images if i.get('src')}
+        check(all(urlsplit(i['url']).path in visible_images for i in data.get('image',[])),r['id']+': structured images appear in article')
         check(isinstance(data.get("wordCount"),int) and data["wordCount"]>0,r["id"]+": readable word count")
         md=(base/"text"/(r["id"]+".md")).read_text(encoding="utf-8")
         check(r["title"] in md and r["original_url"] in md,r["id"]+": Markdown provenance")

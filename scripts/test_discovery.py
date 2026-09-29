@@ -4,7 +4,7 @@ import json
 import unittest
 from html.parser import HTMLParser
 
-from discovery import (article_schema, breadcrumb_schema, collection_schema,
+from discovery import (article_schema, article_images, breadcrumb_schema, collection_schema,
                        organisation_schema, site_schema, social_meta)
 
 
@@ -45,6 +45,32 @@ class DiscoveryTests(unittest.TestCase):
         self.assertNotIn("dateModified", result)
         self.assertEqual(result["translationOfWork"]["datePublished"], "2025-01-02")
         self.assertEqual(result["translationOfWork"]["inLanguage"], "es")
+
+    def test_only_visible_local_large_images_are_described(self):
+        rendered='''<img src="/archive/assets/images/figure.jpg" width="800" height="500" alt="Public &amp; private">
+        <img src="/archive/assets/images/figure.jpg" width="800" height="500">
+        <img src="/archive/assets/images/icon.png" width="20" height="20">
+        <img src="https://external.test/photo.jpg" width="800" height="500">
+        <img src="/archive/assets/images/unknown.png"><img src="/archive/assets/images/bad.png" width="bad" height="500">'''
+        images=article_images(rendered,self.base)
+        self.assertEqual(len(images),1)
+        self.assertEqual(images[0]['url'],self.base+'assets/images/figure.jpg')
+        self.assertEqual(images[0]['caption'],'Public & private')
+        self.assertEqual(article_images('<p>No image.</p>',self.base),[])
+
+    def test_markdown_and_illustration_are_same_article_representations(self):
+        self.record['images']=article_images('<img src="/archive/assets/images/figure.jpg" width="800" height="500" alt="Chart">',self.base)
+        self.record['markdown_url']=self.base+'text/007.md'
+        schema=self.schema()
+        self.assertEqual(schema['image'],self.record['images'])
+        self.assertEqual(schema['encoding']['contentUrl'],self.record['markdown_url'])
+        self.assertTrue(schema['isAccessibleForFree'])
+        parser=MetaParser();parser.feed(social_meta('Essay','Description',self.base,self.config,self.base,True,self.record['images'][0]))
+        values={a.get('property',a.get('name')):a['content'] for _,a in parser.tags}
+        self.assertEqual(values['og:image'],self.record['images'][0]['url'])
+        self.assertEqual(values['og:image:type'],'image/jpeg')
+        self.assertEqual(values['og:image:width'],'800')
+        self.assertEqual(values['twitter:image:alt'],'Chart')
 
     def test_public_uses_article_dates_only(self):
         result = self.schema()

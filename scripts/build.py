@@ -6,7 +6,7 @@ from urllib.parse import urlparse, unquote
 import xml.etree.ElementTree as ET
 import markdown
 from discovery import (article_schema, collection_schema, site_schema,
-                       breadcrumb_schema, organisation_schema, social_meta)
+                       breadcrumb_schema, organisation_schema, social_meta, article_images)
 from reading_media import enhance_images, IMAGE_VIEWER
 from people import (load_profiles, profile_for, route as profile_route, authors,
                     contributions, enrich_article, profile_schema)
@@ -52,6 +52,8 @@ def main():
     review=args.mode=="review"
     config=read_json(ROOT/"site.json")
     profiles=load_profiles(ROOT)
+    script_path=ROOT/'assets/site.js'
+    script_version=hashlib.sha256(script_path.read_bytes()).hexdigest()[:12] if script_path.exists() else '0'
     base=config["base_url"].rstrip("/")+"/"
     prefix=urlparse(base).path.rstrip("/")+"/"
     output=(ROOT/("preview" if review else "dist")).resolve()
@@ -73,6 +75,7 @@ def main():
         record["id"]=f'{record["issue_number"]:03d}'
         record["route"]="essays/"+record["id"]+"/"
         record["url"]=base+record["route"]
+        record['markdown_url']=base+'text/'+record['id']+'.md'
         if not record.get("topics") or any(t not in TOPICS for t in record["topics"]):
             raise ValueError("Invalid topic: "+str(path))
         record["minutes"]=max(1,round(len(record["raw"].split())/220))
@@ -119,6 +122,7 @@ def main():
             extra.append(breadcrumb_schema(crumbs))
             body='<nav class="breadcrumbs" aria-label="Breadcrumb"><ol>'+''.join('<li>'+('<span aria-current="page">'+e(label)+'</span>' if i==len(crumbs)-1 else '<a href="'+e(urlparse(href).path)+'">'+e(label)+'</a>')+'</li>' for i,(label,href) in enumerate(crumbs))+'</ol></nav>'+body
         extra_json=''.join('<script type="application/ld+json">'+json.dumps(item,ensure_ascii=False).replace("<","\\u003c")+'</script>' for item in extra)
+        alternate=('<link rel="alternate" type="text/markdown" title="Plain-text version" href="'+e(schema['encoding']['contentUrl'])+'">') if schema.get('@type')=='Article' and schema.get('encoding') else ''
         navigation="".join('<a href="'+url(dest)+'"'+(' aria-current="page"' if nav==label else '')+'>'+label+'</a>' for label,dest in [("Essays","essays/"),("Topics","topics/"),("About","about/")])
         banner=('<div class="review-banner">English edition · Editorial review copy. '
                 '<a href="'+url("review/")+'">Review status</a></div>') if review else ""
@@ -127,15 +131,16 @@ def main():
 <html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>'''+e(title)+''' · estrategIA</title><meta name="description" content="'''+e(description)+'''">
 '''+robot+'''<link rel="canonical" href="'''+e(canonical)+'''">
-'''+social_meta(title,description,canonical,config,base,is_article=schema.get("@type")=="Article")+'''
+'''+alternate+'''<link rel="sitemap" type="application/xml" href="'''+url('sitemap.xml')+'''">
+'''+social_meta(title,description,canonical,config,base,is_article=schema.get("@type")=="Article",article_image=(schema.get('image') or [None])[0] if schema.get('@type')=='Article' else None)+'''
 <meta name="theme-color" content="#9d2235"><meta name="color-scheme" content="light">
 <link rel="icon" href="'''+url("assets/favicon.svg")+'''" type="image/svg+xml">
-<link rel="stylesheet" href="'''+url("assets/site.css")+'''"><script src="'''+url("assets/site.js")+'''" defer></script>
+<link rel="stylesheet" href="'''+url("assets/site.css")+'''"><script src="'''+url("assets/site.js")+'?v='+script_version+'''" defer></script>
 <link rel="alternate" type="application/atom+xml" title="estrategIA English edition" href="'''+url("feed.xml")+'''">
 <script type="application/ld+json">'''+encoded+'''</script>'''+extra_json+'''</head><body><a class="skip" href="#main">Skip to content</a>
 '''+banner+'''<header class="wrap masthead"><div class="brand-block"><a class="brand" href="'''+url()+'''" aria-label="estrategIA home">estrateg<span>IA</span></a><span class="edition">English<br>edition</span></div><nav class="nav" aria-label="Main navigation">'''+navigation+'''<a class="spanish" href="https://estrategiabyaleph.substack.com">Read in Spanish</a></nav></header>
 <main id="main" class="wrap" tabindex="-1">'''+body+'''</main>
-<footer class="foot"><div class="wrap"><div class="foot-grid"><div><a class="brand" href="'''+url()+'''">estrateg<span>IA</span></a><p>Ideas about artificial intelligence, politics and government. From our Spanish archive, in English.</p></div><div><h2>Read</h2><ul><li><a href="'''+url("essays/")+'''">All essays</a></li><li><a href="'''+url("topics/")+'''">Explore topics</a></li><li><a href="https://estrategiabyaleph.substack.com/subscribe">Subscribe in Spanish</a></li></ul></div><div><h2>About this edition</h2><ul><li><a href="'''+url("about/")+'''">People and purpose</a></li><li><a href="'''+url("about/#translation-and-provenance")+'''">Translation and provenance</a></li><li><a href="'''+url("feed.xml")+'''">Follow new translations</a></li><li><a href="'''+url("catalog.json")+'''">Article catalogue</a></li></ul></div></div><div class="fineprint">© Institución Educativa ALEPH · Original publication dates are preserved. English translations retain the context of their Spanish originals.</div></div></footer></body></html>'''
+<footer class="foot"><div class="wrap"><div class="foot-grid"><div><a class="brand" href="'''+url()+'''">estrateg<span>IA</span></a><p>Ideas about artificial intelligence, politics and government. From our Spanish archive, in English.</p></div><div><h2>Read</h2><ul><li><a href="'''+url("essays/")+'''">All essays</a></li><li><a href="'''+url("topics/")+'''">Explore topics</a></li><li><a href="https://estrategiabyaleph.substack.com/subscribe">Subscribe in Spanish</a></li></ul></div><div><h2>About this edition</h2><ul><li><a href="'''+url("about/")+'''">People and purpose</a></li><li><a href="'''+url("about/#translation-and-provenance")+'''">Translation and provenance</a></li><li><a href="'''+url("feed.xml")+'''">Follow new translations</a></li><li><a href="'''+url("catalog.json")+'''">Article catalogue</a></li><li><a href="'''+url("sitemap.xml")+'''">Sitemap</a></li></ul></div></div><div class="fineprint">© Institución Educativa ALEPH · Original publication dates are preserved. English translations retain the context of their Spanish originals.</div></div></footer></body></html>'''
         write(("index.html" if not route else route+"index.html"),full)
     def card(r,heading="h2"):
         t=r["topics"][0]
@@ -166,7 +171,7 @@ def main():
     home=home.replace('A wider conversation. The same editorial care.','Three years of ideas.<br>A wider conversation.').replace('Read each essay in full, follow its sources and return to the Spanish original. Translation brings the ideas to a new audience while preserving their voice and historical context.','Created to mark our third anniversary in October 2026, this archive translates only the newsletter’s main articles: ideas worth making accessible to readers around the world, with their original dates and voices intact. The full Spanish newsletter also includes news and a practical section with a tool of the week, prompts, a recommendation of the week and memes.').replace('How this edition is made','Why an English edition').replace(url('about/#translation-and-provenance')+'\">Why an English edition',url('about/#three-years-of-ideas-a-wider-conversation')+'\">Why an English edition')
     page("","AI, politics and government","The English edition of estrategIA: essays on artificial intelligence, public life and the power to decide.",home)
     available_genres=sorted({r.get("genre","essay") for r in records},key=lambda g:GENRES.get(g,g))
-    filters='<form id="archive-filters" class="filters" role="search" aria-label="Search the essay archive" hidden><label class="search-field" for="search">Search the full archive<input id="search" name="q" type="search" placeholder="An idea, a phrase, an author…" autocomplete="off" aria-describedby="search-help"></label><p id="search-help" class="filter-help">Search titles, authors and the complete essay texts.</p><div class="filter-options"><label for="topic">Topic<select id="topic" name="topic"><option value="">All topics</option>'+''.join('<option value="'+k+'">'+e(v[0])+'</option>' for k,v in TOPICS.items())+'</select></label><label for="year">Original year<select id="year" name="year"><option value="">All years</option>'+''.join('<option>'+y+'</option>' for y in years)+'</select></label><label for="genre">Type of essay<select id="genre" name="genre"><option value="">All types</option>'+''.join('<option value="'+e(g)+'">'+e(GENRES.get(g,g))+'</option>' for g in available_genres)+'</select></label><label for="sort">Order<select id="sort" name="sort"><option value="newest">Newest original first</option><option value="oldest">Oldest original first</option><option value="title">Title A–Z</option></select></label></div><div class="filter-actions"><button type="button" id="clear-filters" class="text-button">Clear filters</button><span>Share a search by copying its URL.</span></div><p id="search-status" class="status" role="status" aria-live="polite"></p></form><noscript><p class="history-note">All essays are listed below, newest first. Browser search is available; reading and topic navigation work without JavaScript.</p></noscript><p id="result-count" class="result-count" role="status" aria-live="polite">'+str(len(records))+' essays</p>'
+    filters='<form id="archive-filters" class="filters" role="search" aria-label="Search the essay archive" aria-busy="true"><label class="search-field" for="search">Search the full archive<input id="search" name="q" type="search" disabled placeholder="An idea, a phrase, an author…" autocomplete="off" aria-describedby="search-help"></label><p id="search-help" class="filter-help">Search titles, authors and the complete essay texts. If search is unavailable, browse all essays below.</p><div class="filter-options"><label for="topic">Topic<select id="topic" name="topic" disabled><option value="">All topics</option>'+''.join('<option value="'+k+'">'+e(v[0])+'</option>' for k,v in TOPICS.items())+'</select></label><label for="year">Original year<select id="year" name="year" disabled><option value="">All years</option>'+''.join('<option>'+y+'</option>' for y in years)+'</select></label><label for="genre">Type of essay<select id="genre" name="genre" disabled><option value="">All types</option>'+''.join('<option value="'+e(g)+'">'+e(GENRES.get(g,g))+'</option>' for g in available_genres)+'</select></label><label for="sort">Order<select id="sort" name="sort" disabled><option value="newest">Newest original first</option><option value="oldest">Oldest original first</option><option value="title">Title A–Z</option></select></label></div><div class="filter-actions"><button type="button" id="clear-filters" class="text-button" disabled>Clear filters</button><span>Share a search by copying its URL.</span></div><p id="search-status" class="status" role="status" aria-live="polite"></p></form><noscript><style>#archive-filters{display:none}</style><p class="history-note">All essays are listed below, newest first. Browser search is available; reading and topic navigation work without JavaScript.</p></noscript><p id="result-count" class="result-count" role="status" aria-live="polite">'+str(len(records))+' essays</p>'
     archive='<header class="page-heading"><p class="eyebrow">'+str(len(records))+' essays · '+e(period)+'</p><h1>Ideas to think with.</h1><p class="dek">Explore the English archive: arguments, experiments and possible futures for AI in public life. Dates refer to the Spanish originals.</p></header>'+filters+'<div id="archive-list" class="archive-list" data-search-index="'+url("search-index.json")+'">'+"".join(card(r) for r in records)+'</div><div id="empty-results" class="empty" hidden><h2>No essays found</h2><p>Try fewer words or clear a filter to broaden your search.</p></div><div class="load-more-wrap"><button type="button" id="load-more" class="button" hidden>Show more essays</button></div>'
     archive_description='Search '+str(len(records))+' English essays on AI, politics and government by topic, author, year and type. From the estrategIA archive.'
     page("essays/","Essays",archive_description,archive,"Essays",collection_schema("Essays",archive_description,base+"essays/",records,config,base))
@@ -248,6 +253,7 @@ For the original presentation of the publication and its editorial approach, [re
         if re.search(r"<(?:script|iframe|form)\b|\son\w+\s*=|javascript:",rendered,re.I):
             raise ValueError("Unsafe HTML in article "+r["id"])
         rendered=enhance_images(rendered,output,prefix)
+        r['images']=article_images(rendered,base)
         toc=converter.toc if converter.toc_tokens else ""
         genre=r["genre_label"]
         people=r.get("authors")
