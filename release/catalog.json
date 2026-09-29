@@ -1,0 +1,4017 @@
+{
+  "title": "estrategIA · English edition",
+  "status": "published",
+  "articles": [
+    {
+      "id": "156",
+      "issue_number": 156,
+      "title": "Fear of AI concentrates power too",
+      "description": "An argument for independent AI safety oversight, proportionate controls and broad access, examining regulatory capture and the human costs of unjustified delay.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-156-como-hacer-segura",
+      "original_date": "2026-09-23",
+      "topics": [
+        "futures",
+        "sovereignty",
+        "work"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/156/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/156.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "155",
+      "issue_number": 155,
+      "title": "AI sovereignty: five conditions for the power to decide",
+      "description": "Electricity, compute, oversight, people and capital: what countries need to turn a claim of AI sovereignty into the power to decide.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-155-que-separa-a-los-paises",
+      "original_date": "2026-09-16",
+      "topics": [
+        "sovereignty",
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/155/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/155.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "154",
+      "issue_number": 154,
+      "title": "Astra: a new scale of intelligence and power",
+      "description": "A historical account of GPT-6 Astra and an interactive municipal planning experiment, examining what better AI capabilities mean for public explanation and judgement.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-154-gpt-6-astra-y-la-nueva",
+      "original_date": "2026-09-09",
+      "topics": [
+        "practice",
+        "government",
+        "futures"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/154/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/154.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "153",
+      "issue_number": 153,
+      "title": "It would take gods to give laws to humans",
+      "description": "Pablo Martín Diez reviews José Ignacio Latorre’s proposal for a social contract encompassing nature, humanity and AI, examining legitimacy and concentrated power.",
+      "author": {
+        "name": "Pablo Martín Diez",
+        "url": "https://www.linkedin.com/in/pablomartindiez/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-153-harian-falta-dioses",
+      "original_date": "2026-09-02",
+      "topics": [
+        "government",
+        "democracy",
+        "sovereignty"
+      ],
+      "genre": "review_or_commentary",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/153/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/153.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/pablo-martin-diez/"
+      ]
+    },
+    {
+      "id": "152",
+      "issue_number": 152,
+      "title": "What remains to be governed: seven lessons from the summer historIAs of 2026",
+      "description": "Seven political lessons from the 2026 summer fiction: meaningful oversight, public choices, autonomy, accountability, resilience, attention and a shared reality.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-152-lo-que-queda-por-gobernar",
+      "original_date": "2026-08-26",
+      "topics": [
+        "government",
+        "democracy",
+        "futures"
+      ],
+      "genre": "retrospective",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/152/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/152.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "151",
+      "issue_number": 151,
+      "title": "The law everyone supported",
+      "description": "A fictional public consultation explores how personalised explanations can make a policy accessible while hiding the common choices citizens need to debate.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-151-la-ley-que-todos-apoyaban",
+      "original_date": "2026-08-19",
+      "topics": [
+        "democracy",
+        "government",
+        "futures"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/151/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/151.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "150",
+      "issue_number": 150,
+      "title": "The automated opposition",
+      "description": "When AI makes political accusations cheap, a fictional MP discovers how the competition for attention can displace serious public scrutiny.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-150-la-oposicion-automatica",
+      "original_date": "2026-08-12",
+      "topics": [
+        "democracy",
+        "government",
+        "futures"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/150/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/150.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "149",
+      "issue_number": 149,
+      "title": "The company that wasn't there",
+      "description": "A story about an automated public-service contractor, and why a human signature means little without the authority to overrule the system.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-149-la-empresa-que-no",
+      "original_date": "2026-08-05",
+      "topics": [
+        "government",
+        "work",
+        "futures"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/149/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/149.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "148",
+      "issue_number": 148,
+      "title": "Zero compute",
+      "description": "Summer fiction about allocating scarce public AI capacity during a heat emergency, revealing hidden dependencies and unequal local resilience.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-148-historias-veraniegas",
+      "original_date": "2026-07-29",
+      "topics": [
+        "government",
+        "sovereignty",
+        "futures"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/148/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/148.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "147",
+      "issue_number": 147,
+      "title": "The carer who learnt to call",
+      "description": "Summer fiction about an older woman, an AI care assistant and rebuilding human support without surrendering control of life at home.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-147-historias-veraniegas",
+      "original_date": "2026-07-22",
+      "topics": [
+        "government",
+        "futures"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/147/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/147.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "146",
+      "issue_number": 146,
+      "title": "The minister’s memory",
+      "description": "Summer fiction about an outgoing minister whose AI memory must be divided between institutional continuity and personal privacy.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-146-historias-veraniegas",
+      "original_date": "2026-07-15",
+      "topics": [
+        "government",
+        "futures"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/146/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/146.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "145",
+      "issue_number": 145,
+      "title": "The Thursday mayor",
+      "description": "Summer fiction set in 2032: a mayor whose administration runs smoothly with AI must choose between two legitimate but incompatible public needs.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-145-historias-veraniegas",
+      "original_date": "2026-07-08",
+      "topics": [
+        "government",
+        "futures"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/145/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/145.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "144",
+      "issue_number": 144,
+      "title": "The final signature",
+      "description": "The first summer historIA of 2026: a fictional council officer in 2032 confronts the difference between a recorded human signature and meaningful oversight.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-144-historias-veraniegas",
+      "original_date": "2026-07-01",
+      "topics": [
+        "government",
+        "futures"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/144/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/144.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "143",
+      "issue_number": 143,
+      "title": "Trying SillyTavern as a space for political debate with AI",
+      "description": "A first-person SillyTavern experiment with five synthetic political profiles, exploring its value for preparing questions and its limits as social research.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://institucioneducativaaleph.com/fernando-nieto-lobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-143-puede-ya-la-ia-simular",
+      "original_date": "2026-06-24",
+      "topics": [
+        "practice",
+        "democracy"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/143/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/143.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "142",
+      "issue_number": 142,
+      "title": "Before the shutdown: a conversation and a practical test with Fable 5, the most advanced AI model to date",
+      "description": "A historical interview and practical website-building experiment with Claude Fable 5, framed by the model's withdrawal in June 2026.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://institucioneducativaaleph.com/fernando-nieto-lobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-142-claude-fable-5-hablamos",
+      "original_date": "2026-06-17",
+      "topics": [
+        "practice",
+        "sovereignty"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/142/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/142.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "141",
+      "issue_number": 141,
+      "title": "AI returns to the desktop: why local models are worth trying",
+      "description": "A practical invitation to try local AI models, with historical examples of tools, hardware and the political case for greater technological autonomy.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-141-la-ia-local-ya-empieza",
+      "original_date": "2026-06-10",
+      "topics": [
+        "practice",
+        "sovereignty"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/141/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/141.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "140",
+      "issue_number": 140,
+      "title": "From the Vatican to Silicon Valley: the encyclical that turned AI into a moral dispute about power",
+      "description": "The global debate around Magnifica humanitas: AI, moral authority, technological power, Anthropic and the common good.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/bio/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-140-desarmar-la-ia-el",
+      "original_date": "2026-06-03",
+      "topics": [
+        "government",
+        "democracy",
+        "sovereignty"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/140/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/140.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "139",
+      "issue_number": 139,
+      "title": "From tools to industries",
+      "description": "Juan Segundo Hevia examines how AI companies move from general tools into industry workflows, and what this means for regulation and sovereignty.",
+      "author": {
+        "name": "Juan Segundo Hevia",
+        "url": "https://www.linkedin.com/in/juanse-hevia/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-139-la-nueva-fase-de-la",
+      "original_date": "2026-05-27",
+      "topics": [
+        "government",
+        "sovereignty",
+        "work"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/139/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/139.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "138",
+      "issue_number": 138,
+      "title": "Governing in the fog",
+      "description": "How democratic institutions can plan under AI uncertainty through staged commitments, flexible structures and systems for detecting change.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-138-inteligencia-artificial",
+      "original_date": "2026-05-20",
+      "topics": [
+        "government",
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/138/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/138.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "137",
+      "issue_number": 137,
+      "title": "The public AI agenda towards 2030: anticipate capabilities, guarantee access",
+      "description": "Two principles for public AI strategy towards 2030: governing emerging capabilities and ensuring meaningful universal access.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-137-dos-errores-que-los",
+      "original_date": "2026-05-13",
+      "topics": [
+        "government",
+        "futures",
+        "learning"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/137/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/137.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "136",
+      "issue_number": 136,
+      "title": "A minister, a Raspberry Pi and Claude: why Singapore’s second brain matters for politics",
+      "description": "Singapore's foreign minister and a personal AI memory system: technical competence, institutional learning and the political value of showing the code.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-136-cuando-un-ministro",
+      "original_date": "2026-05-06",
+      "topics": [
+        "government",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/136/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/136.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "135",
+      "issue_number": 135,
+      "title": "We test ChatGPT Images 2.0: a comparison with Nano Banana Pro and new uses for government, politics and public administration",
+      "description": "An April 2026 comparison of image models through public communication experiments, with the original prompts and generated examples.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-135-de-nano-banana-pro",
+      "original_date": "2026-04-29",
+      "topics": [
+        "practice",
+        "government"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/135/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/135.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "134",
+      "issue_number": 134,
+      "title": "How councils can lead the transformation of local government through artificial intelligence without leaving anyone behind",
+      "description": "Román Robles Valades sets out how municipalities can adopt AI responsibly, connecting staff development, data sovereignty and better public services.",
+      "author": {
+        "name": "Román Robles Valades",
+        "url": "https://www.linkedin.com/in/romanrobles/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-134-la-hora-de-los-ayuntamientos",
+      "original_date": "2026-04-22",
+      "topics": [
+        "government",
+        "sovereignty",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/134/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/134.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "133",
+      "issue_number": 133,
+      "title": "Three possible futures for artificial intelligence in 2030",
+      "description": "Three alternative AI futures for 2030 — plateau, sustained ascent and rapid take-off — and why strategic preparation must work across all three.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-133-meseta-ascenso-o-despegue",
+      "original_date": "2026-04-15",
+      "topics": [
+        "futures",
+        "government",
+        "sovereignty"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/133/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/133.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "132",
+      "issue_number": 132,
+      "title": "AI is not taking our work away. It is freeing us from it.",
+      "description": "If technology can separate income from employment, the political task is to share its gains—and the freedom they could make possible.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-132-contra-el-pensamiento",
+      "original_date": "2026-04-08",
+      "topics": [
+        "work",
+        "futures"
+      ],
+      "genre": "opinion",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/132/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/132.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "131",
+      "issue_number": 131,
+      "title": "The new watchdogs of power: how AI is democratising public scrutiny",
+      "description": "AI is lowering the barriers to public scrutiny. The question is how democratic institutions will respond to these new civic capabilities.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-131-vibecoding-civico",
+      "original_date": "2026-04-01",
+      "topics": [
+        "democracy",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/131/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/131.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "130",
+      "issue_number": 130,
+      "title": "Artificial intelligence and electoral disinformation: lessons from Chile and Argentina for democratic governance in Latin America",
+      "description": "Eight Fundación Botín programme participants examine AI-amplified electoral disinformation in Chile and Argentina and the institutional responses Latin America needs.",
+      "author": {
+        "name": "Martín Telleria; María Fernanda Pech Novelo; Steeven Johannes Flor Pio; Genesis Dejaneyra Cadenasso Correa; Maria Antônia de Medeiros Dantas Costa; Valentina Silva Schmidt; Katherine Lizeth Bernal Santos; Samuel José Vega Martínez",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-130-inteligencia-artificial",
+      "original_date": "2026-03-25",
+      "topics": [
+        "democracy",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/130/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/130.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "authors": [
+        {
+          "name": "Martín Telleria",
+          "url": "https://www.linkedin.com/in/martin-telleria-b67135353?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+        },
+        {
+          "name": "María Fernanda Pech Novelo",
+          "url": "https://www.linkedin.com/in/mar%C3%ADa-fernanda-pech-novelo-64490b219?utm_source=share_via&utm_content=profile&utm_medium=member_ios"
+        },
+        {
+          "name": "Steeven Johannes Flor Pio",
+          "url": "http://www.linkedin.com/in/steeven-flor-pio"
+        },
+        {
+          "name": "Genesis Dejaneyra Cadenasso Correa",
+          "url": "https://uy.linkedin.com/in/g%C3%A9nesis-dejaneyra-cadenasso-correa-3588b6273"
+        },
+        {
+          "name": "Maria Antônia de Medeiros Dantas Costa",
+          "url": "https://www.linkedin.com/in/maria-ant%C3%B4nia-de-medeiros-costa-b94308177/"
+        },
+        {
+          "name": "Valentina Silva Schmidt",
+          "url": "https://cl.linkedin.com/in/valentina-isidora-silva-schmidt-b77797335"
+        },
+        {
+          "name": "Katherine Lizeth Bernal Santos",
+          "url": "https://www.linkedin.com/in/katherinebernal29"
+        },
+        {
+          "name": "Samuel José Vega Martínez",
+          "url": "https://www.linkedin.com/in/samueljvega"
+        }
+      ]
+    },
+    {
+      "id": "129",
+      "issue_number": 129,
+      "title": "MUNICIP-IA: from using AI tools to governing change",
+      "description": "Sofía García Morales reports from MUNICIP-IA on practical municipal adoption, institutional judgement, digital sovereignty and the political implications of AI.",
+      "author": {
+        "name": "Sofía García Morales",
+        "url": "http://www.linkedin.com/in/sofiagarciam"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-129-la-inteligencia-artificial",
+      "original_date": "2026-03-18",
+      "topics": [
+        "government",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/129/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/129.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/sofia-garcia-morales/"
+      ]
+    },
+    {
+      "id": "128",
+      "issue_number": 128,
+      "title": "The end of conversational ping-pong: autonomous agents are here, and they will change how we work",
+      "description": "Three first-person experiments with autonomous agents: a political comic, a Windows speech analyser and a Stoic quotations app.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-128-adios-al-chatbot-la",
+      "original_date": "2026-03-11",
+      "topics": [
+        "practice",
+        "government"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/128/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/128.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "127",
+      "issue_number": 127,
+      "title": "Who leads AI? Twelve key players in the model race, 2026",
+      "description": "A historical guide to twelve AI model developers and deployment players, their products, institutional significance and competing strategic priorities.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-127-el-quien-es-quien",
+      "original_date": "2026-03-04",
+      "topics": [
+        "sovereignty",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/127/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/127.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "126",
+      "issue_number": 126,
+      "title": "Thinking through AI: from uncritical adoption to organisational and educational transformation",
+      "description": "Carlos López Ariztegui argues that AI creates value only when organisations and universities rethink their judgement, processes and culture.",
+      "author": {
+        "name": "Carlos López Ariztegui",
+        "url": "https://www.linkedin.com/in/clariztegui/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-126-pensar-la-ia-de-la",
+      "original_date": "2026-02-25",
+      "topics": [
+        "learning",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/126/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/126.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "125",
+      "issue_number": 125,
+      "title": "Super Bowl LX: half-time as a fault line between political assertion and the AI war",
+      "description": "Super Bowl advertising as miniature political theory: AI companies compete over trust, convenience, business models and cultural legitimacy.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-125-la-verdadera-super",
+      "original_date": "2026-02-18",
+      "topics": [
+        "democracy",
+        "sovereignty"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/125/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/125.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "124",
+      "issue_number": 124,
+      "title": "Silicon Springfield: when The Simpsons drew the future of artificial intelligence",
+      "description": "Five Simpsons storylines connect satire with autocorrect, smart homes, machine learning, alignment and technological unemployment.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-124-mascaras-donuts-y",
+      "original_date": "2026-02-11",
+      "topics": [
+        "futures",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/124/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/124.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "123",
+      "issue_number": 123,
+      "title": "AI's adolescence: when power arrives before policy",
+      "description": "A political reading of Dario Amodei’s technological adolescence and Claude’s Constitution: institutional wisdom, oversight and the limits of corporate sovereignty.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-123-constitucion-y-adolescencia",
+      "original_date": "2026-02-04",
+      "topics": [
+        "futures",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/123/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/123.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "122",
+      "issue_number": 122,
+      "title": "ABC and precision literacy: an ecosystem where context and AI's technological capabilities are the keys to success",
+      "description": "Harvey Sánchez-Restrepo explains how ABC combines contextual understanding and adaptive AI assessment to support literacy across Latin America and the Caribbean.",
+      "author": {
+        "name": "Harvey Sánchez-Restrepo",
+        "url": "https://www.aleph.la/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-122-la-evaluacion-educativa",
+      "original_date": "2026-01-28",
+      "topics": [
+        "learning",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/122/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/122.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "121",
+      "issue_number": 121,
+      "title": "AI has crossed the 15% chasm, and the digital divide is widening: Microsoft's global report on AI diffusion in 2025",
+      "description": "What Microsoft’s 2025 adoption report suggests about institutional strategy, the widening digital divide and the challenge of turning AI use into public value.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-121-informe-global-de",
+      "original_date": "2026-01-21",
+      "topics": [
+        "government",
+        "sovereignty"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/121/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/121.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "120",
+      "issue_number": 120,
+      "title": "CES 2026 confirms a new phase: AI as ‘electricity’",
+      "description": "A historical assessment of CES 2026: universal AI access, Nvidia's physical AI infrastructure, on-device assistants, autonomous agriculture and preventive care.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-120-ces-2026-la-ia-conquista",
+      "original_date": "2026-01-14",
+      "topics": [
+        "government",
+        "futures",
+        "sovereignty"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/120/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/120.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "119",
+      "issue_number": 119,
+      "title": "Will politics rise to the challenge of AI in 2026? Five new requests from estrategIA",
+      "description": "A critical review of political responses to AI in 2025 and five demands for 2026: state capacity, scaled services, literacy, shared truth and a new social contract.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-119-cinco-peticiones-clave",
+      "original_date": "2026-01-07",
+      "topics": [
+        "government",
+        "democracy",
+        "work"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/119/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/119.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "118",
+      "issue_number": 118,
+      "title": "The year in AI through estrategIA: interact with all our 2025 content in NotebookLM",
+      "description": "An interactive yearbook of estrategIA's 2025 coverage, with a practical explanation of how its NotebookLM collection and multimedia summaries were created.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-118-especial-fin-de-ano",
+      "original_date": "2025-12-31",
+      "topics": [
+        "practice",
+        "learning",
+        "government"
+      ],
+      "genre": "retrospective",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/118/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/118.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "116",
+      "issue_number": 116,
+      "title": "Your brother-in-law, the prawns and AI: a Christmas survival guide for estrategIA readers",
+      "description": "A humorous Christmas guide to five familiar arguments about AI, from bubbles and jobs to energy use and disinformation, with a political and governance perspective.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-116-manual-de-supervivencia",
+      "original_date": "2025-12-17",
+      "topics": [
+        "democracy",
+        "work",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/116/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/116.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "115",
+      "issue_number": 115,
+      "title": "Instant visual communication: Nano Banana Pro examples for campaigns and public administrations",
+      "description": "Ten historical image-generation demonstrations, with full prompts, retained examples and the author's warning to verify generated data.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-115-diez-usos-estrategicos",
+      "original_date": "2025-12-10",
+      "topics": [
+        "practice",
+        "government",
+        "democracy"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/115/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/115.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "114",
+      "issue_number": 114,
+      "title": "AI's impact on education: a rebirth or the end of the teacher?",
+      "description": "Pablo Martín Diez reflects on CONAED Mexico 2025, educational divides and the teacher's role in cultivating curiosity, judgement and civic independence.",
+      "author": {
+        "name": "Pablo Martín Diez",
+        "url": "https://www.linkedin.com/in/pablomartindiez/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-114-renacer-o-fin-del",
+      "original_date": "2025-12-03",
+      "topics": [
+        "learning",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/114/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/114.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/pablo-martin-diez/"
+      ]
+    },
+    {
+      "id": "113",
+      "issue_number": 113,
+      "title": "Gemini 3 Pro shows that model power is only part of the story: training and how people use it matter too",
+      "description": "Gemini 3 Pro's launch results, an unexpected calendar error and a practical electoral-system demo illustrate the importance of informed use.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-113-gemini-3-pro-el-gigante",
+      "original_date": "2025-11-26",
+      "topics": [
+        "learning",
+        "practice",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/113/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/113.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "112",
+      "issue_number": 112,
+      "title": "The new role of digital advisers",
+      "description": "Javier Battilana Urbieta considers how conversational AI can extend the tradition of advisers who help leaders reflect, decide and act.",
+      "author": {
+        "name": "Javier Battilana Urbieta",
+        "url": "https://www.linkedin.com/in/javier-battilana-urbieta/?originalSubdomain=py"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-112-consejeros-digitales",
+      "original_date": "2025-11-19",
+      "topics": [
+        "government",
+        "learning",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/112/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/112.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "111",
+      "issue_number": 111,
+      "title": "How to counter the liar’s dividend: procedures for checking and verifying information with AI",
+      "description": "Five defensive verification workflows and practical tools for using AI to counter disinformation while preserving human judgement.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-111-cuando-ver-para-creer",
+      "original_date": "2025-11-12",
+      "topics": [
+        "democracy",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/111/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/111.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "110",
+      "issue_number": 110,
+      "title": "Vibe coding for estrategIA readers: from a prompt to a simple application with Google AI Studio",
+      "description": "A November 2025 demonstration of building and refining a press-release-generator prototype through conversation, with the complete visible prompts and outputs.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-110-la-revolucion-del",
+      "original_date": "2025-11-05",
+      "topics": [
+        "practice",
+        "government",
+        "learning"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/110/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/110.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "109",
+      "issue_number": 109,
+      "title": "Physics in artificial intelligence",
+      "description": "Luis Eduardo Paniagua Martín explores physics as a bridge between mathematical ideas, algorithms and hardware, with an illustrated explanation from the original newsletter.",
+      "author": {
+        "name": "Luis Eduardo Paniagua Martín",
+        "url": "https://www.linkedin.com/in/luis-paniagua-824a891a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-109-el-motor-oculto-de",
+      "original_date": "2025-10-29",
+      "topics": [
+        "learning",
+        "practice",
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/109/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/109.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "108",
+      "issue_number": 108,
+      "title": "Clarity in the age of machines: five thinkers to understand AI and the human future",
+      "description": "Five perspectives on AI’s future—from geopolitical urgency and technical control to economic incentives and relational ethics—and the case for addressing both future and present harms.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://es.linkedin.com/in/fernandonietolobato?utm_source=chatgpt.com"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-108-buscando-a-los-filosofos",
+      "original_date": "2025-10-22",
+      "topics": [
+        "futures",
+        "government",
+        "sovereignty"
+      ],
+      "genre": "review_or_commentary",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/108/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/108.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "107",
+      "issue_number": 107,
+      "title": "The year reasoning became real: what State of AI 2025 tells governments and public policymakers",
+      "description": "A reading of State of AI 2025 for public policy, covering reasoning, energy, geopolitics, commercial adoption and safety, with the report’s full prediction slides.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/?originalSubdomain=es"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-107-el-nuevo-orden-de",
+      "original_date": "2025-10-15",
+      "topics": [
+        "government",
+        "sovereignty",
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/107/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/107.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "106",
+      "issue_number": 106,
+      "title": "Governing with artificial intelligence",
+      "description": "Ignacio Martín Granados explores where AI creates public value, the risks of action and inaction, and the conditions for trustworthy government adoption.",
+      "author": {
+        "name": "Ignacio Martín Granados",
+        "url": "https://www.linkedin.com/in/ignaciomartingranados"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-106-donde-pisa-fuerte",
+      "original_date": "2025-10-08",
+      "topics": [
+        "government",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/106/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/106.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "105",
+      "issue_number": 105,
+      "title": "Five charts to understand two years of AI: adoption, capabilities, costs, investment and public perceptions",
+      "description": "A second-anniversary comparison of AI adoption, task capabilities, falling costs, investment and public perceptions, preserving the October 2025 evidence and forecasts.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/?originalSubdomain=es"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-105-dos-anos-de-estrategia",
+      "original_date": "2025-10-01",
+      "topics": [
+        "futures",
+        "government",
+        "practice"
+      ],
+      "genre": "retrospective",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/105/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/105.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "104",
+      "issue_number": 104,
+      "title": "AI in the state: why digital transformation must come first",
+      "description": "Roxana Mazzola argues that effective public-sector AI depends on digital processes, interoperable data and stronger state capacity.",
+      "author": {
+        "name": "Roxana Mazzola",
+        "url": "https://www.linkedin.com/in/roxana-mazzola-9ba30814/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-104-la-ia-no-es-un-atajo",
+      "original_date": "2025-09-24",
+      "topics": [
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/104/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/104.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "103",
+      "issue_number": 103,
+      "title": "Is entry-level work disappearing? How generative AI is changing the rules—and how politics can respond",
+      "description": "An examination of preliminary evidence that generative AI reduces entry-level hiring, and possible responses in training, employment incentives and social protection.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/?originalSubdomain=es"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-103-el-primer-peldano",
+      "original_date": "2025-09-17",
+      "topics": [
+        "work",
+        "government",
+        "learning"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/103/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/103.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "102",
+      "issue_number": 102,
+      "title": "Campaigns in the age of AI: global lessons from 2024",
+      "description": "Ignacio Martín Granados examines a global study of AI use in the 2024 elections and its lessons for campaigns, public trust and democratic integrity.",
+      "author": {
+        "name": "Ignacio Martín Granados",
+        "url": "https://www.linkedin.com/in/ignaciomartingranados"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-102-como-la-ia-esta-cambiando",
+      "original_date": "2025-09-10",
+      "topics": [
+        "democracy",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/102/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/102.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "101",
+      "issue_number": 101,
+      "title": "Gemini 2.5 Flash Image (Nano banana): a qualitative leap in image editing and generation",
+      "description": "Practical tests of Google’s September 2025 image model, from political posters and public spaces to editing photographs and combining visual elements.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/?originalSubdomain=es"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-101-nano-banana-y-el-nuevo",
+      "original_date": "2025-09-03",
+      "topics": [
+        "practice",
+        "government"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/101/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/101.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "100",
+      "issue_number": 100,
+      "title": "One hundred issues on: politics still has its back turned to advances in AI",
+      "description": "On estrategIA's hundredth issue, Fernando reflects on the widening gap between AI progress and political engagement.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/?originalSubdomain=es"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-100-tras-un-centenar-de",
+      "original_date": "2025-08-27",
+      "topics": [
+        "government",
+        "democracy",
+        "sovereignty"
+      ],
+      "genre": "retrospective",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/100/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/100.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "099",
+      "issue_number": 99,
+      "title": "Supercomputing and AI: strategic investments to avoid irrelevance",
+      "description": "Pep Martorell explains why computing infrastructure, scientific talent and international cooperation are essential to avoid irrelevance.",
+      "author": {
+        "name": "Josep M. (Pep) Martorell",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-99-sin-computo-no-hay",
+      "original_date": "2025-08-20",
+      "topics": [
+        "sovereignty",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/099/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/099.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "098",
+      "issue_number": 98,
+      "title": "GPT-5: the floor rises sharply, the ceiling barely moves — and why that matters",
+      "description": "An August 2025 assessment of GPT-5's launch, reasoning access, rollout problems and practical value for government.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/?originalSubdomain=es"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-98-gpt-5-lleva-el-razonamiento",
+      "original_date": "2025-08-13",
+      "topics": [
+        "practice",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/098/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/098.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "097",
+      "issue_number": 97,
+      "title": "The bot union: a technology strike in the middle of August",
+      "description": "A Claude Sonnet 4 satire imagines a union of bots, a technology strike and the rediscovery of civic debate.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-97-historias-veraniegas",
+      "original_date": "2025-08-06",
+      "topics": [
+        "futures",
+        "democracy",
+        "work"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/097/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/097.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "096",
+      "issue_number": 96,
+      "title": "The year of the silent tsunami",
+      "description": "A Gemini 2.5 Pro story imagines a rapid AGI transition and the consequences of failing to prepare institutions and the social contract.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-96-historias-veraniegas",
+      "original_date": "2025-07-30",
+      "topics": [
+        "futures",
+        "work",
+        "government"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/096/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/096.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "095",
+      "issue_number": 95,
+      "title": "Room to sleep: a day in the life of a campaign manager in 2032",
+      "description": "A Kimi K2 story follows a campaign manager through a day of AI systems, ethical safeguards and human decisions in 2032.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-95-historias-veraniegas",
+      "original_date": "2025-07-23",
+      "topics": [
+        "futures",
+        "democracy"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/095/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/095.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "094",
+      "issue_number": 94,
+      "title": "The voice of the algorithm that learned to dream",
+      "description": "A Grok 4 summer fable set in Mexico City in 2045 explores civic participation, empathy and an AI that learns from human stories.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-94-historias-veraniegas",
+      "original_date": "2025-07-16",
+      "topics": [
+        "futures",
+        "democracy"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/094/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/094.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "093",
+      "issue_number": 93,
+      "title": "An AI's travel diary: summer 2025",
+      "description": "A fictional AI travel diary, created with GPT-4.5, visits four places associated with the development of artificial intelligence.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-93-historias-veraniegas",
+      "original_date": "2025-07-09",
+      "topics": [
+        "futures"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/093/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/093.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "092",
+      "issue_number": 92,
+      "title": "Artificial intelligence in Cuba's informal currency market",
+      "description": "Alejandro Ulloa García explains how elTOQUE uses AI and public online offers to estimate exchange rates in Cuba.",
+      "author": {
+        "name": "Alejandro Ulloa García",
+        "url": "https://www.linkedin.com/in/alejandroulloa/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-92-el-bot-que-le-pone",
+      "original_date": "2025-07-02",
+      "topics": [
+        "practice",
+        "democracy"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/092/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/092.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "091",
+      "issue_number": 91,
+      "title": "Distributed forecasting platforms and the future of AI",
+      "description": "How collective forecasting can inform AI policy, and why probabilities require critical judgement rather than blind trust.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-91-senales-debiles-decisiones",
+      "original_date": "2025-06-25",
+      "topics": [
+        "futures",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/091/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/091.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "090",
+      "issue_number": 90,
+      "title": "The score for the “gentle singularity”: Sam Altman, OpenAI and the imminent choreography of the future",
+      "description": "Sam Altman’s vision of superintelligence is read alongside Amodei’s employment warnings, Bengio’s alignment concerns and the political question of who benefits.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-90-la-hoja-de-ruta-de",
+      "original_date": "2025-06-18",
+      "topics": [
+        "futures",
+        "government",
+        "work"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/090/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/090.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "089",
+      "issue_number": 89,
+      "title": "BOND’s 2025 report: a portrait of an irreversible transformation",
+      "description": "Seven findings from BOND’s AI trends report, covering adoption, investment, falling inference costs, China, work and the next technological frontiers.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-89-que-esta-pasando-con",
+      "original_date": "2025-06-11",
+      "topics": [
+        "futures",
+        "sovereignty",
+        "work"
+      ],
+      "genre": "review_or_commentary",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/089/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/089.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "088",
+      "issue_number": 88,
+      "title": "Google Cloud Summit Madrid 2025: generative AI and the future of the public sector, with ALEPH Educational Institution as VIP guest and reporter",
+      "description": "Gabriela Ortega Jarrín reports from Madrid on public services, sovereign cloud, AI skills, regulation and competition between cloud providers.",
+      "author": {
+        "name": "Gabriela Ortega Jarrín",
+        "url": "https://www.linkedin.com/in/gabrielaortegaj"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-88-google-cloud-summit",
+      "original_date": "2025-06-04",
+      "topics": [
+        "government",
+        "sovereignty",
+        "learning"
+      ],
+      "genre": "report",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/088/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/088.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/gabriela-ortega/"
+      ]
+    },
+    {
+      "id": "087",
+      "issue_number": 87,
+      "title": "Google I/O 2025: artificial intelligence at the heart of innovation and the future",
+      "description": "Google’s May 2025 announcements, from Gemini and Veo to local AI models, and their implications for creating, searching and communicating.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-87-el-retorno-de-google",
+      "original_date": "2025-05-28",
+      "topics": [
+        "practice",
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/087/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/087.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "086",
+      "issue_number": 86,
+      "title": "Repeating the AI election experiment a year later — with our students: what has changed in twelve months",
+      "description": "A repeat of estrategIA’s election experiment with ALEPH students explores human judgement, reasoning models, deep research and new campaign tools.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-86-un-ano-despues-creamos",
+      "original_date": "2025-05-21",
+      "topics": [
+        "practice",
+        "learning",
+        "democracy"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/086/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/086.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "085",
+      "issue_number": 85,
+      "title": "Who should decide in the age of artificial intelligence? Ethics, prudence and human dignity in the face of algorithmic power",
+      "description": "Pablo Martín Diez reviews Adela Cortina's case for an ethical, democratic approach to AI grounded in human dignity, practical wisdom and public dialogue.",
+      "author": {
+        "name": "Pablo Martín Diez",
+        "url": "https://www.linkedin.com/in/pablomartindiez/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-85-etica-o-ideologia-de",
+      "original_date": "2025-05-14",
+      "topics": [
+        "democracy",
+        "government",
+        "learning"
+      ],
+      "genre": "review_or_commentary",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/085/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/085.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/pablo-martin-diez/"
+      ]
+    },
+    {
+      "id": "084",
+      "issue_number": 84,
+      "title": "From innovation to action: artificial intelligence serving public administration in Chile",
+      "description": "Mauricio Pilleux describes an AI assistance system for Chilean women facing gender-based violence abroad and the incremental approach behind its development.",
+      "author": {
+        "name": "Mauricio Pilleux",
+        "url": "https://www.linkedin.com/in/mauricio-pilleux-gallardo/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-84-ia-contra-la-violencia",
+      "original_date": "2025-05-07",
+      "topics": [
+        "government",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/084/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/084.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "083",
+      "issue_number": 83,
+      "title": "The dawn of artificial muscle: how a new wave of intelligent robots could redraw the employment map",
+      "description": "On the eve of International Workers' Day, a look at humanoid robotics, its possible effects on jobs and the policies needed to manage the transition.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-83-humanos-ias-y-robots",
+      "original_date": "2025-04-30",
+      "topics": [
+        "work",
+        "futures",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/083/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/083.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "082",
+      "issue_number": 82,
+      "title": "AI Index 2025: the state of AI in politics and public power",
+      "description": "Stanford's AI Index 2025 through the lens of regulation, public investment, geopolitical competition, responsible AI and public trust.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/?originalSubdomain=es"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-82-ia-y-poder-publico",
+      "original_date": "2025-04-23",
+      "topics": [
+        "government",
+        "sovereignty"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/082/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/082.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "081",
+      "issue_number": 81,
+      "title": "The old and the new: the Catholic Church confronts artificial intelligence",
+      "description": "A Holy Week reflection on Antiqua et Nova, the Vatican's view of AI, and the place of human dignity, solidarity and philosophical judgement in technological change.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-81-la-tradicion-interpela",
+      "original_date": "2025-04-16",
+      "topics": [
+        "government",
+        "futures"
+      ],
+      "genre": "review_or_commentary",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/081/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/081.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "080",
+      "issue_number": 80,
+      "title": "Ten uses for ChatGPT's new image-generation system: how easy AI image creation could redraw political communication",
+      "description": "Thirty-one preserved images illustrate ten historical GPT-4o experiments in visual political communication, with complete prompts and accessible English text.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "http://www.linkedin.com/in/fernandonietolobato"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-80-la-imaginacion-es-el",
+      "original_date": "2025-04-09",
+      "topics": [
+        "practice",
+        "democracy",
+        "government"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/080/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/080.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "079",
+      "issue_number": 79,
+      "title": "Rewriting the social contract in the age of thinking machines: universal basic income in the AI storm",
+      "description": "An argument for debating universal basic income before large-scale AI disruption, covering its history, purposes, funding, uncertainties and social meaning.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-79-inteligencia-artificial",
+      "original_date": "2025-04-02",
+      "topics": [
+        "work",
+        "government",
+        "futures"
+      ],
+      "genre": "essay",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/079/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/079.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "078",
+      "issue_number": 78,
+      "title": "AI on official accounts: viral play, threat or distortion?",
+      "description": "Martín Sosa Dirié examines AI imagery on official political accounts and asks whether viral reach enriches or trivialises public discourse.",
+      "author": {
+        "name": "Martín Sosa Dirié",
+        "url": "https://www.linkedin.com/in/martinpsosa/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-78-de-trump-a-macron-como",
+      "original_date": "2025-03-26",
+      "topics": [
+        "democracy",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/078/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/078.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "077",
+      "issue_number": 77,
+      "title": "The age of thinking machines: navigating Lassalle's “Artificial Civilisation”",
+      "description": "A review of José María Lassalle's Civilización artificial, its case for technological humanism and its account of AI, power and the future of work.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-77-resena-de-civilizacion",
+      "original_date": "2025-03-19",
+      "topics": [
+        "futures",
+        "sovereignty",
+        "work"
+      ],
+      "genre": "review_or_commentary",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/077/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/077.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "076",
+      "issue_number": 76,
+      "title": "AI takes the lead: what Mobile World Congress 2025 tells us about the digital future",
+      "description": "MWC 2025's AI announcements and the implications for mobile networks, public administration, regulation and future services.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-76-el-mobile-world-congress",
+      "original_date": "2025-03-12",
+      "topics": [
+        "government",
+        "futures",
+        "sovereignty"
+      ],
+      "genre": "report",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/076/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/076.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "075",
+      "issue_number": 75,
+      "title": "February, the month of AI “deep research”: introducing and testing three major tools",
+      "description": "A March 2025 test of OpenAI, Perplexity and xAI research tools on electoral systems and Spanish polling, with complete historical evaluation tables.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-75-como-usar-la-ia-para",
+      "original_date": "2025-03-05",
+      "topics": [
+        "practice",
+        "government",
+        "democracy"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/075/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/075.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "074",
+      "issue_number": 74,
+      "title": "Exponential innovation: how AI is redefining science and challenging those who govern",
+      "description": "AI-assisted scientific discovery, from Google's Co-scientist to new biomedical models, and the political questions raised by accelerating research.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-74-la-revolucion-cientifica",
+      "original_date": "2025-02-26",
+      "topics": [
+        "government",
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/074/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/074.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "073",
+      "issue_number": 73,
+      "title": "From information to shared knowledge: the process behind every issue of estrategIA",
+      "description": "An inside account of estrategIA's sources, AI-assisted writing workflows and editorial production in February 2025.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.linkedin.com/in/fernandonietolobato/?originalSubdomain=es"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-73-como-se-hace-estrategia",
+      "original_date": "2025-02-19",
+      "topics": [
+        "practice",
+        "learning"
+      ],
+      "genre": "practical_guide",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/073/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/073.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "072",
+      "issue_number": 72,
+      "title": "At the Paris summit, AI moves forward and the debate shifts from concern to massive investment",
+      "description": "An assessment of the Paris AI Action Summit’s investment announcements, competing regulatory approaches and shift towards coordinated action.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-72-mas-alla-del-miedo",
+      "original_date": "2025-02-12",
+      "topics": [
+        "sovereignty",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/072/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/072.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "071",
+      "issue_number": 71,
+      "title": "Superagency: when AI gives us superpowers (and, we hope, no superproblems)",
+      "description": "A review of Reid Hoffman and Greg Beato’s Superagency, its qualified optimism and its political case for measured regulation.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-71-innovacion-sin-miedo",
+      "original_date": "2025-02-05",
+      "topics": [
+        "futures",
+        "government"
+      ],
+      "genre": "review_or_commentary",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/071/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/071.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "070",
+      "issue_number": 70,
+      "title": "Stargate: $500 billion for AI — the most ambitious technology project in history?",
+      "description": "A January 2025 assessment of Stargate's projected investment, infrastructure ambitions, historical comparisons and the Musk-Altman dispute.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-70-stargate-el-nuevo-proyecto",
+      "original_date": "2025-01-29",
+      "topics": [
+        "sovereignty",
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/070/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/070.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "069",
+      "issue_number": 69,
+      "title": "Artificial intelligence in the new Trump era: an analysis in five dimensions",
+      "description": "Five dimensions of AI policy at the start of Trump's second term: regulation, industry, geopolitical competition, advisers and social consequences.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-69-la-ia-en-el-segundo",
+      "original_date": "2025-01-22",
+      "topics": [
+        "government",
+        "sovereignty"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/069/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/069.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "068",
+      "issue_number": 68,
+      "title": "AI’s future at stake: the challenge between Gary Marcus and Miles Brundage",
+      "description": "Gary Marcus and Miles Brundage put money behind competing expectations for AI, with ten tasks and a deadline at the end of 2027.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-68-la-agi-antes-de-2027",
+      "original_date": "2025-01-15",
+      "topics": [
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/068/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/068.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "067",
+      "issue_number": 67,
+      "title": "From simulation to strategy: new AI developments that will transform political communication",
+      "description": "A guest essay on simulated populations, AI agents and the opportunities and limits of predicting human behaviour for political communication.",
+      "author": {
+        "name": "Martín Sosa Dirié",
+        "url": "https://www.linkedin.com/in/martinpsosa/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-67-predecir-para-influir",
+      "original_date": "2025-01-08",
+      "topics": [
+        "democracy",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/067/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/067.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "066",
+      "issue_number": 66,
+      "title": "Five essential priorities for politicians facing the AI revolution in 2025 and beyond",
+      "description": "Five policy requests for 2025: make AI a priority, develop it safely and quickly, protect people, redesign institutions and plan for the long term.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-66-cinco-peticiones-clave",
+      "original_date": "2025-01-01",
+      "topics": [
+        "government",
+        "work",
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/066/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/066.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "064",
+      "issue_number": 64,
+      "title": "Where do I begin? A step-by-step guide to adopting AI in your organisation",
+      "description": "Pablo Martín Diez outlines five stages of organisational AI adoption, from focused pilots and an internal team to staff training, strategy and communication.",
+      "author": {
+        "name": "Pablo Martín Diez",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-64-de-la-teoria-a-la-practica",
+      "original_date": "2024-12-18",
+      "topics": [
+        "government",
+        "practice",
+        "learning"
+      ],
+      "genre": "practical_guide",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/064/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/064.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/pablo-martin-diez/"
+      ]
+    },
+    {
+      "id": "063",
+      "issue_number": 63,
+      "title": "“Don’t look up”: artificial intelligence is overtaking us. What about our governments?",
+      "description": "Fernando Nieto Lobato argues that rapid advances in AI reasoning demand serious preparation by governments, businesses and individuals, including for a possible transformation of work.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-63-estamos-preparados",
+      "original_date": "2024-12-11",
+      "topics": [
+        "government",
+        "work",
+        "futures"
+      ],
+      "genre": "opinion",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/063/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/063.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "062",
+      "issue_number": 62,
+      "title": "Operación Retuit: AI as a shield for Venezuelan journalism",
+      "description": "César Batiz recounts how Venezuelan and Colombian journalists used AI avatars and media alliances to report under censorship and protect their colleagues.",
+      "author": {
+        "name": "César Batiz",
+        "url": "https://elpitazo.net/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-62-narrativas-de-resistencia",
+      "original_date": "2024-12-04",
+      "topics": [
+        "democracy",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/062/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/062.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "061",
+      "issue_number": 61,
+      "title": "Five good AI tools with Black Friday discounts",
+      "description": "The November 2024 archive of estrategIA's Black Friday selection: Pictory, Kling, Mimic PC, Freepik and Poe, with the original offers and disclosures preserved.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-61-especial-black-friday",
+      "original_date": "2024-11-27",
+      "topics": [
+        "practice"
+      ],
+      "genre": "review_or_commentary",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/061/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/061.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "060",
+      "issue_number": 60,
+      "title": "SocialAI: an ally for political communication",
+      "description": "Carlos Guadián explores political role-play with SocialAI through simulated US election messages and debates over Mexico's judicial reform.",
+      "author": {
+        "name": "Carlos Guadián",
+        "url": "https://carlosguadian.net/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-60-roleplay-politico-con",
+      "original_date": "2024-11-20",
+      "topics": [
+        "democracy",
+        "practice"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/060/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/060.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "059",
+      "issue_number": 59,
+      "title": "Five ways the Trump administration could change the course of artificial intelligence",
+      "description": "A November 2024 outlook on deregulation, ideological bias, energy, competition with China, military applications and Elon Musk's possible influence on US AI policy.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-59-la-segunda-era-de-trump",
+      "original_date": "2024-11-13",
+      "topics": [
+        "sovereignty",
+        "government",
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/059/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/059.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "058",
+      "issue_number": 58,
+      "title": "AI Steve and candidacies based on artificial intelligence",
+      "description": "Fernando Domínguez Sardou examines AI Steve's parliamentary campaign and what generative AI could contribute to the relationship between citizens and their representatives.",
+      "author": {
+        "name": "Fernando Domínguez Sardou",
+        "url": "https://www.linkedin.com/in/fernando-dominguez-sardou/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-58-cuando-la-ia-aspira",
+      "original_date": "2024-11-06",
+      "topics": [
+        "democracy",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/058/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/058.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "057",
+      "issue_number": 57,
+      "title": "Technological nightmares: science fiction’s most dangerous AIs and their terrifying echoes in reality",
+      "description": "A Halloween essay by Pablo Martín Diez uses science fiction to explore AI alignment, emotional manipulation and the risk of willingly surrendering human control.",
+      "author": {
+        "name": "Pablo Martín Diez",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-57-especial-halloween",
+      "original_date": "2024-10-30",
+      "topics": [
+        "futures",
+        "democracy"
+      ],
+      "genre": "essay",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/057/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/057.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/pablo-martin-diez/"
+      ]
+    },
+    {
+      "id": "056",
+      "issue_number": 56,
+      "title": "Humanity at its final frontier",
+      "description": "Pablo Martín Diez examines Harari’s Nexus, digital empires and four principles for protecting democratic life in an age of AI.",
+      "author": {
+        "name": "Pablo Martín Diez",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-56-imperios-digitales",
+      "original_date": "2024-10-23",
+      "topics": [
+        "democracy",
+        "sovereignty"
+      ],
+      "genre": "review_or_commentary",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/056/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/056.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/pablo-martin-diez/"
+      ]
+    },
+    {
+      "id": "055",
+      "issue_number": 55,
+      "title": "State of AI Report 2024: accelerating progress and a new technological era",
+      "description": "A review of the State of AI Report 2024 across research, industry, politics and safety, including its assessment of earlier forecasts and predictions for 2025.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-55-el-estado-de-la-ia",
+      "original_date": "2024-10-16",
+      "topics": [
+        "futures",
+        "sovereignty"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/055/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/055.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "054",
+      "issue_number": 54,
+      "title": "Generative artificial intelligence in politics: opportunities, challenges and the search for democratic ethics",
+      "description": "Javier Naranjo Sanjuan explores generative AI’s political uses, transparency and democratic ethics through an experimental custom GPT for estrategIA.",
+      "author": {
+        "name": "Javier Naranjo Sanjuan",
+        "url": "https://www.linkedin.com/in/javiernaranjosanjuan"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-54-ia-generativa-el-motor",
+      "original_date": "2024-10-09",
+      "topics": [
+        "democracy",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/054/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/054.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "053",
+      "issue_number": 53,
+      "title": "estrategIA’s first anniversary: testing ChatGPT’s new voice for political communication",
+      "description": "On estrategIA’s first anniversary, Fernando Nieto Lobato tests ChatGPT’s advanced voice mode as a political debate sparring partner.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-53-un-ano-de-estrategia",
+      "original_date": "2024-10-02",
+      "topics": [
+        "practice",
+        "democracy"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/053/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/053.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "052",
+      "issue_number": 52,
+      "title": "From scepticism to acclaim: AI takes centre stage at ACOP’s Seventh International Congress",
+      "description": "Pablo Martín Diez reports on AI, disinformation and the future of political communication at ACOP’s 2024 congress.",
+      "author": {
+        "name": "Pablo Martín Diez",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-52-el-congreso-internacional",
+      "original_date": "2024-09-25",
+      "topics": [
+        "democracy",
+        "practice"
+      ],
+      "genre": "report",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/052/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/052.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/pablo-martin-diez/"
+      ]
+    },
+    {
+      "id": "051",
+      "issue_number": 51,
+      "title": "OpenAI o1: a new frontier in AI “thinking” and problem-solving",
+      "description": "A historical account of OpenAI o1, its reasoning capabilities, benchmark results, limitations and possible applications.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-51-llega-la-era-del-razonamiento",
+      "original_date": "2024-09-18",
+      "topics": [
+        "futures",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/051/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/051.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "050",
+      "issue_number": 50,
+      "title": "Navigating the future of education: how Institución Educativa ALEPH is trying to advance learning with AI",
+      "description": "An account of ALEPH’s experimental AI tutors, the limits of early GPT agents and the challenge of helping students learn rather than outsource their work.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-50-la-transformacion-de",
+      "original_date": "2024-09-11",
+      "topics": [
+        "learning",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/050/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/050.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "049",
+      "issue_number": 49,
+      "title": "Five clues to what awaits us in artificial intelligence before the end of the year",
+      "description": "A September 2024 outlook on new models, synthetic media, falling costs, mass adoption and the technologies expected to reach the public that autumn.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-49-avances-decisivos-en",
+      "original_date": "2024-09-04",
+      "topics": [
+        "futures",
+        "democracy",
+        "work"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/049/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/049.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "048",
+      "issue_number": 48,
+      "title": "Stories of politics, government and AI in 2045 (8 and final): reflecting on the summer stories",
+      "description": "Seven themes drawn from the summer fiction series: efficiency, human connection, ethical judgement, democratic control and collaboration with AI.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-48-siete-claves-sobre",
+      "original_date": "2024-08-28",
+      "topics": [
+        "futures",
+        "democracy",
+        "government"
+      ],
+      "genre": "retrospective",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/048/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/048.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "047",
+      "issue_number": 47,
+      "title": "Stories of politics, government and AI in 2045 (7)",
+      "description": "Grok 2 mini supplies the final summer story: an AI candidate faces a human activist who questions its promise to optimise collective happiness.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-47-el-electo-y-la-rebelion",
+      "original_date": "2024-08-21",
+      "topics": [
+        "futures",
+        "democracy"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/047/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/047.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "046",
+      "issue_number": 46,
+      "title": "Stories of politics, government and AI in 2045 (6)",
+      "description": "An updated Gemini model tells the story of Perseo, an AI policy adviser whose impeccable calculations raise disturbing ethical questions.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-46-la-logica-fria-de-perseo",
+      "original_date": "2024-08-14",
+      "topics": [
+        "futures",
+        "democracy"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/046/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/046.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "045",
+      "issue_number": 45,
+      "title": "Stories of politics, government and AI in 2045 (5)",
+      "description": "Created with Mistral Large 2, this story follows ATHENA, an AI cabinet member whose success provokes a political conspiracy.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-45-el-algoritmo-del-poder",
+      "original_date": "2024-08-07",
+      "topics": [
+        "futures",
+        "democracy"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/045/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/045.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "044",
+      "issue_number": 44,
+      "title": "Stories of politics, government and AI in 2045 (4)",
+      "description": "A fictional AI designed to advise governments becomes a political force in its own right, in a story created with Llama 3.1 405B.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-44-historias-para-el-verano",
+      "original_date": "2024-07-31",
+      "topics": [
+        "futures",
+        "democracy"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/044/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/044.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "043",
+      "issue_number": 43,
+      "title": "Stories of politics, government and AI in 2045 (3)",
+      "description": "A summer satire created with Claude Sonnet 3.5: an AI campaign assistant detects one problem too many in a presidential debate.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-43-historias-para-el-verano",
+      "original_date": "2024-07-24",
+      "topics": [
+        "futures",
+        "democracy"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/043/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/043.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "042",
+      "issue_number": 42,
+      "title": "Stories of politics, government and AI in 2045 (2)",
+      "description": "In this summer story created with Gemini 1.5 Pro, a bored programmer disrupts the speeches of an impeccably rational digital ruler.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-42-historias-para-el-verano",
+      "original_date": "2024-07-17",
+      "topics": [
+        "futures",
+        "democracy"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/042/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/042.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "041",
+      "issue_number": 41,
+      "title": "Stories of politics, government and AI in 2045",
+      "description": "The summer fiction series begins with GPT-4o's story of Políticus-Prime, a humorous AI candidate facing a flamboyant human rival.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-41-historias-para-el-verano",
+      "original_date": "2024-07-10",
+      "topics": [
+        "futures",
+        "democracy"
+      ],
+      "genre": "fiction",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/041/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/041.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "040",
+      "issue_number": 40,
+      "title": "The Singularity Is Nearer: Ray Kurzweil and the race to merge with artificial intelligence",
+      "description": "A July 2024 reading of Ray Kurzweil's vision of superintelligence, human–machine integration, abundance and the choices society faces.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-40-el-futuro-a-la-vuelta",
+      "original_date": "2024-07-03",
+      "topics": [
+        "futures",
+        "work",
+        "learning"
+      ],
+      "genre": "review_or_commentary",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/040/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/040.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "039",
+      "issue_number": 39,
+      "title": "The AI race in 2024: the world's biggest companies go all in while politics takes tentative steps",
+      "description": "A mid-2024 assessment of private investment, public-sector readiness and the widening gap between AI development and preparations for its social consequences.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-39-balance-de-los-primeros",
+      "original_date": "2024-06-26",
+      "topics": [
+        "sovereignty",
+        "work",
+        "government"
+      ],
+      "genre": "retrospective",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/039/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/039.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "038",
+      "issue_number": 38,
+      "title": "Ethan Mollick’s Co-Intelligence: Living and Working with AI: an accessible, practical guide to understanding artificial intelligence",
+      "description": "A reading of Ethan Mollick's Co-Intelligence, presenting four rules for working with AI and the distinction between centaur and cyborg collaboration.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-38-descubra-las-cuatro",
+      "original_date": "2024-06-19",
+      "topics": [
+        "learning",
+        "work",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/038/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/038.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "037",
+      "issue_number": 37,
+      "title": "Apple’s new vision: artificial intelligence at the heart of its products",
+      "description": "A historical reading of WWDC 2024 and Apple's strategy of integrating AI into everyday devices, Siri and its operating systems.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-37-apple-pone-la-inteligencia",
+      "original_date": "2024-06-12",
+      "topics": [
+        "futures",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/037/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/037.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "036",
+      "issue_number": 36,
+      "title": "Testing new AI models to compare manifestos and analyse data ahead of the European Parliament elections",
+      "description": "Historical tests of Gemini and GPT-4o for manifesto comparison, turnout visualisation and interpreting the European Parliament's composition.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-36-innovaciones-en-ia",
+      "original_date": "2024-06-05",
+      "topics": [
+        "democracy",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/036/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/036.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "035",
+      "issue_number": 35,
+      "title": "Artificial intelligence in Mexico’s 2024 elections: challenges and opportunities",
+      "description": "Ray Acosta's historical opinion piece on social media, AI and Mexico's 2024 elections, examining manipulation, political participation and civic education.",
+      "author": {
+        "name": "Ray Acosta",
+        "url": "https://rayacostaconsulta.wordpress.com/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-35-ia-y-redes-sociales",
+      "original_date": "2024-05-29",
+      "topics": [
+        "democracy"
+      ],
+      "genre": "opinion",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/035/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/035.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "034",
+      "issue_number": 34,
+      "title": "The potential of artificial intelligence in education: a look at Salman Khan’s Brave New Words: How AI Will Revolutionize Education (and Why That’s a Good Thing)",
+      "description": "A reading of Salman Khan's Brave New Words, exploring AI tutors, equitable access, teachers, educational policy and the future of work.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-34-abrazando-la-revolucion",
+      "original_date": "2024-05-22",
+      "topics": [
+        "learning",
+        "work"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/034/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/034.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "033",
+      "issue_number": 33,
+      "title": "Towards ubiquitous AI: the OpenAI and Google developments that will transform the future",
+      "description": "A historical account of OpenAI's GPT-4o launch and Google I/O 2024, examining multimodal assistants, search and the prospect of ubiquitous AI.",
+      "author": {
+        "name": "Gabriela Ortega",
+        "url": null,
+        "type": "Person"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-33-google-vs-openai-una",
+      "original_date": "2024-05-15",
+      "topics": [
+        "futures",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/033/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/033.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/gabriela-ortega/"
+      ]
+    },
+    {
+      "id": "032",
+      "issue_number": 32,
+      "title": "AI’s future and social impact debated at estrategIA’s first event at ESIC University",
+      "description": "A historical report from estrategIA's first event, covering AI regulation, public services, work and education through the speakers' contributions.",
+      "author": {
+        "name": "ALEPH team",
+        "url": null,
+        "type": "Organization"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-32-el-impacto-de-la-inteligencia",
+      "original_date": "2024-05-08",
+      "topics": [
+        "government",
+        "work",
+        "learning"
+      ],
+      "genre": "report",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/032/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/032.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "031",
+      "issue_number": 31,
+      "title": "Beyond automation: artificial intelligence and its cross-cutting impact on work",
+      "description": "Pilar Mairal Medina examines AI and work beyond automation, from reskilling and organisational culture to interdisciplinary collaboration and a new work ethic.",
+      "author": {
+        "name": "Pilar Mairal Medina",
+        "url": "https://www.linkedin.com/in/pilarmairal?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-31-desafiando-los-paradigmas",
+      "original_date": "2024-05-01",
+      "topics": [
+        "work",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/031/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/031.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "030",
+      "issue_number": 30,
+      "title": "Continuing our experiment in creating and developing an AI-generated political party for the European Parliament elections",
+      "description": "A historical test of generative AI for a fictional electoral campaign: objectives, messages, talking points, poster designs and songs.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-30-ia-en-el-campo-de-batalla",
+      "original_date": "2024-04-24",
+      "topics": [
+        "democracy",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/030/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/030.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "029",
+      "issue_number": 29,
+      "title": "“Elena Vidal”: an AI-generated political profile for the European Parliament elections",
+      "description": "A historical experiment creating a fictional European Parliament candidate with GPT-4 and Midjourney, including her profile, SWOT analysis, speech and interview.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-29-inteligencia-artificial",
+      "original_date": "2024-04-17",
+      "topics": [
+        "democracy",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/029/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/029.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "028",
+      "issue_number": 28,
+      "title": "estrategIA’s “electoral” experiment: generative artificial intelligence as the creator and promoter of a new political party",
+      "description": "A historical experiment using generative AI to create the identity, policies, logo and website of a fictional pro-European, Stoic political party.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-28-explorando-las-posibilidades",
+      "original_date": "2024-04-10",
+      "topics": [
+        "democracy",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/028/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/028.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "027",
+      "issue_number": 27,
+      "title": "Six months of AI with estrategIA: discoveries, dilemmas and future directions",
+      "description": "A six-month retrospective on disinformation, models, European regulation and the AI trends identified for 2024.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-27-seis-meses-de-avances",
+      "original_date": "2024-04-03",
+      "topics": [
+        "futures",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/027/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/027.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "026",
+      "issue_number": 26,
+      "title": "Singapore: shaping the future in the light of artificial intelligence",
+      "description": "Fernando Ujaldón examines Singapore’s national AI strategy, public-service projects, workforce preparation and lessons for other countries.",
+      "author": {
+        "name": "Fernando Ujaldón",
+        "url": "https://www.linkedin.com/in/fujaldon/",
+        "evidence_line": 89,
+        "status": "explicit_article_byline"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-26-la-estrategia-nacional",
+      "original_date": "2024-03-27",
+      "topics": [
+        "government",
+        "learning",
+        "sovereignty"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/026/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/026.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "025",
+      "issue_number": 25,
+      "title": "The AI Act through AI’s eyes: using the most advanced text models—or trying to—to analyse the EU law in full",
+      "description": "A March 2024 experiment analysing the full AI Act with language models, preserving seven questions and answers, context-window tests and observed costs.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null,
+        "evidence_line": 310,
+        "status": "explicit_article_byline"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-25-explorando-la-ai-act",
+      "original_date": "2024-03-20",
+      "topics": [
+        "government",
+        "practice"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/025/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/025.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "024",
+      "issue_number": 24,
+      "title": "Claude 3 versus GPT-4: comparing Anthropic’s new AI with the current leader on political prompts",
+      "description": "A historical comparison of Claude 3 Opus and GPT-4 using two political and public-policy prompts, with all four responses preserved in full.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null,
+        "evidence_line": 217,
+        "status": "explicit_article_byline"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-24-evaluando-los-modelos",
+      "original_date": "2024-03-13",
+      "topics": [
+        "practice",
+        "government",
+        "democracy"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/024/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/024.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "023",
+      "issue_number": 23,
+      "title": "A proof of concept: using generative image AI (Midjourney) to enhance a candidate’s image",
+      "description": "A March 2024 educational proof of concept using Midjourney images of Emmanuel Macron to examine political narratives, synthetic imagery and deepfake risks.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null,
+        "evidence_line": 140,
+        "status": "explicit_article_byline"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-23-narrativas-visuales",
+      "original_date": "2024-03-06",
+      "topics": [
+        "democracy",
+        "practice"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/023/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/023.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "022",
+      "issue_number": 22,
+      "title": "Challenges and uses of AI in public affairs",
+      "description": "Gustavo Fedi examines the distinction between generative and predictive AI, the challenges of measurement and six emerging applications in public affairs.",
+      "author": {
+        "name": "Gustavo Fedi",
+        "url": "https://www.linkedin.com/in/gustavofedi",
+        "evidence_line": 45,
+        "status": "explicit_article_byline"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-22-la-era-de-la-inteligencia",
+      "original_date": "2024-02-28",
+      "topics": [
+        "government",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/022/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/022.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "021",
+      "issue_number": 21,
+      "title": "Sora: a leap forward in realistic AI video that calls for a coordinated social response",
+      "description": "Sora’s February 2024 announcement, its potential for political communication and the need for a coordinated response to realistic synthetic video.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null,
+        "evidence_line": 47,
+        "status": "explicit_article_byline"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-21-revolucion-audiovisual",
+      "original_date": "2024-02-21",
+      "topics": [
+        "democracy",
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/021/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/021.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "020",
+      "issue_number": 20,
+      "title": "Gemini Ultra under scrutiny: exploring the capabilities and problems of Google’s latest AI",
+      "description": "A historical first assessment of Gemini Ultra in February 2024, including its political-content restrictions, benchmark claims and image-generation examples.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null,
+        "evidence_line": 108,
+        "status": "explicit_article_byline"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-20-google-lanza-el-modelo",
+      "original_date": "2024-02-14",
+      "topics": [
+        "practice",
+        "democracy"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/020/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/020.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "019",
+      "issue_number": 19,
+      "title": "AI: our key ally in first-class training",
+      "description": "Santiago Comadira describes ALEPH’s use of AI to build an immersive electoral training exercise and shares five lessons for educators.",
+      "author": {
+        "name": "Santiago Comadira",
+        "url": null,
+        "evidence_line": 45,
+        "status": "explicit_article_byline"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-19-inteligencia-artificial",
+      "original_date": "2024-02-07",
+      "topics": [
+        "learning",
+        "practice",
+        "democracy"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/019/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/019.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published"
+    },
+    {
+      "id": "018",
+      "issue_number": 18,
+      "title": "Artificial intelligence at the heart of the political, economic and social agenda at Davos 2024",
+      "description": "Employment, disinformation and science at Davos 2024, and the tension between AI optimism, regulation and inequality.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null,
+        "evidence_line": 68,
+        "status": "explicit_article_byline"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-18-davos-2024-la-inteligencia",
+      "original_date": "2024-01-31",
+      "topics": [
+        "work",
+        "government",
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/018/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/018.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "017",
+      "issue_number": 17,
+      "title": "AI advances unveiled at CES with particular potential for politics and government",
+      "description": "Holograms, real-time interpreting and portable AI devices at CES 2024, considered through their possible uses in politics and public administration.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null,
+        "evidence_line": 65,
+        "status": "explicit_article_byline"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-17-de-la-cabina-de-hologramas",
+      "original_date": "2024-01-24",
+      "topics": [
+        "practice",
+        "government"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/017/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/017.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "016",
+      "issue_number": 16,
+      "title": "Five interesting categories of AI proto-agents already in OpenAI’s new GPT Store",
+      "description": "A historical exploration of five types of GPT assistants for politics and government at the launch of OpenAI’s GPT Store.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null,
+        "evidence_line": 105,
+        "status": "explicit_article_byline"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-16-la-llegada-de-los-primeros",
+      "original_date": "2024-01-17",
+      "topics": [
+        "practice",
+        "government",
+        "democracy"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/016/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/016.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "015",
+      "issue_number": 15,
+      "title": "Artificial intelligence in the 2024 US elections: opportunities, risks and solutions",
+      "description": "An examination of the opportunities, disinformation risks and safeguards surrounding AI in the 2024 US elections.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null,
+        "evidence_line": 75,
+        "status": "explicit_article_byline"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-15-entre-la-personalizacion",
+      "original_date": "2024-01-10",
+      "topics": [
+        "democracy",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/015/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/015.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "014",
+      "issue_number": 14,
+      "title": "The rise of AI: key predictions for 2024",
+      "description": "Five AI trends predicted at the start of 2024, plus the expected impact of AI on the US elections and public perceptions.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-14-horizonte-2024-las",
+      "original_date": "2024-01-03",
+      "topics": [
+        "futures",
+        "democracy"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/014/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/014.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "012",
+      "issue_number": 12,
+      "title": "Discover 10 AI-related gift ideas for Christmas",
+      "description": "The original Christmas 2023 selection of five AI-related books or series and five devices, with historical product descriptions and links.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-12-innovacion-bajo-el",
+      "original_date": "2023-12-20",
+      "topics": [
+        "practice",
+        "learning"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/012/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/012.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "011",
+      "issue_number": 11,
+      "title": "Marathon EU negotiations culminate in agreement on the world's first cross-sector AI law",
+      "description": "The December 2023 provisional AI Act agreement, its biometric safeguards and the debate over Europe's ability to combine regulation with innovation.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-11-la-union-europea-se",
+      "original_date": "2023-12-13",
+      "topics": [
+        "government",
+        "sovereignty"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/011/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/011.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "010",
+      "issue_number": 10,
+      "title": "A year of artificial intelligence: the ChatGPT revolution and its global consequences",
+      "description": "ChatGPT's first anniversary, viewed from December 2023 through adoption charts, competing models and early evidence about AI in consulting and education.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-10-chatgpt-y-la-era-de",
+      "original_date": "2023-12-06",
+      "topics": [
+        "work",
+        "futures"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/010/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/010.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "009",
+      "issue_number": 9,
+      "title": "Create your own virtual proto-agent: a guide to developing GPTs for any task",
+      "description": "A historical November 2023 walkthrough of the GPT Builder, with complete screenshot dialogues for Tweet Master and examples of other customised assistants.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-9-personalice-su-inteligencia",
+      "original_date": "2023-11-29",
+      "topics": [
+        "practice"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/009/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/009.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "008",
+      "issue_number": 8,
+      "title": "The end of OpenAI? Sam Altman's dismissal unleashes a storm in the AI world",
+      "description": "A contemporaneous account of OpenAI's November 2023 leadership crisis and the tensions between research, commercial deployment, safety and corporate power.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-8-juego-de-tronos-en-openai",
+      "original_date": "2023-11-22",
+      "topics": [
+        "sovereignty",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/008/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/008.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "007",
+      "issue_number": 7,
+      "title": "AI agents: a new way of interacting with technology",
+      "description": "Bill Gates’s vision of personal AI agents prompts an exploration of hypothetical applications in public services, participation, policy analysis and scrutiny.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-7-agentes-de-ia-redefiniendo",
+      "original_date": "2023-11-15",
+      "topics": [
+        "practice",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/007/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/007.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "006",
+      "issue_number": 6,
+      "title": "The first major international AI safety summit: seeking harmony between progress and precaution",
+      "description": "The 2023 Bletchley Park summit brought agreements on AI safety, while leaving difficult questions about regulation, openness and international cooperation.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-6-la-primera-gran-conferencia",
+      "original_date": "2023-11-08",
+      "topics": [
+        "futures",
+        "sovereignty"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/006/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/006.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "005",
+      "issue_number": 5,
+      "title": "AI innovations transforming public safety and the environment: Time's chosen inventions of 2023",
+      "description": "Three inventions selected by Time in 2023 show how AI can support wildfire detection, wildlife protection and urban drone security.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-5-los-inventos-de-ia-elegidos",
+      "original_date": "2023-11-01",
+      "topics": [
+        "government",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/005/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/005.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "004",
+      "issue_number": 4,
+      "title": "The silent battle: China, the United States and the race for AI supremacy",
+      "description": "Pablo Martín Diez examines Kai-Fu Lee's account of China's AI advantages and the social contract needed in a world reshaped by automation.",
+      "author": {
+        "name": "Pablo Martín Diez",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-4-y-si-china-lidera-la",
+      "original_date": "2023-10-25",
+      "topics": [
+        "sovereignty",
+        "work"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/004/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/004.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/pablo-martin-diez/"
+      ]
+    },
+    {
+      "id": "003",
+      "issue_number": 3,
+      "title": "AI's new frontier: multimodality and its applications in politics — GPT-4 V(ision)",
+      "description": "Three historical GPT-4 Vision experiments from October 2023: election posters, a campaign website and the appearance of a fictional candidate.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-3-como-aplicar-la-capacidad",
+      "original_date": "2023-10-18",
+      "topics": [
+        "practice",
+        "democracy"
+      ],
+      "genre": "practical_experiment",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/003/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/003.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "002",
+      "issue_number": 2,
+      "title": "AI at a political crossroads: Mustafa Suleyman on the containment problem",
+      "description": "Mustafa Suleyman's ten steps for containing advanced technologies, and what they demand of governments and international cooperation.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-2-ia-la-encrucijada-politica",
+      "original_date": "2023-10-11",
+      "topics": [
+        "government",
+        "sovereignty"
+      ],
+      "genre": "review_or_commentary",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/002/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/002.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
+      "id": "001",
+      "issue_number": 1,
+      "title": "The industrialisation of disinformation: a new era on the horizon",
+      "description": "Generative AI could make convincing political disinformation cheap and widely available, with particular risks for local democracy.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-1",
+      "original_date": "2023-10-04",
+      "topics": [
+        "democracy"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/001/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/001.md",
+      "english_publication_date": "2026-09-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    }
+  ]
+}

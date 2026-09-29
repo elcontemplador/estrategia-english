@@ -8,9 +8,9 @@
     "name": "Institución Educativa ALEPH",
     "url": "https://institucioneducativaaleph.com/"
   },
-  "human_approval": "pending",
-  "publication_date": null,
-  "training_policy": "pending",
+  "human_approval": "approved",
+  "publication_date": "2026-09-29",
+  "training_policy": "allow",
   "pilot_issues": [
     1,
     50,

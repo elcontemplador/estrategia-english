@@ -17,7 +17,9 @@ def verify(folder):
     for name, path in files.items():
         if path.is_symlink() or hashlib.sha256(path.read_bytes()).hexdigest() != seal[name]:
             raise ValueError("Release checksum mismatch: " + name)
-        if path.suffix == ".html" and 'name="robots" content="noindex' in path.read_text(encoding="utf-8"):
+        # Public error documents are deliberately noindex. The exception is
+        # restricted to the generator's two exact routes, never nested pages.
+        if path.suffix == ".html" and name not in {"404.html", "404/index.html"} and 'name="robots" content="noindex' in path.read_text(encoding="utf-8"):
             raise ValueError("Review page in public release: " + name)
     catalog = json.loads((folder / "catalog.json").read_text(encoding="utf-8"))
     if catalog.get("status") != "published" or len(catalog["articles"]) != manifest["article_count"]:

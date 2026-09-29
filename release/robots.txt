@@ -1,0 +1,4 @@
+# For a project subpath, the origin-level robots.txt remains authoritative.
+User-agent: *
+Allow: /
+Sitemap: https://elcontemplador.github.io/estrategia-english/sitemap.xml
