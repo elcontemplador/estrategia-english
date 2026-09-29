@@ -5,6 +5,7 @@
       "aliases": [
         "Fernando Nieto Lobato"
       ],
+      "group": "editorial",
       "role": "Founder, director and lead writer",
       "bio": "Fernando Nieto Lobato created estrategIA in 2023 and directs the publication as its lead writer. He is Director of Marketing and Digital Innovation at ALEPH Educational Institution. Based in Salamanca, he works across strategic consultancy, communication and technology, with a particular interest in how artificial intelligence changes politics, public institutions and the decisions they make.\n\nHe studied journalism and founded ThinkNet Consultora Estratégica in 2014. His work has involved political campaigns, public administrations, businesses and third-sector organisations, alongside teaching and the design of training programmes and political simulations. In estrategIA, he examines both practical applications of AI and their implications for democratic life, connecting technological developments with questions of public responsibility, institutional capacity and judgement.",
       "url": "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/",
@@ -146,6 +147,7 @@
       "aliases": [
         "Pablo Martín Diez"
       ],
+      "group": "editorial",
       "role": "Editor and contributor",
       "bio": "Pablo Martín Diez is the editor of estrategIA and Academic Director of ALEPH Educational Institution. His professional work spans political communication, leadership, electoral campaigns and crisis management. He has led training and consultancy projects for political institutions and universities in Europe, the Americas and Africa, and has taught at the Universidad Internacional de La Rioja and universities in Latin America.\n\nHis work also addresses the use of generative AI in politics and the challenges it poses for education and organisations. His contributions to estrategIA include reflections on democratic ethics, the changing role of teachers and the social contract in an age of AI. He combines these subjects with a background in history, journalism and political communication.",
       "url": "https://elcontemplador.github.io/estrategia-english/people/pablo-martin-diez/",
@@ -179,6 +181,7 @@
       "aliases": [
         "Sofía García Morales"
       ],
+      "group": "editorial",
       "role": "Editorial review and proofreading",
       "bio": "Sofía García Morales is responsible for editorial review and proofreading at estrategIA. She is also responsible for online communication at ALEPH Educational Institution, where she works as a consultant. Alongside her editorial work, she contributes reporting on the practical questions that public institutions face as they begin to use artificial intelligence.\n\nHer account of MUNICIP-IA, a public-sector AI event in Galapagar, examines municipal services, institutional readiness and the political implications of technological change. The report explores how councils can set priorities, develop internal capabilities and apply AI with an understanding of its limits. It also considers digital sovereignty and the wider challenges that changes in work and education pose for public decision-making.",
       "url": "https://elcontemplador.github.io/estrategia-english/people/sofia-garcia-morales/",
@@ -200,30 +203,427 @@
       ]
     },
     {
+      "name": "Alejandro Ulloa García",
+      "aliases": [
+        "Alejandro Ulloa García"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Alejandro Ulloa García in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/alejandro-ulloa-garcia/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/092/"
+      ]
+    },
+    {
+      "name": "Carlos Guadián",
+      "aliases": [
+        "Carlos Guadián"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Carlos Guadián in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/carlos-guadian/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/060/"
+      ]
+    },
+    {
+      "name": "Carlos López Ariztegui",
+      "aliases": [
+        "Carlos López Ariztegui"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Carlos López Ariztegui in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/carlos-lopez-ariztegui/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/126/"
+      ]
+    },
+    {
+      "name": "César Batiz",
+      "aliases": [
+        "César Batiz"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by César Batiz in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/cesar-batiz/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/062/"
+      ]
+    },
+    {
+      "name": "Fernando Domínguez Sardou",
+      "aliases": [
+        "Fernando Domínguez Sardou"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Fernando Domínguez Sardou in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/fernando-dominguez-sardou/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/058/"
+      ]
+    },
+    {
+      "name": "Fernando Ujaldón",
+      "aliases": [
+        "Fernando Ujaldón"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Fernando Ujaldón in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/fernando-ujaldon/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/026/"
+      ]
+    },
+    {
       "name": "Gabriela Ortega Jarrín",
       "aliases": [
         "Gabriela Ortega Jarrín",
         "Gabriela Ortega"
       ],
-      "role": "Contributor · Strategy Director at ALEPH",
-      "bio": "Gabriela Ortega Jarrín is Strategy Director at ALEPH Educational Institution and a contributor to estrategIA. A political consultant, she has worked with electoral campaigns and public institutions in Spain and Latin America. She holds a doctorate in Public Communication from the Universidad Complutense de Madrid, and her research examines intangible assets and brand management in the public sector.\n\nHer professional experience combines consultancy with university teaching and publications on political and institutional communication. For estrategIA, she has written about developments from OpenAI and Google and reported from Google Cloud Summit Madrid 2025. Her summit account examines public services, digital sovereignty, skills and regulation, placing the technology presented at the event in the context of public-sector decisions.",
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Gabriela Ortega Jarrín in estrategIA, with original publication dates and links to the Spanish sources.",
       "url": "https://elcontemplador.github.io/estrategia-english/people/gabriela-ortega/",
-      "links": [
-        {
-          "label": "ALEPH profile",
-          "url": "https://institucioneducativaaleph.com/maria-gabriela-ortega-jarrin/",
-          "language": "Spanish",
-          "identity": true
-        },
-        {
-          "label": "ALEPH team",
-          "url": "https://institucioneducativaaleph.com/equipo/",
-          "language": "Spanish"
-        }
-      ],
+      "links": [],
       "articles": [
         "https://elcontemplador.github.io/estrategia-english/essays/088/",
         "https://elcontemplador.github.io/estrategia-english/essays/033/"
+      ]
+    },
+    {
+      "name": "Genesis Dejaneyra Cadenasso Correa",
+      "aliases": [
+        "Genesis Dejaneyra Cadenasso Correa"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Genesis Dejaneyra Cadenasso Correa in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/genesis-dejaneyra-cadenasso-correa/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/130/"
+      ]
+    },
+    {
+      "name": "Gustavo Fedi",
+      "aliases": [
+        "Gustavo Fedi"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Gustavo Fedi in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/gustavo-fedi/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/022/"
+      ]
+    },
+    {
+      "name": "Harvey Sánchez-Restrepo",
+      "aliases": [
+        "Harvey Sánchez-Restrepo"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Harvey Sánchez-Restrepo in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/harvey-sanchez-restrepo/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/122/"
+      ]
+    },
+    {
+      "name": "Ignacio Martín Granados",
+      "aliases": [
+        "Ignacio Martín Granados"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Ignacio Martín Granados in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/ignacio-martin-granados/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/106/",
+        "https://elcontemplador.github.io/estrategia-english/essays/102/"
+      ]
+    },
+    {
+      "name": "Javier Battilana Urbieta",
+      "aliases": [
+        "Javier Battilana Urbieta"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Javier Battilana Urbieta in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/javier-battilana-urbieta/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/112/"
+      ]
+    },
+    {
+      "name": "Javier Naranjo Sanjuan",
+      "aliases": [
+        "Javier Naranjo Sanjuan"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Javier Naranjo Sanjuan in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/javier-naranjo-sanjuan/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/054/"
+      ]
+    },
+    {
+      "name": "Josep M. (Pep) Martorell",
+      "aliases": [
+        "Josep M. (Pep) Martorell"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Josep M. (Pep) Martorell in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/josep-m-pep-martorell/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/099/"
+      ]
+    },
+    {
+      "name": "Juan Segundo Hevia",
+      "aliases": [
+        "Juan Segundo Hevia"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Juan Segundo Hevia in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/juan-segundo-hevia/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/139/"
+      ]
+    },
+    {
+      "name": "Katherine Lizeth Bernal Santos",
+      "aliases": [
+        "Katherine Lizeth Bernal Santos"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Katherine Lizeth Bernal Santos in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/katherine-lizeth-bernal-santos/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/130/"
+      ]
+    },
+    {
+      "name": "Luis Eduardo Paniagua Martín",
+      "aliases": [
+        "Luis Eduardo Paniagua Martín"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Luis Eduardo Paniagua Martín in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/luis-eduardo-paniagua-martin/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/109/"
+      ]
+    },
+    {
+      "name": "Maria Antônia de Medeiros Dantas Costa",
+      "aliases": [
+        "Maria Antônia de Medeiros Dantas Costa"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Maria Antônia de Medeiros Dantas Costa in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/maria-antonia-de-medeiros-dantas-costa/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/130/"
+      ]
+    },
+    {
+      "name": "María Fernanda Pech Novelo",
+      "aliases": [
+        "María Fernanda Pech Novelo"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by María Fernanda Pech Novelo in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/maria-fernanda-pech-novelo/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/130/"
+      ]
+    },
+    {
+      "name": "Martín Sosa Dirié",
+      "aliases": [
+        "Martín Sosa Dirié"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Martín Sosa Dirié in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/martin-sosa-dirie/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/078/",
+        "https://elcontemplador.github.io/estrategia-english/essays/067/"
+      ]
+    },
+    {
+      "name": "Martín Telleria",
+      "aliases": [
+        "Martín Telleria"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Martín Telleria in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/martin-telleria/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/130/"
+      ]
+    },
+    {
+      "name": "Mauricio Pilleux",
+      "aliases": [
+        "Mauricio Pilleux"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Mauricio Pilleux in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/mauricio-pilleux/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/084/"
+      ]
+    },
+    {
+      "name": "Pilar Mairal Medina",
+      "aliases": [
+        "Pilar Mairal Medina"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Pilar Mairal Medina in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/pilar-mairal-medina/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/031/"
+      ]
+    },
+    {
+      "name": "Ray Acosta",
+      "aliases": [
+        "Ray Acosta"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Ray Acosta in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/ray-acosta/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/035/"
+      ]
+    },
+    {
+      "name": "Román Robles Valades",
+      "aliases": [
+        "Román Robles Valades"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Román Robles Valades in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/roman-robles-valades/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/134/"
+      ]
+    },
+    {
+      "name": "Roxana Mazzola",
+      "aliases": [
+        "Roxana Mazzola"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Roxana Mazzola in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/roxana-mazzola/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/104/"
+      ]
+    },
+    {
+      "name": "Samuel José Vega Martínez",
+      "aliases": [
+        "Samuel José Vega Martínez"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Samuel José Vega Martínez in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/samuel-jose-vega-martinez/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/130/"
+      ]
+    },
+    {
+      "name": "Santiago Comadira",
+      "aliases": [
+        "Santiago Comadira"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Santiago Comadira in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/santiago-comadira/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/019/"
+      ]
+    },
+    {
+      "name": "Steeven Johannes Flor Pio",
+      "aliases": [
+        "Steeven Johannes Flor Pio"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Steeven Johannes Flor Pio in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/steeven-johannes-flor-pio/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/130/"
+      ]
+    },
+    {
+      "name": "Valentina Silva Schmidt",
+      "aliases": [
+        "Valentina Silva Schmidt"
+      ],
+      "group": "guest",
+      "role": "Guest author",
+      "bio": "Read the essays by Valentina Silva Schmidt in estrategIA, with original publication dates and links to the Spanish sources.",
+      "url": "https://elcontemplador.github.io/estrategia-english/people/valentina-silva-schmidt/",
+      "links": [],
+      "articles": [
+        "https://elcontemplador.github.io/estrategia-english/essays/130/"
       ]
     }
   ]

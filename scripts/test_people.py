@@ -21,6 +21,7 @@ class PeopleBuildTests(unittest.TestCase):
     def profile(self, name='Gabriela Ortega Jarr\u00edn', slug='gabriela-ortega', aliases=None):
         return {
             'slug': slug, 'name': name, 'aliases': aliases or [name],
+            'group': 'editorial',
             'role': 'Fictional fixture role',
             'bio': 'Synthetic biography for isolated testing only.',
             'short_bio': 'Synthetic test biography.',
@@ -108,7 +109,7 @@ class PeopleBuildTests(unittest.TestCase):
         _, article = self.schema(output, 130)
         self.assertEqual([author['name'] for author in article['author']],
                          [author['name'] for author in people])
-        self.assertEqual([i for i, author in enumerate(article['author']) if '@id' in author], [0, 6])
+        self.assertEqual([i for i, author in enumerate(article['author']) if '@id' in author], list(range(8)))
         for slug in ['first-author', 'seventh-author']:
             page = self.profile_output(output, slug)[1]
             self.assertEqual([part['url'] for part in page['hasPart']],
@@ -205,6 +206,42 @@ class PeopleBuildTests(unittest.TestCase):
         self.assertEqual(page['mainEntity']['sameAs'], ['https://example.test/person/'])
         profile['links'][0]['identity'] = False
         self.assertNotIn('sameAs', profile_schema(profile, [], 'https://example.test/archive/')['mainEntity'])
+
+    def test_guest_directory_is_complete_equal_and_respects_publication_boundary(self):
+        editor = self.profile('Main editor', 'main-editor')
+        guest = self.profile('Known guest', 'known-guest', ['Known guest', 'Guest alias'])
+        guest['group'] = 'guest'
+        self.save_profiles([editor, guest])
+        self.article(1, [{'name': 'Guest alias'}, {'name': 'Another guest'}])
+        self.article(2)
+        self.update_article(2, author={'name': 'Known guest'})
+        self.article(3)
+        self.update_article(3, author={'name': 'Draft-only guest'}, human_approval='pending', english_publication_date=None)
+        self.article(4)
+        self.update_article(4, author={'name': 'Collective credit', 'type': 'Organization'})
+        output = self.run_build('public')
+        directory = json.loads((output/'people.json').read_text())['people']
+        self.assertEqual([(p['name'], p['group']) for p in directory], [
+            ('Main editor', 'editorial'), ('Another guest', 'guest'), ('Known guest', 'guest')])
+        guests = directory[1:]
+        self.assertTrue(all(p['role'] == 'Guest author' for p in guests))
+        self.assertEqual([len(p['articles']) for p in guests], [1, 2])
+        page = (output/'people/index.html').read_text(encoding='utf-8')
+        staff, invited = page.split('<h2 id="guest-authors">')
+        self.assertNotIn('Known guest', staff)
+        self.assertNotIn('Another guest', staff)
+        self.assertIn('Known guest', invited)
+        self.assertIn('Another guest', invited)
+        self.assertNotIn('Draft-only guest', page)
+        self.assertNotIn('Collective credit', page)
+        for slug in ['known-guest', 'another-guest']:
+            html, _ = self.profile_output(output, slug)
+            self.assertIn('Guest author', html)
+            self.assertNotIn('Synthetic biography', html)
+            self.assertNotIn('Elsewhere', html)
+        self.assertNotIn('class="author-note"', self.schema(output, 1)[0])
+        review = self.run_build('review')
+        self.assertIn('Draft-only guest', (review/'people/index.html').read_text())
 
 
 if __name__ == '__main__':

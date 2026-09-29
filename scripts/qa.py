@@ -4,7 +4,7 @@ from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
 import xml.etree.ElementTree as ET
-from people import load_profiles, profile_for, route as profile_route, author_entity, contributions
+from people import load_profiles, profile_for, route as profile_route, author_entity, contributions, archive_profiles
 from discovery import social_image
 ROOT=Path(__file__).resolve().parents[1]
 class Page(HTMLParser):
@@ -82,6 +82,12 @@ def run(folder):
             check(target.is_file(),f"{path}: missing target {link}")
             if parsed.fragment and target in pages:check(unquote(parsed.fragment) in pages[target].ids,f"{path}: missing anchor {link}")
     catalog=json.loads((base/"catalog.json").read_text(encoding="utf-8"))
+    profiles=archive_profiles(profiles,catalog['articles'])
+    people_export=json.loads((base/'people.json').read_text(encoding='utf-8'))['people']
+    check([(p['name'],p['group']) for p in people_export]==[(p['name'],p['group']) for p in profiles], 'People export includes every guest and editorial profile in order')
+    directory=(base/'people/index.html').read_text(encoding='utf-8')
+    for profile in profiles:
+        check(prefix+profile_route(profile) in directory,profile['slug']+': listed in people directory')
     check(len(catalog["articles"])==manifest["article_count"],"Catalogue count")
     for r in catalog["articles"]:
         check(bool(r["original_date"] and r["original_url"]),r["id"]+": missing provenance")

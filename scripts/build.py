@@ -9,7 +9,7 @@ from discovery import (article_schema, collection_schema, site_schema,
                        breadcrumb_schema, organisation_schema, social_meta, article_images, social_image)
 from reading_media import enhance_images, IMAGE_VIEWER
 from people import (load_profiles, profile_for, route as profile_route, authors,
-                    contributions, enrich_article, profile_schema)
+                    contributions, enrich_article, profile_schema, archive_profiles)
 from release_gate import (editorial_fingerprint, validate_article_release,
                           previous_publication_dates, validate_training_policy)
 
@@ -86,6 +86,7 @@ def main():
         record["genre_label"]=GENRES.get(record.get("genre"),"Essay")
         records.append(record)
     if not records: raise ValueError("No eligible translated essays.")
+    profiles=archive_profiles(profiles,records)
     if not review:
         if config.get("human_approval")!="approved":
             raise ValueError("Public release requires explicit editorial acceptance of the edition.")
@@ -152,7 +153,15 @@ def main():
         name=author.get("name") or "Byline not stated in original"
         return '<a href="'+e(href)+'">'+e(name)+'</a>' if href else e(name)
     def team_cards():
-        return '<div class="people-grid">'+''.join('<article class="person-card"><p class="eyebrow">'+e(p['role'])+'</p><h3><a href="'+url(profile_route(p))+'">'+e(p['name'])+'</a></h3><p>'+e(p['short_bio'])+'</p><a class="text-link" href="'+url(profile_route(p))+'">Profile and essays <span aria-hidden="true">→</span></a></article>' for p in profiles)+'</div>'
+        return '<div class="people-grid">'+''.join('<article class="person-card"><p class="eyebrow">'+e(p['role'])+'</p><h3><a href="'+url(profile_route(p))+'">'+e(p['name'])+'</a></h3><p>'+e(p['short_bio'])+'</p><a class="text-link" href="'+url(profile_route(p))+'">Profile and essays <span aria-hidden="true">→</span></a></article>' for p in profiles if p['group']=='editorial')+'</div>'
+    def guest_cards():
+        cards=[]
+        for p in profiles:
+            if p['group']!='guest': continue
+            selected=contributions(p,records)
+            count=str(len(selected))+(' essay' if len(selected)==1 else ' essays')
+            cards.append('<article class="person-card"><p class="eyebrow">Guest author</p><h3><a href="'+url(profile_route(p))+'">'+e(p['name'])+'</a></h3><p>'+count+', including co-authored work.</p><a class="text-link" href="'+url(profile_route(p))+'">Read the essays <span aria-hidden="true">→</span></a></article>')
+        return '<section class="team-section" aria-labelledby="guest-authors"><div class="section-heading"><div><p class="eyebrow">Contributions to the archive</p><h2 id="guest-authors">Guest authors</h2><p>Listed alphabetically by name, including co-authors. Each essay retains its own byline and perspective.</p></div></div><div class="people-grid">'+''.join(cards)+'</div></section>'
     records.sort(key=lambda r:r["issue_number"],reverse=True)
     lead=next((r for r in records if r["issue_number"]==155),records[0])
     years=sorted({r["original_date"][:4] for r in records if r.get("original_date")},reverse=True)
@@ -220,18 +229,20 @@ For the original presentation of the publication and its editorial approach, [re
 """
     about_path=ROOT/'content/site/about.md'
     if about_path.exists(): about_md=about_path.read_text(encoding='utf-8').replace('{{base_path}}',prefix)
-    team='<section class="team-section" aria-labelledby="team-title"><div class="section-heading"><div><p class="eyebrow">The people behind the publication</p><h2 id="team-title">Meet the team</h2></div><a href="'+url('people/')+'">All profiles <span aria-hidden="true">→</span></a></div>'+team_cards()+'</section>' if profiles else ''
+    team='<section class="team-section" aria-labelledby="team-title"><div class="section-heading"><div><p class="eyebrow">The people behind the publication</p><h2 id="team-title">Editorial team</h2></div><a href="'+url('people/')+'">Team and guest authors <span aria-hidden="true">→</span></a></div>'+team_cards()+'<p class="people-context">Guest authors bring additional perspectives to the archive. <a href="'+url('people/#guest-authors')+'">Meet all guest authors →</a></p></section>' if profiles else ''
     about='<header class="page-heading"><p class="eyebrow">People, ideas and public life</p><h1>About estrategIA</h1><p class="dek">A Spanish publication. An international conversation.<br>Three years of thinking about AI and public life.</p></header><div class="about-layout"><div class="prose">'+markdown.markdown(about_md,extensions=["extra","toc"])+'</div><aside class="about-brand"><img src="'+url("assets/estrategia-header.png")+'" alt="The original estrategIA publication header" width="756" height="502"><p>An editorial initiative of Institución Educativa ALEPH.</p>'+('<a class="text-link" href="#team-title">Meet the team ↓</a>' if profiles else '')+'</aside></div>'+team
     page("about/","About estrategIA","The people, purpose and editorial method behind estrategIA's English edition.",about,"About")
     if profiles:
-        page('people/','The people behind estrategIA','Meet the editorial team and contributors behind estrategIA, with English biographies and links to their essays.','<header class="page-heading"><p class="eyebrow">Ideas have authors</p><h1>The people behind estrategIA</h1><p class="dek">Meet the core editorial team and a regular contributor. The archive also includes guest authors, credited on each essay.</p></header>'+team_cards()+'<p class="people-context"><a href="'+url('about/')+'">Our purpose and editorial approach →</a></p>','About')
+        page('people/','The people behind estrategIA','Meet estrategIA’s editorial team and all guest authors, with links to their essays and original bylines.','<header class="page-heading"><p class="eyebrow">Ideas have authors</p><h1>The people behind estrategIA</h1><p class="dek">Fernando Nieto Lobato founded and directs estrategIA and is its principal writer. Pablo Martín Diez and Sofía García Morales work alongside him on editing and editorial review.</p><a class="text-link" href="#guest-authors">Explore the guest authors ↓</a></header><section aria-labelledby="editorial-team"><div class="section-heading"><h2 id="editorial-team">Editorial team</h2></div>'+team_cards()+'</section>'+guest_cards()+'<p class="people-context"><a href="'+url('about/')+'">Our purpose and editorial approach →</a></p>','About')
     for profile in profiles:
         selected=contributions(profile,records)
         links=''.join('<li><a href="'+e(link['url'])+'"'+(' hreflang="es"' if link['language']=='Spanish' else '')+'>'+e(link['label'])+' <span aria-hidden="true">↗</span></a><span class="link-language">'+e(link['language'])+'</span></li>' for link in profile['links'])
         bio=''.join('<p>'+e(paragraph)+'</p>' for paragraph in profile['bio'].split('\n\n'))
         content='<header class="page-heading profile-heading"><p class="eyebrow">'+e(profile['role'])+'</p><h1>'+e(profile['name'])+'</h1></header><div class="profile-layout"><div class="prose profile-bio">'+bio+'</div><aside class="profile-links" aria-label="More about '+e(profile['name'])+'"><h2>Elsewhere</h2><ul>'+links+'</ul><a class="text-link" href="'+url('people/')+'">Meet the team →</a></aside></div><section class="profile-essays" aria-labelledby="author-essays"><div class="section-heading"><div><p class="eyebrow">In the English archive</p><h2 id="author-essays">Essays by '+e(profile['name'])+'</h2><p>'+str(len(selected))+(' essay' if len(selected)==1 else ' essays')+', including co-authored work. Dates refer to the Spanish originals.</p></div></div><div class="archive-list">'+''.join(card(r) for r in selected)+'</div></section>'
+        if profile['group']=='guest':
+            content='<header class="page-heading profile-heading"><p class="eyebrow">Guest author</p><h1>'+e(profile['name'])+'</h1><p class="dek">'+e(profile['short_bio'])+'</p><a class="text-link" href="'+url('people/#guest-authors')+'">All guest authors →</a></header><section class="profile-essays" aria-labelledby="author-essays"><div class="section-heading"><div><h2 id="author-essays">Contributions to estrategIA</h2><p>'+str(len(selected))+(' essay' if len(selected)==1 else ' essays')+', including co-authored work. Dates refer to the Spanish originals.</p></div></div><div class="archive-list">'+''.join(card(r) for r in selected)+'</div></section>'
         page(profile_route(profile),profile['name'],profile['short_bio'],content,'About',profile_schema(profile,selected,base))
-    write('people.json',json.dumps({'people':[{'name':p['name'],'aliases':p['aliases'],'role':p['role'],'bio':p['bio'],'url':base+profile_route(p),'links':p['links'],'articles':[r['url'] for r in contributions(p,records)]} for p in profiles]},ensure_ascii=False,indent=2))
+    write('people.json',json.dumps({'people':[{'name':p['name'],'aliases':p['aliases'],'group':p['group'],'role':p['role'],'bio':p['bio'],'url':base+profile_route(p),'links':p['links'],'articles':[r['url'] for r in contributions(p,records)]} for p in profiles]},ensure_ascii=False,indent=2))
     catalogue=[]
     for r in records:
         raw=re.sub(r"^#\s+.+\r?\n", "",r["raw"],count=1).lstrip()
@@ -276,7 +287,7 @@ For the original presentation of the publication and its editorial approach, [re
         related.sort(key=lambda x:len(set(x["topics"])&set(r["topics"])),reverse=True)
         more='<section class="related"><div class="section-heading"><h2>Continue the conversation</h2></div><div class="essay-grid">'+"".join(card(x,"h3") for x in related[:3])+'</div></section>'
         matched=[p for p in profiles if any(profile_for(a,[p]) for a in authors(r))]
-        author_note=''.join('<aside class="author-note" aria-label="About '+e(p['name'])+'"><p class="eyebrow">'+('One of this essay’s co-authors' if people and len(people)>1 else 'About the author')+'</p><h2><a href="'+url(profile_route(p))+'">'+e(p['name'])+'</a></h2><p>'+e(p['short_bio'])+'</p><a class="text-link" href="'+url(profile_route(p))+'">Biography and essays →</a></aside>' for p in matched)
+        author_note=''.join('<aside class="author-note" aria-label="About '+e(p['name'])+'"><p class="eyebrow">'+('One of this essay’s co-authors' if people and len(people)>1 else 'About the author')+'</p><h2><a href="'+url(profile_route(p))+'">'+e(p['name'])+'</a></h2><p>'+e(p['short_bio'])+'</p><a class="text-link" href="'+url(profile_route(p))+'">Biography and essays →</a></aside>' for p in matched if p['group']=='editorial')
         schema=enrich_article(article_schema(r,config,base,review),r,profiles,base)
         page(r["route"],r["title"],r["description"],'<div id="reading-progress" aria-hidden="true"></div><article class="reading-article">'+headline+'<div class="article-layout">'+body+aside+'</div></article>'+author_note+more+IMAGE_VIEWER,"Essays",schema)
         export_header='# '+r["title"]+'\n\nAuthor: '+author_label(r)+'\nOriginal publication: '+str(r.get("original_date") or "unverified")+'\nSpanish original: '+r["original_url"]+'\nEnglish URL: '+r["url"]+'\nStatus: '+("Editorial review draft" if review else "Published translation")+'\n\n'+historical+'\n\n'

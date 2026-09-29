@@ -53,6 +53,8 @@ Public framework files alone do not contain the private editorial workspace. A f
 
 The generator creates `/people/`, individual English profiles and `people.json`. It resolves article bylines to those profiles without altering article metadata or original attribution. Profile essay lists include named coauthors and use explicit aliases only; collective authors remain organisations. Article and profile structured data share the same person identifiers. Biographies, provenance and profile references also appear in the discovery resources. The build manifest records hashes of the site copy separately from article fingerprints.
 
+The people directory separates the three explicitly designated editorial team members from guest authors. Every named guest and coauthor in the selected archive receives the same contribution page and an alphabetically ordered directory entry, regardless of affiliation. The registry preserves explicit aliases and existing profile routes; guests are discovered only from the articles eligible for that build, so unpublished contributors do not enter the public directory.
+
 ## Verification
 
 ```text

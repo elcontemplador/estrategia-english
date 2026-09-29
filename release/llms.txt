@@ -172,4 +172,33 @@ This archive translates only the main articles. The original Spanish newsletter 
 - [Fernando Nieto Lobato](https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/): Founder, director and lead writer
 - [Pablo Martín Diez](https://elcontemplador.github.io/estrategia-english/people/pablo-martin-diez/): Editor and contributor
 - [Sofía García Morales](https://elcontemplador.github.io/estrategia-english/people/sofia-garcia-morales/): Editorial review and proofreading
-- [Gabriela Ortega Jarrín](https://elcontemplador.github.io/estrategia-english/people/gabriela-ortega/): Contributor · Strategy Director at ALEPH
+- [Alejandro Ulloa García](https://elcontemplador.github.io/estrategia-english/people/alejandro-ulloa-garcia/): Guest author
+- [Carlos Guadián](https://elcontemplador.github.io/estrategia-english/people/carlos-guadian/): Guest author
+- [Carlos López Ariztegui](https://elcontemplador.github.io/estrategia-english/people/carlos-lopez-ariztegui/): Guest author
+- [César Batiz](https://elcontemplador.github.io/estrategia-english/people/cesar-batiz/): Guest author
+- [Fernando Domínguez Sardou](https://elcontemplador.github.io/estrategia-english/people/fernando-dominguez-sardou/): Guest author
+- [Fernando Ujaldón](https://elcontemplador.github.io/estrategia-english/people/fernando-ujaldon/): Guest author
+- [Gabriela Ortega Jarrín](https://elcontemplador.github.io/estrategia-english/people/gabriela-ortega/): Guest author
+- [Genesis Dejaneyra Cadenasso Correa](https://elcontemplador.github.io/estrategia-english/people/genesis-dejaneyra-cadenasso-correa/): Guest author
+- [Gustavo Fedi](https://elcontemplador.github.io/estrategia-english/people/gustavo-fedi/): Guest author
+- [Harvey Sánchez-Restrepo](https://elcontemplador.github.io/estrategia-english/people/harvey-sanchez-restrepo/): Guest author
+- [Ignacio Martín Granados](https://elcontemplador.github.io/estrategia-english/people/ignacio-martin-granados/): Guest author
+- [Javier Battilana Urbieta](https://elcontemplador.github.io/estrategia-english/people/javier-battilana-urbieta/): Guest author
+- [Javier Naranjo Sanjuan](https://elcontemplador.github.io/estrategia-english/people/javier-naranjo-sanjuan/): Guest author
+- [Josep M. (Pep) Martorell](https://elcontemplador.github.io/estrategia-english/people/josep-m-pep-martorell/): Guest author
+- [Juan Segundo Hevia](https://elcontemplador.github.io/estrategia-english/people/juan-segundo-hevia/): Guest author
+- [Katherine Lizeth Bernal Santos](https://elcontemplador.github.io/estrategia-english/people/katherine-lizeth-bernal-santos/): Guest author
+- [Luis Eduardo Paniagua Martín](https://elcontemplador.github.io/estrategia-english/people/luis-eduardo-paniagua-martin/): Guest author
+- [Maria Antônia de Medeiros Dantas Costa](https://elcontemplador.github.io/estrategia-english/people/maria-antonia-de-medeiros-dantas-costa/): Guest author
+- [María Fernanda Pech Novelo](https://elcontemplador.github.io/estrategia-english/people/maria-fernanda-pech-novelo/): Guest author
+- [Martín Sosa Dirié](https://elcontemplador.github.io/estrategia-english/people/martin-sosa-dirie/): Guest author
+- [Martín Telleria](https://elcontemplador.github.io/estrategia-english/people/martin-telleria/): Guest author
+- [Mauricio Pilleux](https://elcontemplador.github.io/estrategia-english/people/mauricio-pilleux/): Guest author
+- [Pilar Mairal Medina](https://elcontemplador.github.io/estrategia-english/people/pilar-mairal-medina/): Guest author
+- [Ray Acosta](https://elcontemplador.github.io/estrategia-english/people/ray-acosta/): Guest author
+- [Román Robles Valades](https://elcontemplador.github.io/estrategia-english/people/roman-robles-valades/): Guest author
+- [Roxana Mazzola](https://elcontemplador.github.io/estrategia-english/people/roxana-mazzola/): Guest author
+- [Samuel José Vega Martínez](https://elcontemplador.github.io/estrategia-english/people/samuel-jose-vega-martinez/): Guest author
+- [Santiago Comadira](https://elcontemplador.github.io/estrategia-english/people/santiago-comadira/): Guest author
+- [Steeven Johannes Flor Pio](https://elcontemplador.github.io/estrategia-english/people/steeven-johannes-flor-pio/): Guest author
+- [Valentina Silva Schmidt](https://elcontemplador.github.io/estrategia-english/people/valentina-silva-schmidt/): Guest author

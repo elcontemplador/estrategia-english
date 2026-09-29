@@ -40,7 +40,9 @@ class AuthorshipBuildTests(unittest.TestCase):
         self.assertEqual([p['name'] for p in schema['author']],[p['name'] for p in people])
         heading=text.split('<header class="article-heading">')[1].split('</header>')[0]
         self.assertIn('<span>Authors</span>',heading)
-        for person in people:self.assertIn('href="'+person['url']+'"',heading)
+        for i, person in enumerate(people, 1):
+            self.assertIn('href="/archive/people/test-author-'+str(i)+'/"',heading)
+            self.assertIn(person['name'],heading)
         self.assertEqual(next(r for r in json.loads((out/'catalog.json').read_text(encoding='utf-8'))['articles'] if r['id']=='001')['authors'],people)
         ns={'a':'http://www.w3.org/2005/Atom'};entries=sorted(ET.parse(out/'feed.xml').findall('a:entry',ns),key=lambda entry:entry.find('a:id',ns).text)
         self.assertEqual([x.text for x in entries[0].findall('a:author/a:name',ns)],[p['name'] for p in people])

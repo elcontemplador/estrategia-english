@@ -1,6 +1,7 @@
 """Explicit editorial identities, separate from immutable article metadata."""
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 
@@ -18,6 +19,8 @@ def load_profiles(root):
         if not re.fullmatch(r'[a-z0-9]+(?:-[a-z0-9]+)*', p['slug']) or p['slug'] in slugs:
             raise ValueError('Invalid or duplicate profile slug')
         slugs.add(p['slug'])
+        if p.get('group') not in ('editorial', 'guest'):
+            raise ValueError('Profile group must be editorial or guest')
         for key in ['name', 'role', 'bio', 'short_bio']:
             if not isinstance(p[key], str) or not p[key].strip():
                 raise ValueError('Missing profile field: ' + key)
@@ -39,6 +42,38 @@ def profile_for(author, profiles):
     if not author or author.get('type', 'Person') != 'Person':
         return None
     return next((p for p in profiles if author.get('name') in p['aliases']), None)
+
+
+def archive_profiles(registry, records):
+    """Include every named guest and coauthor, without inferring a staff role."""
+    profiles = [dict(p) for p in registry if p.get('group') == 'editorial']
+    guests = {}
+    used_slugs = {p['slug'] for p in profiles}
+    for record in records:
+        for author in authors(record):
+            if author.get('type', 'Person') != 'Person' or not author.get('name'):
+                continue
+            known = profile_for(author, registry)
+            if known and known.get('group') == 'editorial':
+                continue
+            name = known['name'] if known else author['name']
+            if name in guests:
+                continue
+            slug = known['slug'] if known else re.sub(
+                r'[^a-z0-9]+', '-', unicodedata.normalize('NFKD', name)
+                .encode('ascii', 'ignore').decode().lower()).strip('-')
+            if not slug or slug in used_slugs:
+                raise ValueError('Ambiguous guest profile slug: ' + name)
+            used_slugs.add(slug)
+            description = 'Read the essays by ' + name + ' in estrategIA, with original publication dates and links to the Spanish sources.'
+            guests[name] = {
+                'slug': slug, 'name': name,
+                'aliases': list(known['aliases']) if known else [name],
+                'group': 'guest', 'role': 'Guest author',
+                'short_bio': description, 'bio': description, 'links': [],
+            }
+    return profiles + sorted(guests.values(), key=lambda p: unicodedata.normalize(
+        'NFKD', p['name']).encode('ascii', 'ignore').decode().casefold())
 
 
 def route(profile):
