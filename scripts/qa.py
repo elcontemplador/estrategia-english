@@ -6,6 +6,7 @@ from urllib.parse import urlsplit,unquote
 import xml.etree.ElementTree as ET
 from people import load_profiles, profile_for, route as profile_route, author_entity, contributions, archive_profiles
 from discovery import social_image
+from reading_media import image_size
 ROOT=Path(__file__).resolve().parents[1]
 class Page(HTMLParser):
     def __init__(self): super().__init__();self.ids=set();self.links=[];self.images=[];self.h1=0;self.lang=None;self.canonical=[];self.robots=[];self.description=[];self.jsonld=[];self.capture=False;self.buf="";self.duplicates=[];self.meta={}
@@ -21,6 +22,8 @@ class Page(HTMLParser):
             value=a.get("src") if tag!="link" else a.get("href")
             if value:self.links.append(value)
         if tag=="img":self.images.append(a)
+        if tag=="img" and a.get('srcset'):
+            self.links.extend(candidate.strip().split()[0] for candidate in a['srcset'].split(','))
         if tag=="link" and a.get("rel")=="canonical":self.canonical.append(a.get("href"))
         if tag=="meta" and a.get("name")=="robots":self.robots.append(a.get("content",""))
         if tag=="meta" and a.get("name")=="description":self.description.append(a.get("content",""))
@@ -54,15 +57,23 @@ def run(folder):
         check(("noindex" in ",".join(p.robots))==(manifest["mode"]=="review" or is_error),f"{path}: robots mode")
         check(p.meta.get("og:url")==p.canonical,f"{path}: social URL matches canonical")
         article=next((s for s in p.jsonld if s.get('@type')=='Article'),{})
-        image=social_image(article.get('image',[])) or {}
+        sharing=base/'assets/social'/f"{path.parent.name}.jpg"
+        image=({'url':manifest['base_url']+'assets/social/'+sharing.name} if article and sharing.is_file() else social_image(article.get('image',[]))) or {}
         check(p.meta.get("og:image")==[image.get('url') or manifest["base_url"]+"assets/estrategia-header.png"],f"{path}: absolute social image matches article or brand fallback")
         check(p.meta.get('twitter:image')==p.meta.get('og:image'),f'{path}: consistent social previews')
         check(bool(p.meta.get("og:image:alt",[""])[0]),f"{path}: social image description")
         check(p.meta.get("twitter:card")==["summary_large_image"],f"{path}: social card")
+        if article:
+            check(sharing.is_file() and image_size(sharing)==(1200,630),f'{path}: complete landscape sharing card')
+            check(p.meta.get('og:image:width')==['1200'] and p.meta.get('og:image:height')==['630'],f'{path}: sharing card dimensions')
         for img in p.images:
-            if img.get("src") and "assets/images/" in img["src"]:
+            if img.get("src") and ("assets/images/" in img["src"] or "assets/optimized/images/" in img["src"]):
                 check(all(str(img.get(k,"")).isdigit() and int(img[k])>0 for k in ("width","height")),f"{path}: image dimensions {img['src']}")
                 check(img.get("loading")=="lazy" and img.get("decoding")=="async",f"{path}: deferred image loading")
+                if 'assets/optimized/images/' in img['src']:
+                    check(bool(img.get('srcset') and img.get('sizes')),f'{path}: responsive image candidates and sizes')
+                    local=base/unquote(urlsplit(img['src']).path.removeprefix(prefix))
+                    check(image_size(local)==(int(img['width']),int(img['height'])),f'{path}: image dimensions match optimized file')
         for schema in p.jsonld:
             if schema.get("@type")=="CollectionPage":
                 items=schema["mainEntity"]["itemListElement"]

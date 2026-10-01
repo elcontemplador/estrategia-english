@@ -54,6 +54,16 @@ class ReadingMediaTests(unittest.TestCase):
             self.assertIn('src="https://example.test/a.png"', rendered)
             self.assertNotIn('width=', rendered)
 
+    def test_only_image_only_substack_cdn_wrappers_are_removed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            image='<img alt="Chart" src="/edition/assets/images/chart.png">'
+            source='<a href="https://substackcdn.com/image/x">'+image+'</a><a href="https://example.test/source">'+image+'</a><a href="https://substackcdn.com/image/y">Read the source</a>'
+            rendered=enhance_images(source,Path(directory),'/edition/')
+            self.assertNotIn('href="https://substackcdn.com/image/x"',rendered)
+            self.assertIn('href="https://example.test/source"',rendered)
+            self.assertIn('href="https://substackcdn.com/image/y"',rendered)
+            self.assertIn('<noscript><a href="/edition/assets/images/chart.png">Open original image</a></noscript>',rendered)
+
     def test_jpeg_dimensions_skip_application_marker(self):
         with tempfile.TemporaryDirectory() as directory:
             path = Path(directory)/'test.jpeg'

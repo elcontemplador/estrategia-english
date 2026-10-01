@@ -39,6 +39,8 @@ HTML, plain Markdown, JSON catalogue, sitemap and Atom feed are built from the s
 
 Reading pages provide a native section index, an optional image viewer and citation copying. Original artwork is preserved. Local image dimensions reserve its layout space, while lazy loading defers image downloads. No external fonts, analytics, UI libraries or AI services are required.
 
+Responsive WebP copies serve the illustrations at widths appropriate to the screen; the enlargement control and no-JavaScript link retain the original file. Generated variants use a content-addressed local cache under data/media-cache. Each essay has a separate 1200 × 630 sharing card. Cross-references inside the HTML article body point to the corresponding English essay when it is selected for the build, while original Markdown and provenance links retain their source destinations. The archive explains the three issues without a main essay, and /follow/ explains how to use the Atom feed.
+
 ## Search and citation metadata
 
 The generator supplies canonical URLs, social preview metadata and JSON-LD for articles, collections, breadcrumbs, the website and publisher. Spanish source dates belong to `translationOfWork`; public English publication and modification dates come from each accepted article. Sitemaps use those persistent dates rather than the build time. Error pages remain `noindex` in both modes.

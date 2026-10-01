@@ -38,7 +38,7 @@ def article_images(rendered, base):
                 width, height = int(attrs.get('width', 0)), int(attrs.get('height', 0))
             except (TypeError, ValueError):
                 return
-            if not url.startswith(base + 'assets/images/') or width * height < 50000 or url in seen:
+            if not url.startswith((base + 'assets/images/', base + 'assets/optimized/images/')) or width * height < 50000 or url in seen:
                 return
             seen.add(url)
             item = {'@type': 'ImageObject', 'url': url, 'contentUrl': url,

@@ -8,17 +8,22 @@ from functools import lru_cache
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
+from media_variants import image_variants
 
 
 @lru_cache(maxsize=None)
 def image_size(path: Path) -> tuple[int, int] | None:
-    """Read PNG/JPEG/GIF dimensions using the standard library only."""
+    """Read PNG/JPEG/GIF headers; use Pillow for generated WebP dimensions."""
     with path.open('rb') as stream:
         header = stream.read(24)
         if header.startswith(b'\x89PNG\r\n\x1a\n') and len(header) == 24:
             return struct.unpack('>II', header[16:24])
         if header[:6] in (b'GIF87a', b'GIF89a'):
             return struct.unpack('<HH', header[6:10])
+        if header[:4] == b'RIFF' and header[8:12] == b'WEBP':
+            from PIL import Image
+            with Image.open(path) as image:
+                return image.size
         if not header.startswith(b'\xff\xd8'):
             return None
         stream.seek(2)
@@ -56,7 +61,7 @@ class ImageTag(HTMLParser):
         self.attrs = dict(attrs)
 
 
-def enhance_images(rendered: str, output: Path, prefix: str) -> str:
+def enhance_images(rendered: str, output: Path, prefix: str, cache: Path | None = None) -> str:
     def replace(match, pending=None):
         parser = ImageTag()
         parser.feed(match.group())
@@ -69,6 +74,15 @@ def enhance_images(rendered: str, output: Path, prefix: str) -> str:
                 size = image_size(path)
                 if size:
                     attrs['width'], attrs['height'] = map(str, size)
+                variants = image_variants(path, output, cache) if cache else []
+                # A few source JPEGs are already smaller than the derivative.
+                # Keep those originals as the reading image as well.
+                if variants and variants[-1]['bytes'] < path.stat().st_size:
+                    largest = variants[-1]
+                    attrs['src'] = prefix + largest['file']
+                    attrs['srcset'] = ', '.join(prefix+v['file']+' '+str(v['width'])+'w' for v in variants)
+                    attrs['sizes'] = '(max-width: 640px) calc(100vw - 2.25rem), (max-width: 900px) calc(100vw - 4rem), 740px'
+                    attrs['width'], attrs['height'] = str(largest['width']), str(largest['height'])
         attrs.update(loading='lazy', decoding='async')
         image = '<img ' + ' '.join(f'{k}="{html.escape(v or "", quote=True)}"'
                                  for k, v in attrs.items()) + '>'
@@ -81,18 +95,25 @@ def enhance_images(rendered: str, output: Path, prefix: str) -> str:
                   + html.escape(caption, quote=True)
                   + '" aria-haspopup="dialog">Enlarge image'
                   + '<span class="sr-only">: ' + html.escape(caption)
-                  + '</span></button>')
+                  + '</span></button><noscript><a href="'+html.escape(src,quote=True)+'">Open original image</a></noscript>')
         if pending is not None:
             pending.append(button)
             return image
         return image + button
 
     def replace_link_or_image(match):
-        # Markdown often wraps an image in a link to its original. Keep that
-        # destination intact and put controls AFTER it, never inside the link.
+        # Remove only image-only CDN wrappers: the local original and its
+        # enlargement control already provide the illustration. Other image
+        # links may be substantive sources and retain their destination.
         if match.group().startswith('<a'):
             pending = []
-            anchor = re.sub(r'<img\b[^>]*>', lambda img: replace(img, pending), match.group())
+            original = match.group()
+            opening = re.match(r'<a\b[^>]*>',original).group()
+            parser = ImageTag(); parser.feed(opening)
+            host = urlsplit(parser.attrs.get('href','')).hostname
+            inner = original[len(opening):original.rfind('</a>')]
+            unwrap = host in ('substackcdn.com','substack-post-media.s3.amazonaws.com') and re.fullmatch(r'\s*<img\b[^>]*>\s*',inner)
+            anchor = re.sub(r'<img\b[^>]*>', lambda img: replace(img, pending), inner if unwrap else original)
             return anchor + ''.join(pending)
         return replace(match)
 
