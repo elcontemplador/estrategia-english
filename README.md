@@ -2,7 +2,7 @@
 
 An English reading edition of estrategIA, the Spanish-language publication about artificial intelligence, politics and government.
 
-This repository contains the static website framework and the accepted deployment artifact. The English reading edition brings together 153 main articles from issues 001–156, with original dates, bylines and links to the Spanish newsletter. Editorial working files, source snapshots and review evidence are excluded from this repository. Articles enter a release only after editorial acceptance.
+This repository contains the static website framework and the accepted deployment artifact. The English reading edition brings together 154 main articles from issues 001–157, with original dates, bylines and links to the Spanish newsletter. Editorial working files, source snapshots and review evidence are excluded from this repository. Articles enter a release only after editorial acceptance.
 
 ## Local editorial workflow
 

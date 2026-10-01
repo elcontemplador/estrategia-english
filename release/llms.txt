@@ -6,6 +6,7 @@ This archive translates only the main articles. The original Spanish newsletter 
 
 ## Articles
 
+- [The environment and the decision](https://elcontemplador.github.io/estrategia-english/essays/157/): Ivan Sverdlick explains how Sustantiva is redesigning workflows around AI, shared knowledge and deliberate points for human judgement, beyond automating individual tasks.
 - [Fear of AI concentrates power too](https://elcontemplador.github.io/estrategia-english/essays/156/): An argument for independent AI safety oversight, proportionate controls and broad access, examining regulatory capture and the human costs of unjustified delay.
 - [AI sovereignty: five conditions for the power to decide](https://elcontemplador.github.io/estrategia-english/essays/155/): Electricity, compute, oversight, people and capital: what countries need to turn a claim of AI sovereignty into the power to decide.
 - [Astra: a new scale of intelligence and power](https://elcontemplador.github.io/estrategia-english/essays/154/): A historical account of GPT-6 Astra and an interactive municipal planning experiment, examining what better AI capabilities mean for public explanation and judgement.
@@ -183,6 +184,7 @@ This archive translates only the main articles. The original Spanish newsletter 
 - [Gustavo Fedi](https://elcontemplador.github.io/estrategia-english/people/gustavo-fedi/): Guest author
 - [Harvey Sánchez-Restrepo](https://elcontemplador.github.io/estrategia-english/people/harvey-sanchez-restrepo/): Guest author
 - [Ignacio Martín Granados](https://elcontemplador.github.io/estrategia-english/people/ignacio-martin-granados/): Guest author
+- [Ivan Sverdlick](https://elcontemplador.github.io/estrategia-english/people/ivan-sverdlick/): Guest author
 - [Javier Battilana Urbieta](https://elcontemplador.github.io/estrategia-english/people/javier-battilana-urbieta/): Guest author
 - [Javier Naranjo Sanjuan](https://elcontemplador.github.io/estrategia-english/people/javier-naranjo-sanjuan/): Guest author
 - [Josep M. (Pep) Martorell](https://elcontemplador.github.io/estrategia-english/people/josep-m-pep-martorell/): Guest author

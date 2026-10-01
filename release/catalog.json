@@ -3,6 +3,33 @@
   "status": "published",
   "articles": [
     {
+      "id": "157",
+      "issue_number": 157,
+      "title": "The environment and the decision",
+      "description": "Ivan Sverdlick explains how Sustantiva is redesigning workflows around AI, shared knowledge and deliberate points for human judgement, beyond automating individual tasks.",
+      "author": {
+        "name": "Ivan Sverdlick",
+        "url": "https://www.linkedin.com/in/ivan-sverdlick-064611b4/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-157-anadir-ia-no-basta",
+      "original_date": "2026-09-30",
+      "topics": [
+        "practice",
+        "work",
+        "democracy"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/157/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/157.md",
+      "english_publication_date": "2026-10-01",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/ivan-sverdlick/"
+      ]
+    },
+    {
       "id": "156",
       "issue_number": 156,
       "title": "Fear of AI concentrates power too",

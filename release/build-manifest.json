@@ -1,10 +1,11 @@
 {
   "mode": "public",
   "base_url": "https://elcontemplador.github.io/estrategia-english/",
-  "built_at": "2026-09-29T19:47:01.645614+00:00",
+  "built_at": "2026-10-01T10:19:15.959651+00:00",
   "human_approval": "approved",
-  "article_count": 153,
+  "article_count": 154,
   "article_ids": [
+    "157",
     "156",
     "155",
     "154",
@@ -160,6 +161,7 @@
     "001"
   ],
   "source_hashes": {
+    "157": "6bb0dce54427f2a32646c38b6e1ba514503538a099b0f43aec1828cbcbe00dde",
     "156": "a761676e26e87404da9071fe8a85fad4ec41f266875f45eef13c307af513f7ee",
     "155": "a35d4ca3f6e8f58ae338af8511a50ba602863ddcf58a31e221366b790f237b9b",
     "154": "b870342962f300763795466295acd05242f62e3fd6cd6c508d625cf603dc50c7",
@@ -685,6 +687,7 @@
     "assets/images/b695c1e0-2fc6-4b22-854e-0a35c4a2e2f5_1469x821.png",
     "assets/images/b85fbe04-beed-4c71-a68d-d33fcd02c05a_1600x886.png",
     "assets/images/b92b1980-5d54-4d5e-91fb-64e43b9bb995_1215x1533.png",
+    "assets/images/b9f6a127-f073-4695-8b92-01126c53047b_1024x1536.png",
     "assets/images/ba3b9ace-e340-4ccc-8f5a-bca8967b17f5_1577x1600.png",
     "assets/images/ba72d526-d3cf-4efe-a03d-d24e333d23c2_1600x1229.png",
     "assets/images/ba888da9-d6fd-4e0f-a11c-8ec0951d79a3_1024x1536.png",
@@ -771,6 +774,7 @@
     "assets/images/de7a6d7f-5119-43d5-ada1-a864ed47f0e3_1053x699.png",
     "assets/images/de86770f-147d-4128-a356-47abcb776987_1536x1024.png",
     "assets/images/dfbbca87-7296-44d5-a8f5-906ca28ebb73_1088x879.png",
+    "assets/images/e0e8a384-84df-47fb-9970-9b72d5514804_318x319.png",
     "assets/images/e16e3202-7c50-42fb-9985-b29c431b1451_893x1600.png",
     "assets/images/e1972711-ec97-4361-8646-3259db48bf41_990x915.png",
     "assets/images/e34a3cc0-f932-4b64-adaf-8945bc4aa2a3_876x584.jpeg",
@@ -974,6 +978,7 @@
     "essays/154/index.html",
     "essays/155/index.html",
     "essays/156/index.html",
+    "essays/157/index.html",
     "essays/index.html",
     "feed.xml",
     "index.html",
@@ -992,6 +997,7 @@
     "people/harvey-sanchez-restrepo/index.html",
     "people/ignacio-martin-granados/index.html",
     "people/index.html",
+    "people/ivan-sverdlick/index.html",
     "people/javier-battilana-urbieta/index.html",
     "people/javier-naranjo-sanjuan/index.html",
     "people/josep-m-pep-martorell/index.html",
@@ -1169,6 +1175,7 @@
     "text/154.md",
     "text/155.md",
     "text/156.md",
+    "text/157.md",
     "topics/democracy/index.html",
     "topics/futures/index.html",
     "topics/government/index.html",
@@ -1179,6 +1186,7 @@
     "topics/work/index.html"
   ],
   "editorial_hashes": {
+    "157": "9d79b416a7a079a07aaef40f5e62d345dc616a9a2240810a2100c438d0ac033c",
     "156": "900e93fe9282e7b58916d08366019c3a291ebd67ff16ddafb4f737629d6c99c6",
     "155": "14ae6ec4056a38d59b768c99f9d383324f6d1c854c13c495a982a0b33ce44ef0",
     "154": "c6b98dc8bbbac5a89c9e21db0cef676951e0eeb07dab82931e78be9d66af02ec",
@@ -1338,6 +1346,7 @@
     "people.json": "dc3728abe9e0c9620a595c5afbf88fa70f2d3557fa9ef48b2c158118104047b2"
   },
   "english_publication_dates": {
+    "157": "2026-10-01",
     "156": "2026-09-29",
     "155": "2026-09-29",
     "154": "2026-09-29",
