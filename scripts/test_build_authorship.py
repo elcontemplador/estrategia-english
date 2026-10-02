@@ -3,6 +3,7 @@ import contextlib, io, json, re, tempfile, unittest
 import xml.etree.ElementTree as ET
 from pathlib import Path
 from unittest.mock import patch
+from PIL import Image
 import build
 from release_gate import editorial_fingerprint
 
@@ -12,6 +13,7 @@ class AuthorshipBuildTests(unittest.TestCase):
         self.root = Path(self.tmp.name).resolve()
         (self.root/'content/en').mkdir(parents=True)
         (self.root/'assets').mkdir()
+        Image.new('RGB', (756,502), '#1e1e20').save(self.root/'assets/estrategia-header.png')
         config=json.loads((build.ROOT/'site.json').read_text(encoding='utf-8-sig'))
         config.update(base_url='https://example.test/archive/',human_approval='approved',training_policy='allow')
         (self.root/'site.json').write_text(json.dumps(config),encoding='utf-8')

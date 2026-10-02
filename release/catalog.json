@@ -1503,7 +1503,7 @@
       "id": "101",
       "issue_number": 101,
       "title": "Gemini 2.5 Flash Image (Nano banana): a qualitative leap in image editing and generation",
-      "description": "Practical tests of Google’s September 2025 image model, from political posters and public spaces to editing photographs and combining visual elements.",
+      "description": "Practical tests of Google’s Gemini 2.5 Flash Image, from political posters and public spaces to editing photographs and combining visual elements.",
       "author": {
         "name": "Fernando Nieto Lobato",
         "url": "https://www.linkedin.com/in/fernandonietolobato/?originalSubdomain=es"
@@ -1519,7 +1519,7 @@
       "inLanguage": "en-GB",
       "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/101.md",
       "english_publication_date": "2026-09-29",
-      "english_modified_date": null,
+      "english_modified_date": "2026-10-02",
       "status": "published",
       "author_profiles": [
         "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"

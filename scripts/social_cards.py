@@ -44,3 +44,26 @@ def article_card(record, output, base):
     image.save(path,format='JPEG',quality=90,optimize=True,subsampling=0)
     return {'url':base+'assets/social/'+path.name,'width':1200,'height':630,
             'caption':'estrategIA · Issue '+record['id']+' · '+record['title']}
+
+
+def edition_card(output, base):
+    """Home sharing image, preserving the complete original brand artwork."""
+    image = Image.new('RGB', (1200, 630), '#F6F3EF')
+    draw = ImageDraw.Draw(image)
+    draw.rectangle((0, 0, 1200, 12), fill='#9D2235')
+    with Image.open(output / 'assets/estrategia-header.png') as source:
+        artwork = source.convert('RGB')
+        artwork.thumbnail((302, 201), Image.Resampling.LANCZOS)
+        image.paste(artwork, (64, 48))
+    draw.text((795, 76), 'ENGLISH EDITION', font=font('arial.ttf', 27), fill='#9D2235')
+    draw.text((795, 119), 'Ideas for public life', font=font('arial.ttf', 23), fill='#545456')
+    draw.line((64, 277, 1136, 277), fill='#CEC6C0', width=2)
+    draw.text((64, 309), 'AI, politics', font=font('georgia.ttf', 76), fill='#1E1E20')
+    draw.text((64, 400), 'and government.', font=font('georgia.ttf', 76), fill='#9D2235')
+    draw.line((64, 528, 1136, 528), fill='#CEC6C0', width=2)
+    draw.text((64, 558), "Essays from estrategIA's Spanish archive", font=font('arial.ttf', 26), fill='#545456')
+    path = output / 'assets/social/english-edition.jpg'
+    path.parent.mkdir(parents=True, exist_ok=True)
+    image.save(path, format='JPEG', quality=90, optimize=True, subsampling=0)
+    return {'url': base + 'assets/social/' + path.name, 'width': 1200, 'height': 630,
+            'caption': 'estrategIA · English edition · AI, politics and government'}

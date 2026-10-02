@@ -1,7 +1,7 @@
 {
   "mode": "public",
   "base_url": "https://elcontemplador.github.io/estrategia-english/",
-  "built_at": "2026-10-01T10:44:20.482998+00:00",
+  "built_at": "2026-10-02T16:14:21.440888+00:00",
   "human_approval": "approved",
   "article_count": 154,
   "article_ids": [
@@ -2312,6 +2312,7 @@
     "assets/social/155.jpg",
     "assets/social/156.jpg",
     "assets/social/157.jpg",
+    "assets/social/english-edition.jpg",
     "catalog.json",
     "essays/001/index.html",
     "essays/002/index.html",
@@ -2730,7 +2731,7 @@
     "104": "e7b53da23a417d964f93f931b06c70d4aaa152260a82ac4fee9b8462f12d4897",
     "103": "681d581c285aefd83485c358c03cce7d47569bf6f84842dafe51537d1dcd2612",
     "102": "81d8f331f3ef3635c724afd76a404eb4bac118dc4db067dde242e4561a65bd28",
-    "101": "9d02298f40d103b0b913b03bfaa7604dbe039a5ba23b96ac2d6ecd943f1d914c",
+    "101": "c371db1b0e9e3a73a43cc2123fadfa8e0ff712914537ff185e891c688cf1ee52",
     "100": "02ae8f95639cb0d766d1d033fe325ba51ca641f247b8a10c574a6b3a238470a7",
     "099": "e9fb1211e0902268ef24659765618fee0d0502fa24014c1089dc5360ef0383da",
     "098": "83733c1fa69d46bc1d0fbcdbd4ab9f2687b77c98dac619e7bfb595dca1526513",

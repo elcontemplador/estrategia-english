@@ -17,6 +17,8 @@
     const count = document.querySelector('#result-count');
     const empty = document.querySelector('#empty-results');
     const status = document.querySelector('#search-status');
+    const advanced = document.querySelector('#advanced-filters');
+    const filterSummary = document.querySelector('#filter-summary');
     // An incomplete contract must leave the server-rendered archive readable.
     if (![list, form, search, topic, year, genre, sort, clear, more, count, empty, status].every(Boolean)) return;
 
@@ -56,6 +58,14 @@
       q: search.value.trim(), topic: selected(topic), year: selected(year),
       genre: selected(genre), sort: ['newest', 'oldest', 'title'].includes(sort.value) ? sort.value : 'newest',
     });
+    const mobileFilters = window.matchMedia('(max-width: 640px)');
+    const hasSecondaryFilters = () => selected(topic) || selected(year) || selected(genre) || sort.value !== 'newest';
+    function revealURLFilters() {
+      if (advanced) advanced.open = !mobileFilters.matches || Boolean(hasSecondaryFilters());
+    }
+    mobileFilters.addEventListener('change', () => {
+      if (advanced && !mobileFilters.matches) advanced.open = true;
+    });
 
     function readURL() {
       const params = new URL(window.location.href).searchParams;
@@ -68,6 +78,7 @@
       sort.value = ['newest', 'oldest', 'title'].includes(value) && validOption(sort, value) ? value : 'newest';
       const saved = window.history.state?.estrategiaArchive?.shown;
       limit = Number.isSafeInteger(saved) && saved >= pageSize ? Math.min(saved, Math.max(pageSize, cards.length)) : pageSize;
+      revealURLFilters();
     }
 
     function writeURL(method) {
@@ -94,7 +105,7 @@
       list.setAttribute('aria-busy', String(searching && Boolean(indexRequest)));
     }
 
-    function render() {
+    function render(manageFocus = true) {
       const filters = state();
       const query = terms();
       const ordered = [...cards].sort((a, b) => {
@@ -112,20 +123,26 @@
         && (!filters.topic || card.topics.includes(filters.topic))
         && (!filters.year || card.year === filters.year)
         && (!filters.genre || card.genre === filters.genre));
-      const visible = new Set(matches.slice(0, limit));
+      const visible = new Set(printing ? matches : matches.slice(0, limit));
       const focused = document.activeElement;
       let focusHidden = false;
       cards.forEach(card => {
-        card.element.hidden = !printing && !visible.has(card);
+        card.element.hidden = !visible.has(card);
         if (card.element.hidden && card.element.contains(focused)) focusHidden = true;
       });
-      if (focusHidden) search.focus({ preventScroll: true });
-      const shown = Math.min(limit, matches.length);
+      if (focusHidden && manageFocus && !printing) search.focus({ preventScroll: true });
+      const shown = printing ? matches.length : Math.min(limit, matches.length);
       count.textContent = matches.length + (matches.length === 1 ? ' essay matches' : ' essays match') + '; ' + shown + ' shown.';
       empty.hidden = matches.length !== 0;
       more.hidden = shown >= matches.length;
       more.textContent = 'Show ' + Math.min(pageSize, matches.length - shown) + ' more essays';
       clear.disabled = !filters.q && !filters.topic && !filters.year && !filters.genre && filters.sort === 'newest';
+      if (filterSummary) {
+        const labels = [topic, year, genre].filter(select => selected(select))
+          .map(select => select.selectedOptions[0].textContent);
+        if (filters.sort !== 'newest') labels.push(sort.selectedOptions[0].textContent);
+        filterSummary.textContent = labels.length ? labels.join(' · ') : 'All topics, years and types';
+      }
       updateSearchStatus();
     }
 
@@ -194,8 +211,8 @@
       readURL(); render();
       if (!indexFailed) void loadIndex();
     });
-    window.addEventListener('beforeprint', () => { printing = true; render(); });
-    window.addEventListener('afterprint', () => { printing = false; render(); });
+    window.addEventListener('beforeprint', () => { printing = true; render(false); });
+    window.addEventListener('afterprint', () => { printing = false; render(false); });
     readURL();
     render();
     writeURL('replace');

@@ -107,6 +107,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 .filters #search { font-size:1.1rem; padding:.85rem 1rem; }
 .filters input::placeholder { color:#66615d; opacity:1; }
 .filter-options { display:grid; grid-template-columns:1.5fr .7fr 1fr 1fr; gap:1rem; }
+.advanced-filters>summary { display:none; }
 .filter-help { font-size:.8rem; margin:.4rem 0 1.25rem; color:var(--muted); }
 .filter-actions { display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-top:.7rem; }
 .filter-actions>span { font-size:.75rem; color:var(--muted); }
@@ -251,10 +252,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
   .wrap { width:calc(100% - 2.25rem); }
   .review-banner { font-size:.69rem; padding:.5rem .75rem; }
   .masthead { display:block; padding:1.15rem 0 .65rem; }
-  .brand { font-size:2.4rem; }
-  .brand-block { justify-content:space-between; }
+  .brand { font-size:min(2.4rem,calc(25vw - .5625rem)); }
+  .brand-block { justify-content:space-between; flex-wrap:wrap; }
   .edition { display:block; padding-left:1rem; font-size:.58rem; border:0; }
-  .nav { justify-content:space-between; gap:.65rem; margin-top:.7rem; font-size:.84rem; }
+  .nav { justify-content:space-between; flex-wrap:wrap; gap:.65rem; margin-top:.7rem; font-size:.84rem; }
   .nav a { padding:.6rem 0; }
   .nav .spanish { font-size:.78rem; }
   .intro { grid-template-columns:1fr; padding:2.4rem 0 1.7rem; gap:1.5rem; }
@@ -287,12 +288,24 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
   .page-heading { padding:1.8rem 0 1.5rem; }
   .page-heading h1 { font-size:2.9rem; }
   .page-heading .dek { font-size:1rem; }
+  .archive-heading { padding:1.2rem 0 1rem; }
+  .archive-heading h1 { font-size:2.45rem; margin-bottom:.65rem; }
+  .archive-heading .history-note { margin:.65rem 0 0; font-size:.75rem; }
+  .archive-heading>.text-link { margin-top:.6rem; font-size:.85rem; }
   .filters { padding:1rem; }
   .filters #search { font-size:1rem; padding:.7rem; }
+  .filter-help { margin:.4rem 0 .65rem; font-size:.75rem; }
+  .advanced-filters { border-top:1px solid var(--line); }
+  .advanced-filters>summary { display:list-item; min-height:44px; padding:.65rem 0; cursor:pointer; font-size:.82rem; color:var(--red); }
+  .filter-summary-title { font-weight:600; }
+  .filter-summary { display:block; margin-top:.15rem; color:var(--muted); font-size:.75rem; }
+  .advanced-filters[open] .filter-options { padding:.25rem 0 .5rem; }
   .filter-options { gap:1rem .7rem; }
   .filters select { font-size:.82rem; padding:.65rem .4rem; }
-  .filter-actions { align-items:start; flex-direction:column; gap:0; }
+  .filter-actions { align-items:center; gap:.7rem; margin-top:.25rem; }
   .filter-actions>span { font-size:.7rem; }
+  .filter-actions .text-button { flex-shrink:0; }
+  #result-count { margin:1rem 0 .5rem; }
   .archive-list .essay-card { display:block; padding:1.4rem 0; }
   .archive-list .card-number { font:.72rem/1.5 var(--sans); margin-bottom:.6rem; }
   .archive-list .card-number span { display:inline; font:inherit; letter-spacing:0; text-transform:none; }
@@ -316,10 +329,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
   .prose { font-size:1.1rem; }
   .prose h2 { font-size:1.8rem; }
   .foot { margin-top:2.8rem; padding:2.5rem 0 1.5rem; }
-  .foot-grid { grid-template-columns:1fr 1fr; gap:1.5rem; }
+  .foot-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; overflow-wrap:anywhere; }
   .foot-grid>div:first-child { grid-column:1/-1; }
   .foot h2 { line-height:1.6; }
-  .foot .brand { font-size:2.3rem; }
+  .foot .brand { font-size:min(2.3rem,calc(25vw - .5625rem)); }
   .review-table { display:block; overflow:auto; }
 }
 .team-section { margin-top:3rem; }
@@ -364,7 +377,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
   .article-body img { max-height:16cm; width:auto; break-inside:avoid; }
   .article-body a { color:inherit; text-decoration:underline; }
   .citation,.essay-card { break-inside:avoid; }
-  #archive-list .essay-card[hidden] { display:grid!important; }
   .feature { background:white; border:1px solid var(--line); }
   .feature-main,.feature .summary,.feature .meta,.feature .eyebrow,.feature-main>.text-link { color:var(--ink); }
 }

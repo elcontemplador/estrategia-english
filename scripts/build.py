@@ -9,7 +9,7 @@ from discovery import (article_schema, collection_schema, site_schema,
                        breadcrumb_schema, organisation_schema, social_meta, article_images, social_image)
 from reading_media import enhance_images, IMAGE_VIEWER
 from archive_links import rewrite_references
-from social_cards import article_card
+from social_cards import article_card, edition_card
 from people import (load_profiles, profile_for, route as profile_route, authors,
                     contributions, enrich_article, profile_schema, archive_profiles)
 from release_gate import (editorial_fingerprint, validate_article_release,
@@ -56,6 +56,8 @@ def main():
     profiles=load_profiles(ROOT)
     script_path=ROOT/'assets/site.js'
     script_version=hashlib.sha256(script_path.read_bytes()).hexdigest()[:12] if script_path.exists() else '0'
+    style_path=ROOT/'assets/site.css'
+    style_version=hashlib.sha256(style_path.read_bytes()).hexdigest()[:12] if style_path.exists() else '0'
     base=config["base_url"].rstrip("/")+"/"
     prefix=urlparse(base).path.rstrip("/")+"/"
     output=(ROOT/("preview" if review else "dist")).resolve()
@@ -101,6 +103,7 @@ def main():
     if output.exists(): shutil.rmtree(output)
     output.mkdir(parents=True)
     shutil.copytree(ROOT/"assets",output/"assets")
+    home_social_preview = edition_card(output, base)
     def url(route=""):
         return prefix+route
     def write(route,content):
@@ -108,6 +111,8 @@ def main():
         target.parent.mkdir(parents=True,exist_ok=True)
         target.write_text(content,encoding="utf-8")
     def page(route,title,description,body,nav="",schema=None,social_preview=None):
+        if not route and social_preview is None:
+            social_preview = home_social_preview
         canonical=base+route
         if schema is None:
             schema={"@context":"https://schema.org","@type":"AboutPage" if route=="about/" else "WebPage","@id":canonical+"#webpage","name":title,"description":description,"url":canonical,"inLanguage":"en-GB","isPartOf":{"@id":base+"#website"}}
@@ -138,7 +143,7 @@ def main():
 '''+social_meta(title,description,canonical,config,base,is_article=schema.get("@type")=="Article",article_image=social_preview or (social_image(schema.get('image',[])) if schema.get('@type')=='Article' else None))+'''
 <meta name="theme-color" content="#9d2235"><meta name="color-scheme" content="light">
 <link rel="icon" href="'''+url("assets/favicon.svg")+'''" type="image/svg+xml">
-<link rel="stylesheet" href="'''+url("assets/site.css")+'''"><script src="'''+url("assets/site.js")+'?v='+script_version+'''" defer></script>
+<link rel="stylesheet" href="'''+url("assets/site.css")+'?v='+style_version+'''"><script src="'''+url("assets/site.js")+'?v='+script_version+'''" defer></script>
 <link rel="alternate" type="application/atom+xml" title="estrategIA English edition" href="'''+url("feed.xml")+'''">
 <script type="application/ld+json">'''+encoded+'''</script>'''+extra_json+'''</head><body><a class="skip" href="#main">Skip to content</a>
 '''+banner+'''<header class="wrap masthead"><div class="brand-block"><a class="brand" href="'''+url()+'''" aria-label="estrategIA home">estrateg<span>IA</span></a><span class="edition">English<br>edition</span></div><nav class="nav" aria-label="Main navigation">'''+navigation+'''<a class="spanish" href="https://estrategiabyaleph.substack.com">Read in Spanish</a></nav></header>
@@ -182,8 +187,8 @@ def main():
     home=home.replace('A wider conversation. The same editorial care.','Three years of ideas.<br>A wider conversation.').replace('Read each essay in full, follow its sources and return to the Spanish original. Translation brings the ideas to a new audience while preserving their voice and historical context.','Created to mark our third anniversary in October 2026, this archive translates only the newsletter’s main articles: ideas worth making accessible to readers around the world, with their original dates and voices intact. The full Spanish newsletter also includes news and a practical section with a tool of the week, prompts, a recommendation of the week and memes.').replace('How this edition is made','Why an English edition').replace(url('about/#translation-and-provenance')+'\">Why an English edition',url('about/#three-years-of-ideas-a-wider-conversation')+'\">Why an English edition')
     page("","AI, politics and government","The English edition of estrategIA: essays on artificial intelligence, public life and the power to decide.",home)
     available_genres=sorted({r.get("genre","essay") for r in records},key=lambda g:GENRES.get(g,g))
-    filters='<form id="archive-filters" class="filters" role="search" aria-label="Search the essay archive" aria-busy="true"><label class="search-field" for="search">Search the full archive<input id="search" name="q" type="search" disabled placeholder="An idea, a phrase, an author…" autocomplete="off" aria-describedby="search-help"></label><p id="search-help" class="filter-help">Search titles, authors and the complete essay texts. If search is unavailable, browse all essays below.</p><div class="filter-options"><label for="topic">Topic<select id="topic" name="topic" disabled><option value="">All topics</option>'+''.join('<option value="'+k+'">'+e(v[0])+'</option>' for k,v in TOPICS.items())+'</select></label><label for="year">Original year<select id="year" name="year" disabled><option value="">All years</option>'+''.join('<option>'+y+'</option>' for y in years)+'</select></label><label for="genre">Type of essay<select id="genre" name="genre" disabled><option value="">All types</option>'+''.join('<option value="'+e(g)+'">'+e(GENRES.get(g,g))+'</option>' for g in available_genres)+'</select></label><label for="sort">Order<select id="sort" name="sort" disabled><option value="newest">Newest original first</option><option value="oldest">Oldest original first</option><option value="title">Title A–Z</option></select></label></div><div class="filter-actions"><button type="button" id="clear-filters" class="text-button" disabled>Clear filters</button><span>Share a search by copying its URL.</span></div><p id="search-status" class="status" role="status" aria-live="polite"></p></form><noscript><style>#archive-filters{display:none}</style><p class="history-note">All essays are listed below, newest first. Browser search is available; reading and topic navigation work without JavaScript.</p></noscript><p id="result-count" class="result-count" role="status" aria-live="polite">'+str(len(records))+' essays</p>'
-    archive='<header class="page-heading"><p class="eyebrow">'+str(len(records))+' essays · '+e(period)+'</p><h1>Ideas to think with.</h1><p class="dek">Explore the English archive: arguments, experiments and possible futures for AI in public life. Dates refer to the Spanish originals.</p></header>'+filters+'<div id="archive-list" class="archive-list" data-search-index="'+url("search-index.json")+'">'+"".join(card(r) for r in records)+'</div><div id="empty-results" class="empty" hidden><h2>No essays found</h2><p>Try fewer words or clear a filter to broaden your search.</p></div><div class="load-more-wrap"><button type="button" id="load-more" class="button" hidden>Show more essays</button></div>'
+    filters='<form id="archive-filters" class="filters" role="search" aria-label="Search the essay archive" aria-busy="true"><label class="search-field" for="search">Search the full archive<input id="search" name="q" type="search" disabled placeholder="An idea, a phrase, an author…" autocomplete="off" aria-describedby="search-help"></label><p id="search-help" class="filter-help">Search titles, authors and the complete essay texts. If search is unavailable, browse all essays below.</p><details id="advanced-filters" class="advanced-filters" open><summary><span class="filter-summary-title">Filters and order</span><span id="filter-summary" class="filter-summary">All topics, years and types</span></summary><div class="filter-options"><label for="topic">Topic<select id="topic" name="topic" disabled><option value="">All topics</option>'+''.join('<option value="'+k+'">'+e(v[0])+'</option>' for k,v in TOPICS.items())+'</select></label><label for="year">Original year<select id="year" name="year" disabled><option value="">All years</option>'+''.join('<option>'+y+'</option>' for y in years)+'</select></label><label for="genre">Type of essay<select id="genre" name="genre" disabled><option value="">All types</option>'+''.join('<option value="'+e(g)+'">'+e(GENRES.get(g,g))+'</option>' for g in available_genres)+'</select></label><label for="sort">Order<select id="sort" name="sort" disabled><option value="newest">Newest original first</option><option value="oldest">Oldest original first</option><option value="title">Title A–Z</option></select></label></div></details><div class="filter-actions"><button type="button" id="clear-filters" class="text-button" disabled>Clear filters</button><span>Share a search by copying its URL.</span></div><p id="search-status" class="status" role="status" aria-live="polite"></p></form><noscript><style>#archive-filters{display:none}</style><p class="history-note">All essays are listed below, newest first. Browser search is available; reading and topic navigation work without JavaScript.</p></noscript><p id="result-count" class="result-count" role="status" aria-live="polite">'+str(len(records))+' essays</p>'
+    archive='<header class="page-heading archive-heading"><p class="eyebrow">'+str(len(records))+' essays · '+e(period)+'</p><h1>Ideas to think with.</h1><p class="dek">Explore the English archive: arguments, experiments and possible futures for AI in public life. Dates refer to the Spanish originals.</p></header>'+filters+'<div id="archive-list" class="archive-list" data-search-index="'+url("search-index.json")+'">'+"".join(card(r) for r in records)+'</div><div id="empty-results" class="empty" hidden><h2>No essays found</h2><p>Try fewer words or clear a filter to broaden your search.</p></div><div class="load-more-wrap"><button type="button" id="load-more" class="button" hidden>Show more essays</button></div>'
     exclusions_path=ROOT/'data/exclusions.json'
     exclusions=read_json(exclusions_path).get('items',[]) if exclusions_path.exists() else []
     omitted=sorted(item['issue_number'] for item in exclusions)

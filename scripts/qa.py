@@ -59,7 +59,11 @@ def run(folder):
         article=next((s for s in p.jsonld if s.get('@type')=='Article'),{})
         sharing=base/'assets/social'/f"{path.parent.name}.jpg"
         image=({'url':manifest['base_url']+'assets/social/'+sharing.name} if article and sharing.is_file() else social_image(article.get('image',[]))) or {}
-        check(p.meta.get("og:image")==[image.get('url') or manifest["base_url"]+"assets/estrategia-header.png"],f"{path}: absolute social image matches article or brand fallback")
+        if path.relative_to(base).as_posix() == 'index.html':
+            image = {'url': manifest['base_url'] + 'assets/social/english-edition.jpg'}
+            check(image_size(base/'assets/social/english-edition.jpg') == (1200,630), f'{path}: landscape edition sharing card')
+            check(p.meta.get('og:image:width') == ['1200'] and p.meta.get('og:image:height') == ['630'], f'{path}: edition sharing dimensions')
+        check(p.meta.get("og:image")==[image.get('url') or manifest["base_url"]+"assets/estrategia-header.png"],f"{path}: absolute social image matches article or edition preview")
         check(p.meta.get('twitter:image')==p.meta.get('og:image'),f'{path}: consistent social previews')
         check(bool(p.meta.get("og:image:alt",[""])[0]),f"{path}: social image description")
         check(p.meta.get("twitter:card")==["summary_large_image"],f"{path}: social card")
