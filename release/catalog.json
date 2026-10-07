@@ -3,6 +3,33 @@
   "status": "published",
   "articles": [
     {
+      "id": "158",
+      "issue_number": 158,
+      "title": "Three years of estrategIA: the time we are letting slip away",
+      "description": "On estrategIA’s third anniversary, Fernando Nieto Lobato examines accelerating AI progress and the political preparation needed to protect rights and share its benefits.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-158-de-una-ia-que-fallaba",
+      "original_date": "2026-10-07",
+      "topics": [
+        "government",
+        "futures",
+        "work"
+      ],
+      "genre": "retrospective",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/158/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/158.md",
+      "english_publication_date": "2026-10-07",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
       "id": "157",
       "issue_number": 157,
       "title": "The environment and the decision",

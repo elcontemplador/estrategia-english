@@ -24,12 +24,12 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 .wrap { width:min(1240px,calc(100% - 6rem)); margin-inline:auto; }
 .review-banner { background:var(--red-dark); color:white; padding:.5rem 1rem; font-size:.8rem; text-align:center; }
 .review-banner a { color:white; }
-.masthead { display:flex; justify-content:space-between; align-items:center; gap:2rem; padding:1.65rem 0; border-bottom:1px solid var(--ink); }
+.masthead { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:2rem; padding:1.65rem 0; border-bottom:1px solid var(--ink); }
 .brand { font:2.65rem/1 var(--serif); letter-spacing:-.07em; color:var(--ink); text-decoration:none; }
 .brand span { color:var(--red); }
 .brand-block { display:flex; align-items:center; gap:1.4rem; }
 .edition { font-size:.65rem; font-weight:600; letter-spacing:.15em; text-transform:uppercase; border-left:1px solid var(--line); padding-left:1.4rem; line-height:1.5; }
-.nav { display:flex; align-items:center; gap:1.8rem; font-size:.92rem; }
+.nav { display:flex; flex-wrap:wrap; align-items:center; gap:1.8rem; font-size:.92rem; }
 .nav a { color:var(--ink); text-decoration:none; padding:.6rem 0; }
 .nav a[aria-current="page"] { box-shadow:inset 0 -2px var(--red); }
 .nav a:hover { color:var(--red); text-decoration:underline; }
@@ -67,7 +67,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 .meta { color:var(--muted); font:.8rem/1.6 var(--sans); display:flex; flex-wrap:wrap; gap:.2rem 1rem; }
 .meta .card-author { width:100%; color:var(--ink); font-weight:600; }
 .section-heading { display:flex; justify-content:space-between; align-items:end; gap:1rem; margin:3.5rem 0 1.7rem; }
-.section-heading h2 { font:2.15rem/1.18 var(--serif); letter-spacing:-.025em; margin:0; }
+.section-heading h2 { font:2.15rem/1.18 var(--serif); letter-spacing:-.025em; margin:0; min-width:0; max-width:100%; overflow-wrap:anywhere; }
 .section-heading .eyebrow { margin:0 0 .45rem; }
 .section-heading>a { font-size:.88rem; flex-shrink:0; padding:.3rem 0; }
 .essay-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2rem; }
@@ -201,7 +201,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,su
 .about-brand img { width:100%; height:auto; display:block; }
 .about-brand p { font-size:.85rem; color:var(--muted); }
 .foot { margin-top:4rem; background:var(--ink); color:white; padding:3rem 0 1.5rem; }
-.foot-grid { display:grid; grid-template-columns:1.5fr 1fr 1fr; gap:3rem; }
+.foot-grid { display:grid; grid-template-columns:minmax(0,1.5fr) repeat(2,minmax(0,1fr)); gap:3rem; overflow-wrap:anywhere; }
 .foot .brand { color:white; }
 .foot .brand span { color:#ecacb8; }
 .foot p { font-size:.88rem; color:#d8d1cb; max-width:40ch; margin:1.2rem 0; }
