@@ -3,6 +3,33 @@
   "status": "published",
   "articles": [
     {
+      "id": "159",
+      "issue_number": 159,
+      "title": "More capable, cheaper and increasingly autonomous: five lessons from a year that is accelerating everything",
+      "description": "Fernando Nieto Lobato examines five findings from State of AI 2026: stronger models, recursive self-improvement, falling costs, sovereign capacity and the prospect of AGI in 2027.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-159-state-of-ai-2026-estamos",
+      "original_date": "2026-10-14",
+      "topics": [
+        "futures",
+        "sovereignty",
+        "government"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/159/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/159.md",
+      "english_publication_date": "2026-10-15",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
       "id": "158",
       "issue_number": 158,
       "title": "Three years of estrategIA: the time we are letting slip away",

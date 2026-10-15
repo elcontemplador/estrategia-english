@@ -6,6 +6,7 @@ This archive translates only the main articles. The original Spanish newsletter 
 
 ## Articles
 
+- [More capable, cheaper and increasingly autonomous: five lessons from a year that is accelerating everything](https://elcontemplador.github.io/estrategia-english/essays/159/): Fernando Nieto Lobato examines five findings from State of AI 2026: stronger models, recursive self-improvement, falling costs, sovereign capacity and the prospect of AGI in 2027.
 - [Three years of estrategIA: the time we are letting slip away](https://elcontemplador.github.io/estrategia-english/essays/158/): On estrategIA’s third anniversary, Fernando Nieto Lobato examines accelerating AI progress and the political preparation needed to protect rights and share its benefits.
 - [The environment and the decision](https://elcontemplador.github.io/estrategia-english/essays/157/): Ivan Sverdlick explains how Sustantiva is redesigning workflows around AI, shared knowledge and deliberate points for human judgement, beyond automating individual tasks.
 - [Fear of AI concentrates power too](https://elcontemplador.github.io/estrategia-english/essays/156/): An argument for independent AI safety oversight, proportionate controls and broad access, examining regulatory capture and the human costs of unjustified delay.
