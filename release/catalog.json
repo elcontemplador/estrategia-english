@@ -3,6 +3,33 @@
   "status": "published",
   "articles": [
     {
+      "id": "160",
+      "issue_number": 160,
+      "title": "Political conversations with citizens and artificial intelligence",
+      "description": "Fernanda Cuzme explores what AI can contribute to conversations with citizens, and why context, human empathy and respect for disagreement remain essential.",
+      "author": {
+        "name": "Fernanda Cuzme",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-160-puede-la-inteligencia",
+      "original_date": "2026-10-21",
+      "topics": [
+        "democracy",
+        "government",
+        "practice"
+      ],
+      "genre": "opinion",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/160/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/160.md",
+      "english_publication_date": "2026-10-22",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernanda-cuzme/"
+      ]
+    },
+    {
       "id": "159",
       "issue_number": 159,
       "title": "More capable, cheaper and increasingly autonomous: five lessons from a year that is accelerating everything",

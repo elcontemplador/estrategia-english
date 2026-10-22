@@ -6,6 +6,7 @@ This archive translates only the main articles. The original Spanish newsletter 
 
 ## Articles
 
+- [Political conversations with citizens and artificial intelligence](https://elcontemplador.github.io/estrategia-english/essays/160/): Fernanda Cuzme explores what AI can contribute to conversations with citizens, and why context, human empathy and respect for disagreement remain essential.
 - [More capable, cheaper and increasingly autonomous: five lessons from a year that is accelerating everything](https://elcontemplador.github.io/estrategia-english/essays/159/): Fernando Nieto Lobato examines five findings from State of AI 2026: stronger models, recursive self-improvement, falling costs, sovereign capacity and the prospect of AGI in 2027.
 - [Three years of estrategIA: the time we are letting slip away](https://elcontemplador.github.io/estrategia-english/essays/158/): On estrategIA’s third anniversary, Fernando Nieto Lobato examines accelerating AI progress and the political preparation needed to protect rights and share its benefits.
 - [The environment and the decision](https://elcontemplador.github.io/estrategia-english/essays/157/): Ivan Sverdlick explains how Sustantiva is redesigning workflows around AI, shared knowledge and deliberate points for human judgement, beyond automating individual tasks.
@@ -179,6 +180,7 @@ This archive translates only the main articles. The original Spanish newsletter 
 - [Carlos Guadián](https://elcontemplador.github.io/estrategia-english/people/carlos-guadian/): Guest author
 - [Carlos López Ariztegui](https://elcontemplador.github.io/estrategia-english/people/carlos-lopez-ariztegui/): Guest author
 - [César Batiz](https://elcontemplador.github.io/estrategia-english/people/cesar-batiz/): Guest author
+- [Fernanda Cuzme](https://elcontemplador.github.io/estrategia-english/people/fernanda-cuzme/): Guest author
 - [Fernando Domínguez Sardou](https://elcontemplador.github.io/estrategia-english/people/fernando-dominguez-sardou/): Guest author
 - [Fernando Ujaldón](https://elcontemplador.github.io/estrategia-english/people/fernando-ujaldon/): Guest author
 - [Gabriela Ortega Jarrín](https://elcontemplador.github.io/estrategia-english/people/gabriela-ortega/): Guest author
