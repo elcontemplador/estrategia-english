@@ -3,6 +3,33 @@
   "status": "published",
   "articles": [
     {
+      "id": "161",
+      "issue_number": 161,
+      "title": "Governing at the speed of the threat",
+      "description": "Fernando Nieto Lobato examines how AI is compressing cybersecurity response times and why governments need authority, resources and rehearsed procedures before an alert arrives.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-161-la-inteligencia-artificial",
+      "original_date": "2026-10-28",
+      "topics": [
+        "government",
+        "futures",
+        "sovereignty"
+      ],
+      "genre": "opinion",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/161/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/161.md",
+      "english_publication_date": "2026-10-29",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
       "id": "160",
       "issue_number": 160,
       "title": "Political conversations with citizens and artificial intelligence",
