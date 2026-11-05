@@ -1,10 +1,11 @@
 {
   "mode": "public",
   "base_url": "https://elcontemplador.github.io/estrategia-english/",
-  "built_at": "2026-10-29T09:50:23.129660+00:00",
+  "built_at": "2026-11-05T19:11:33.385554+00:00",
   "human_approval": "approved",
-  "article_count": 158,
+  "article_count": 159,
   "article_ids": [
+    "162",
     "161",
     "160",
     "159",
@@ -165,6 +166,7 @@
     "001"
   ],
   "source_hashes": {
+    "162": "0e83db2ff38d13a907e9f944e9b153cea8375410674a1efdfe4226c3ee8fa5d1",
     "161": "fef7c80957b3d3a8a57ec00c7b43d3fb9ef13fca0c4f69c549f35876eda903bd",
     "160": "e5ea388a0f6c572d25317993ab0ed4b70ad8b104ca263643e16f46af86626db7",
     "159": "11efcb037adfdb68d7c364d0b9f953007424d3544964743cdf57bd5706bce962",
@@ -383,6 +385,7 @@
     "assets/images/161-03.png",
     "assets/images/161-04.png",
     "assets/images/1613949a-1067-401c-896e-f02dc009748e_1024x1024.png",
+    "assets/images/162-01.png",
     "assets/images/165e7994-0635-4a30-81b4-73b8b0ad49fc_633x418.png",
     "assets/images/16a83e02-0ba1-475b-be60-c2fe7c7328e7_876x1173.png",
     "assets/images/16ad18c7-5619-4ad0-93b5-4a46ca6c61fd_909x1483.png",
@@ -1409,6 +1412,9 @@
     "assets/optimized/images/680065bdfe9c29071dc3f1c8c5eacdf1184aa3bc07dad6532b6fe60052fffd1e-w1183.webp",
     "assets/optimized/images/680065bdfe9c29071dc3f1c8c5eacdf1184aa3bc07dad6532b6fe60052fffd1e-w480.webp",
     "assets/optimized/images/680065bdfe9c29071dc3f1c8c5eacdf1184aa3bc07dad6532b6fe60052fffd1e-w960.webp",
+    "assets/optimized/images/684f6244cbc78e486ec8a4670a239820751220fdabb660e0dcf204bb1eae4a68-w1086.webp",
+    "assets/optimized/images/684f6244cbc78e486ec8a4670a239820751220fdabb660e0dcf204bb1eae4a68-w480.webp",
+    "assets/optimized/images/684f6244cbc78e486ec8a4670a239820751220fdabb660e0dcf204bb1eae4a68-w960.webp",
     "assets/optimized/images/68df6681275a859967c7e341ac262708f57248920c86d730838cbf5362922d5d-w1024.webp",
     "assets/optimized/images/68df6681275a859967c7e341ac262708f57248920c86d730838cbf5362922d5d-w480.webp",
     "assets/optimized/images/68df6681275a859967c7e341ac262708f57248920c86d730838cbf5362922d5d-w960.webp",
@@ -2379,6 +2385,7 @@
     "assets/social/159.jpg",
     "assets/social/160.jpg",
     "assets/social/161.jpg",
+    "assets/social/162.jpg",
     "assets/social/english-edition.jpg",
     "catalog.json",
     "essays/001/index.html",
@@ -2539,6 +2546,7 @@
     "essays/159/index.html",
     "essays/160/index.html",
     "essays/161/index.html",
+    "essays/162/index.html",
     "essays/index.html",
     "feed.xml",
     "follow/index.html",
@@ -2546,6 +2554,7 @@
     "llms.txt",
     "people.json",
     "people/alejandro-ulloa-garcia/index.html",
+    "people/andres-ferraro-sastre/index.html",
     "people/carlos-guadian/index.html",
     "people/carlos-lopez-ariztegui/index.html",
     "people/cesar-batiz/index.html",
@@ -2742,6 +2751,7 @@
     "text/159.md",
     "text/160.md",
     "text/161.md",
+    "text/162.md",
     "topics/democracy/index.html",
     "topics/futures/index.html",
     "topics/government/index.html",
@@ -2752,6 +2762,7 @@
     "topics/work/index.html"
   ],
   "editorial_hashes": {
+    "162": "063b03f2c484cc056a47c4f9c4230464c11124ff2e1e8f8250605c915dc08536",
     "161": "314b2ef04a3d608b4a4bb2ffd99264cb4f0e6e4e57d2f0d19548d844982e5578",
     "160": "561a0acfa7aed6fc9dcc0f4dc91060f4960659e6615ba5ee61210923042a929b",
     "159": "a821e1c6705f7bccef02f8d276026e817e42c0b88024a899a76883051e580168",
@@ -2916,6 +2927,7 @@
     "people.json": "dc3728abe9e0c9620a595c5afbf88fa70f2d3557fa9ef48b2c158118104047b2"
   },
   "english_publication_dates": {
+    "162": "2026-11-05",
     "161": "2026-10-29",
     "160": "2026-10-22",
     "159": "2026-10-15",

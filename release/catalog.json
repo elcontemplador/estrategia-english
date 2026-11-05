@@ -3,6 +3,33 @@
   "status": "published",
   "articles": [
     {
+      "id": "162",
+      "issue_number": 162,
+      "title": "How can you work with AI without giving up thinking for yourself?",
+      "description": "Andrés Ferraro Sastre explores how to use AI to ask better questions, preserve independent judgement and distinguish faster work from better work.",
+      "author": {
+        "name": "Andrés Ferraro Sastre",
+        "url": null
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-162-la-paradoja-de-trabajar",
+      "original_date": "2026-11-04",
+      "topics": [
+        "learning",
+        "practice",
+        "work"
+      ],
+      "genre": "opinion",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/162/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/162.md",
+      "english_publication_date": "2026-11-05",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/andres-ferraro-sastre/"
+      ]
+    },
+    {
       "id": "161",
       "issue_number": 161,
       "title": "Governing at the speed of the threat",
