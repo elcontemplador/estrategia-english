@@ -6,6 +6,7 @@ This archive translates only the main articles. The original Spanish newsletter 
 
 ## Articles
 
+- [Coexisting with artificial intelligence: reflections on Ethan Mollick's new book](https://elcontemplador.github.io/estrategia-english/essays/163/): Fernando Nieto Lobato reflects on Ethan Mollick's Co-Existence: AI's jagged frontier, delegation to agents, human expertise, cognitive exhaustion and preparing for uncertain futures.
 - [How can you work with AI without giving up thinking for yourself?](https://elcontemplador.github.io/estrategia-english/essays/162/): Andrés Ferraro Sastre explores how to use AI to ask better questions, preserve independent judgement and distinguish faster work from better work.
 - [Governing at the speed of the threat](https://elcontemplador.github.io/estrategia-english/essays/161/): Fernando Nieto Lobato examines how AI is compressing cybersecurity response times and why governments need authority, resources and rehearsed procedures before an alert arrives.
 - [Political conversations with citizens and artificial intelligence](https://elcontemplador.github.io/estrategia-english/essays/160/): Fernanda Cuzme explores what AI can contribute to conversations with citizens, and why context, human empathy and respect for disagreement remain essential.
