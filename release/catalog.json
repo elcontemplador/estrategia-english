@@ -3,6 +3,33 @@
   "status": "published",
   "articles": [
     {
+      "id": "164",
+      "issue_number": 164,
+      "title": "The AI promises on the campaign trail",
+      "description": "Fernando Nieto Lobato compares artificial intelligence proposals in Spanish parties’ election manifestos, with links to the source documents and an explanation of their differences.",
+      "author": {
+        "name": "Fernando Nieto Lobato",
+        "url": "https://www.fernandonieto.es/"
+      },
+      "original_url": "https://estrategiabyaleph.substack.com/p/estrategia-164-que-proponen-los-partidos",
+      "original_date": "2026-11-18",
+      "topics": [
+        "democracy",
+        "government",
+        "practice"
+      ],
+      "genre": "analysis",
+      "url": "https://elcontemplador.github.io/estrategia-english/essays/164/",
+      "inLanguage": "en-GB",
+      "markdown_url": "https://elcontemplador.github.io/estrategia-english/text/164.md",
+      "english_publication_date": "2026-11-19",
+      "english_modified_date": null,
+      "status": "published",
+      "author_profiles": [
+        "https://elcontemplador.github.io/estrategia-english/people/fernando-nieto-lobato/"
+      ]
+    },
+    {
       "id": "163",
       "issue_number": 163,
       "title": "Coexisting with artificial intelligence: reflections on Ethan Mollick's new book",
